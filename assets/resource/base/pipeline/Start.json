@@ -1,0 +1,670 @@
+{
+  "确认": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "确认.png"
+    ],
+    "is_sub": true
+  },
+  "2周内不再提示": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "2周内不再提示.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "target": true
+  },
+  "X": {
+    "recognition": "FeatureMatch",
+    "template": [
+      "X.png"
+    ],
+    "action": "Click",
+    "is_sub": true
+  },
+  "M-启动": {
+    "action": "StartApp",
+    "package": "com.bilibili.snake/com.bilibili.snake.PermissionActivity",
+    "post_delay": 25000,
+    "next": [
+      "StartIn",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "StartIn": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "CADPA.png"
+    ],
+    "action": "Click",
+    "text": [
+      ""
+    ],
+    "target": [
+      280,
+      550,
+      700,
+      150
+    ],
+    "post_delay": 25000,
+    "next": [
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-签到": {
+    "next": [
+      "关闭公告",
+      "每日签到",
+      "关闭推荐商品",
+      "领取旅馆",
+      "领取小公主礼物",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "timeout": 25000,
+    "focus": true
+  },
+  "关闭公告": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "公告.png"
+    ],
+    "next": [
+      "X"
+    ],
+    "is_sub": true
+  },
+  "每日签到": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "签到.png"
+    ],
+    "next": [
+      "领取奖励"
+    ],
+    "is_sub": true
+  },
+  "关闭推荐商品": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "推荐商品.png"
+    ],
+    "next": [
+      "2周内不再提示"
+    ],
+    "is_sub": true
+  },
+  "领取奖励": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "领取奖励.png"
+    ],
+    "is_sub": true,
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "确认"
+    ]
+  },
+  "领取旅馆": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "金币.png",
+      "金币2.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "roi": [
+      [
+        480,
+        220,
+        340,
+        270
+      ]
+    ]
+  },
+  "领取小公主礼物": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "小公主的礼物.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "确认",
+      "Stop"
+    ],
+    "is_sub": true
+  },
+  "Stop": {
+    "action": "StopTask"
+  },
+  "返回": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "返回.png"
+    ],
+    "is_sub": true,
+    "action": "Click"
+  },
+  "领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "领取.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "action": "Click"
+  },
+  "裂痕": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "裂痕.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      -50,
+      0,
+      0
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "next": [
+      "Stop"
+    ]
+  },
+  "自动战斗": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗.png"
+    ],
+    "next": [
+	  "确认",
+      "体力不足",
+	  "自动战斗MAX",
+      "扫荡",
+      "Stop"
+    ],
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "threshold": [
+      0.9
+    ]
+  },
+  "自动战斗+": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗+.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.95
+    ],
+    "target": true,
+    "is_sub": true
+  },
+  "自动战斗MAX": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗MAX.png"
+    ],
+    "action": "Click",
+    "target": "自动战斗+",
+    "threshold": [
+      0.95
+    ],
+    "is_sub": true,
+    "inverse": true
+  },
+  "扫荡": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "扫荡.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.9
+    ]
+  },
+  "扫荡if": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗MAX.png"
+    ],
+    "next": [
+      "扫荡",
+      "确认"
+    ],
+    "is_sub": true
+  },
+  "M-领取周边": {
+    "next": [
+      "go世界探索船",
+      "世界探索船",
+      "世界探索周边工坊",
+      "世界探索周边工坊领取",
+      "确认",
+      "周边制造1",
+      "返回",
+      "Stop"
+    ],
+    "timeout_next": [
+      "返回",
+      "Stop"
+    ],
+    "focus": true
+  },
+  "go世界探索船": {
+    "recognition": "TemplateMatch",
+    "action": "Swipe",
+    "begin": [
+      200,
+      400,
+      0,
+      0
+    ],
+    "end": [
+      1000,
+      500,
+      0,
+      0
+    ],
+    "next": [
+      "世界探索船"
+    ],
+    "pre_delay": 1000,
+    "duration": 1000,
+    "template": [
+      "世界探索船.png"
+    ],
+    "inverse": true
+  },
+  "世界探索船": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "世界探索船.png"
+    ],
+    "next": [
+      "世界探索周边工坊"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ]
+  },
+  "世界探索周边工坊": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "周边产品工坊.png"
+    ],
+    "next": [
+      "世界探索周边工坊领取",
+      "确认",
+      "周边制造1",
+      "返回",
+      "Stop"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ]
+  },
+  "世界探索周边工坊领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "周边产品制造一键领取.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true
+  },
+  "go浮游城热气球": {
+    "action": "Swipe",
+    "begin": [
+      750,
+      150,
+      0,
+      0
+    ],
+    "end": [
+      200,
+      600,
+      0,
+      0
+    ],
+    "recognition": "DirectHit"
+  },
+  "浮游城热气球领取": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": [
+      "浮游城热气球.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      0,
+      50,
+      0,
+      0
+    ]
+  },
+  "M-热气球": {
+    "next": [
+      "go浮游城热气球",
+      "浮游城热气球领取"
+    ]
+  },
+  "go守护者基地": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "守护者基地2.png"
+    ],
+    "action": "Swipe",
+    "begin": [
+      200,
+      600,
+      0,
+      0
+    ],
+    "end": [
+      450,
+      80,
+      0,
+      0
+    ],
+    "next": [
+      "守护者基地"
+    ],
+    "pre_delay": 1000,
+    "duration": 1000,
+    "inverse": true
+  },
+  "守护者基地": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "守护者基地2.png"
+    ],
+    "action": "Click",
+    "next": [
+      "领取",
+      "确认",
+      "X",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ]
+  },
+  "M-守护者基地": {
+    "next": [
+      "go守护者基地",
+      "守护者基地",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "周边制造1": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "周边制造.png"
+    ],
+    "action": "Click",
+    "is_sub": true,
+    "threshold": [
+      0.85
+    ],
+    "next": [
+      "周边制造2"
+    ]
+  },
+  "周边制造2": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "圆柱设计图.png"
+    ],
+    "action": "Click",
+    "next": [
+      "周边制造3"
+    ]
+  },
+  "周边制造3": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "开始制造.png"
+    ],
+    "action": "Click"
+  },
+  "任务": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "任务.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "action": "Click",
+    "next": [
+      "全部领取",
+      "返回",
+      "Stop"
+    ],
+    "is_sub": true
+  },
+  "全部领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "全部领取.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ]
+  },
+  "M-任务": {
+    "next": [
+      "任务",
+      "确认",
+      "返回",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ]
+  },
+  "探险": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "探险.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+	"post_delay": 1000,
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "觉醒副本扫荡": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "觉醒0.png"
+    ],
+    "inverse": true,
+    "next": [
+      "确认",
+      "自动战斗",
+      "扫荡"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "is_sub": true
+  },
+  "M-裂痕": {
+    "next": [
+      "探险",
+      "裂痕",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-觉醒副本": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "觉醒副本.png"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "觉醒副本扫荡",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-返回": {
+    "next": [
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "recognition": "TemplateMatch",
+    "template": [
+      "返回.png"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "action": "Click",
+    "focus": true
+  },
+  "M-进化石3": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "伤害减免副本.png"
+    ],
+    "action": "Click",
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "threshold": [
+      0.8
+    ],
+    "focus": true,
+    "timeout_next": [
+      "Stop"
+    ],
+    "next": [
+      "确认",
+      "体力不足",
+      "自动战斗",
+      "扫荡",
+      "Stop"
+    ]
+  },
+  "体力不足": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "体力不足.png"
+    ],
+    "is_sub": true,
+    "next": [
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "threshold": [
+      0.999
+    ]
+  }
+}

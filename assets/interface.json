@@ -20,19 +20,52 @@
             "path": [
                 "{PROJECT_DIR}/resource/base"
             ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "{PROJECT_DIR}/resource/base",
-                "{PROJECT_DIR}/resource/bilibili"
-            ]
         }
     ],
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "M-启动",
+            "entry": "M-启动"
+        },
+        {
+            "name": "M-签到",
+            "entry": "M-签到"
+        },
+        {
+            "name": "M-守护者基地",
+            "entry": "M-守护者基地"
+        },
+        {
+            "name": "M-领取周边",
+            "entry": "M-领取周边"
+        },
+        {
+            "name": "M-裂痕",
+            "entry": "M-裂痕"
+        },
+        {
+            "name": "M-觉醒副本",
+            "entry": "M-觉醒副本"
+        },
+        {
+            "name": "M-进化石3",
+            "entry": "M-进化石3"
+        },
+        {
+            "name": "M-热气球",
+            "entry": "M-热气球"
+        },
+        {
+            "name": "M-返回",
+            "entry": "M-返回"
+        },
+        {
+            "name": "确认",
+            "entry": "确认"
+        },
+        {
+            "name": "X",
+            "entry": "X"
         },
         {
             "name": "选项任务",
