@@ -19,7 +19,6 @@
       0,
       0
     ],
-    "is_sub": true,
     "target": true
   },
   "X": {
@@ -119,12 +118,6 @@
     ],
     "is_sub": true,
     "action": "Click",
-    "target_offset": [
-      3,
-      3,
-      0,
-      0
-    ],
     "next": [
       "确认"
     ]
@@ -132,7 +125,6 @@
   "领取旅馆": {
     "recognition": "TemplateMatch",
     "template": [
-      "金币.png",
       "金币2.png"
     ],
     "action": "Click",
@@ -212,6 +204,23 @@
       "Stop"
     ]
   },
+  "战斗": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗.png"
+    ],
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "threshold": [
+      0.9
+    ]
+  },
   "自动战斗": {
     "is_sub": true,
     "action": "Click",
@@ -220,10 +229,8 @@
       "自动战斗.png"
     ],
     "next": [
-	  "确认",
-      "体力不足",
-	  "自动战斗MAX",
-      "扫荡",
+      "扫荡if",
+      "自动战斗+",
       "Stop"
     ],
     "target_offset": [
@@ -254,7 +261,12 @@
       "自动战斗MAX.png"
     ],
     "action": "Click",
-    "target": "自动战斗+",
+    "target": [
+      820,
+      385,
+      0,
+      0
+    ],
     "threshold": [
       0.95
     ],
@@ -284,8 +296,11 @@
       "自动战斗MAX.png"
     ],
     "next": [
-      "扫荡",
-      "确认"
+      "确认",
+      "扫荡"
+    ],
+    "threshold": [
+      0.95
     ],
     "is_sub": true
   },
@@ -352,6 +367,7 @@
     "template": [
       "周边产品工坊.png"
     ],
+    "post_delay": 2000,
     "next": [
       "世界探索周边工坊领取",
       "确认",
@@ -549,7 +565,7 @@
       0,
       0
     ],
-	"post_delay": 1000,
+    "post_delay": 1000,
     "is_sub": true,
     "threshold": [
       0.8
@@ -563,9 +579,14 @@
     "inverse": true,
     "next": [
       "确认",
-      "自动战斗",
-      "扫荡"
+      "扫荡",
+      "战斗",
+      "Stop"
     ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "times_limit": 5,
     "threshold": [
       0.9
     ],
@@ -573,8 +594,8 @@
   },
   "M-裂痕": {
     "next": [
-      "探险",
       "裂痕",
+      "探险",
       "Stop"
     ],
     "timeout_next": [
@@ -643,11 +664,12 @@
     "timeout_next": [
       "Stop"
     ],
+    "post_delay": 1000,
     "next": [
       "确认",
       "体力不足",
-      "自动战斗",
       "扫荡",
+      "自动战斗",
       "Stop"
     ]
   },
@@ -666,5 +688,150 @@
     "threshold": [
       0.999
     ]
+  },
+  "公会可以签到": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "公会签到.png"
+    ],
+    "action": "Swipe",
+    "begin": [
+      185,
+      495,
+      0,
+      0
+    ],
+    "end": [
+      185,
+      395,
+      0,
+      0
+    ],
+    "duration": 100,
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "inverse": true
+  },
+  "公会签到": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "公会签到.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "确认",
+      "公会签到奖励",
+      "X",
+      "返回主城",
+      "Stop"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "公会签到奖励": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": [
+      "签到奖励.png"
+    ],
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true
+  },
+  "确定返回主城": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "确定返回主城.png"
+    ],
+    "threshold": [
+      0.95
+    ],
+    "next": [
+      "确认",
+      "Stop"
+    ],
+    "is_sub": true
+  },
+  "返回主城": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "返回主城.png"
+    ],
+    "action": "Click",
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "确定返回主城"
+    ],
+    "threshold": [
+      0.85
+    ]
+  },
+  "M-进入公会": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "公会.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      0,
+      0,
+      0
+    ],
+    "next": [
+	  "进入公会"
+    ]
+  },
+  "M-公会签到": {
+    "pre_delay": 2000,
+    "next": [
+      "公会可以签到",
+      "公会签到",
+      "返回主城"
+    ]
+  },
+  "进入公会": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "进入公会.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      0,
+      0,
+      0
+    ],
+    "next": [
+	  "确认",
+	  "Stop"
+    ],
+    "is_sub": true
   }
 }
