@@ -22,9 +22,12 @@
     "target": true
   },
   "X": {
-    "recognition": "FeatureMatch",
+    "recognition": "TemplateMatch",
     "template": [
       "X.png"
+    ],
+    "timeout_next": [
+      "Stop"
     ],
     "action": "Click",
     "is_sub": true
@@ -32,10 +35,9 @@
   "M-启动": {
     "action": "StartApp",
     "package": "com.bilibili.snake/com.bilibili.snake.PermissionActivity",
-    "post_delay": 25000,
+    "post_delay": 20000,
     "next": [
-      "StartIn",
-      "Stop"
+      "StartIn"
     ],
     "timeout_next": [
       "Stop"
@@ -48,9 +50,6 @@
       "CADPA.png"
     ],
     "action": "Click",
-    "text": [
-      ""
-    ],
     "target": [
       280,
       550,
@@ -64,11 +63,11 @@
     "timeout_next": [
       "Stop"
     ],
-    "focus": true
+    "focus": true,
+    "is_sub": true
   },
   "M-签到": {
     "next": [
-      "关闭公告",
       "每日签到",
       "关闭推荐商品",
       "领取旅馆",
@@ -78,7 +77,18 @@
     "timeout_next": [
       "Stop"
     ],
-    "timeout": 25000,
+    "post_delay": 5000,
+    "focus": true
+  },
+  "M-关闭公告": {
+    "next": [
+      "关闭公告"
+    ],
+    "post_delay": 15000,
+    "timeout": 10000,
+    "timeout_next": [
+      "Stop"
+    ],
     "focus": true
   },
   "关闭公告": {
@@ -87,9 +97,14 @@
       "公告.png"
     ],
     "next": [
-      "X"
+      "X",
+      "Stop"
     ],
-    "is_sub": true
+    "timeout": 5000,
+    "timeout_next": [
+      "Stop"
+    ],
+    "focus": true
   },
   "每日签到": {
     "recognition": "TemplateMatch",
@@ -183,126 +198,6 @@
     ],
     "is_sub": true,
     "action": "Click"
-  },
-  "裂痕": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "裂痕.png"
-    ],
-    "action": "Click",
-    "target_offset": [
-      3,
-      -50,
-      0,
-      0
-    ],
-    "threshold": [
-      0.8
-    ],
-    "is_sub": true,
-    "next": [
-      "Stop"
-    ]
-  },
-  "战斗": {
-    "is_sub": true,
-    "action": "Click",
-    "recognition": "TemplateMatch",
-    "template": [
-      "自动战斗.png"
-    ],
-    "target_offset": [
-      3,
-      3,
-      0,
-      0
-    ],
-    "threshold": [
-      0.9
-    ]
-  },
-  "自动战斗": {
-    "is_sub": true,
-    "action": "Click",
-    "recognition": "TemplateMatch",
-    "template": [
-      "自动战斗.png"
-    ],
-    "next": [
-      "扫荡if",
-      "自动战斗+",
-      "Stop"
-    ],
-    "target_offset": [
-      3,
-      3,
-      0,
-      0
-    ],
-    "threshold": [
-      0.9
-    ]
-  },
-  "自动战斗+": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "自动战斗+.png"
-    ],
-    "action": "Click",
-    "threshold": [
-      0.95
-    ],
-    "target": true,
-    "is_sub": true
-  },
-  "自动战斗MAX": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "自动战斗MAX.png"
-    ],
-    "action": "Click",
-    "target": [
-      820,
-      385,
-      0,
-      0
-    ],
-    "threshold": [
-      0.95
-    ],
-    "is_sub": true,
-    "inverse": true
-  },
-  "扫荡": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "扫荡.png"
-    ],
-    "action": "Click",
-    "target_offset": [
-      3,
-      3,
-      0,
-      0
-    ],
-    "is_sub": true,
-    "threshold": [
-      0.9
-    ]
-  },
-  "扫荡if": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "自动战斗MAX.png"
-    ],
-    "next": [
-      "确认",
-      "扫荡"
-    ],
-    "threshold": [
-      0.95
-    ],
-    "is_sub": true
   },
   "M-领取周边": {
     "next": [
@@ -454,8 +349,12 @@
     "next": [
       "守护者基地"
     ],
+    "threshold": [
+      0.8
+    ],
     "pre_delay": 1000,
     "duration": 1000,
+    "is_sub": true,
     "inverse": true
   },
   "守护者基地": {
@@ -470,6 +369,10 @@
       "X",
       "Stop"
     ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
     "timeout_next": [
       "Stop"
     ]
@@ -549,26 +452,9 @@
       "返回",
       "Stop"
     ],
+    "post_delay": 10000,
     "timeout_next": [
       "Stop"
-    ]
-  },
-  "探险": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "探险.png"
-    ],
-    "action": "Click",
-    "target_offset": [
-      3,
-      3,
-      0,
-      0
-    ],
-    "post_delay": 1000,
-    "is_sub": true,
-    "threshold": [
-      0.8
     ]
   },
   "觉醒副本扫荡": {
@@ -593,15 +479,50 @@
     "is_sub": true
   },
   "M-裂痕": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "探险.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "post_delay": 5000,
     "next": [
       "裂痕",
-      "探险",
+	  "返回",
       "Stop"
+    ],
+    "threshold": [
+      0.8
     ],
     "timeout_next": [
       "Stop"
     ],
     "focus": true
+  },
+  "裂痕": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "裂痕.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      -50,
+      0,
+      0
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "next": [
+      "Stop"
+    ]
   },
   "M-觉醒副本": {
     "recognition": "TemplateMatch",
@@ -644,7 +565,36 @@
     "action": "Click",
     "focus": true
   },
-  "M-进化石3": {
+  "M-进化石1": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "强化技能副本.png"
+    ],
+    "action": "Click",
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "threshold": [
+      0.8
+    ],
+    "focus": true,
+    "timeout_next": [
+      "Stop"
+    ],
+    "post_delay": 1000,
+    "next": [
+      "确认",
+      "体力不足",
+      "扫荡",
+      "自动战斗",
+      "Stop"
+    ]
+  },
+  "M-进化石2": {
     "recognition": "TemplateMatch",
     "template": [
       "伤害减免副本.png"
@@ -672,6 +622,138 @@
       "自动战斗",
       "Stop"
     ]
+  },
+  "M-进化石3": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "单人进化石副本.png"
+    ],
+    "action": "Click",
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "threshold": [
+      0.8
+    ],
+    "focus": true,
+    "timeout_next": [
+      "Stop"
+    ],
+    "post_delay": 1000,
+    "next": [
+      "确认",
+      "体力不足",
+      "扫荡",
+      "自动战斗",
+      "Stop"
+    ]
+  },
+  "战斗": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗.png"
+    ],
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "threshold": [
+      0.9
+    ]
+  },
+  "自动战斗": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗.png"
+    ],
+    "next": [
+      "扫荡if",
+      "自动战斗+",
+      "Stop"
+    ],
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "threshold": [
+      0.9
+    ]
+  },
+  "自动战斗+": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗+.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.95
+    ],
+    "target": true,
+    "is_sub": true
+  },
+  "自动战斗MAX": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗MAX.png"
+    ],
+    "action": "Click",
+    "target": [
+      820,
+      385,
+      0,
+      0
+    ],
+    "threshold": [
+      0.95
+    ],
+    "is_sub": true,
+    "inverse": true
+  },
+  "扫荡": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "扫荡.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.9
+    ]
+  },
+  "扫荡if": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "自动战斗MAX.png"
+    ],
+    "next": [
+      "确认",
+      "扫荡",
+      "体力不足",
+      "自动战斗",
+      "Stop"
+    ],
+    "threshold": [
+      0.95
+    ],
+    "is_sub": true
   },
   "体力不足": {
     "recognition": "TemplateMatch",
@@ -717,15 +799,16 @@
   "公会签到": {
     "recognition": "TemplateMatch",
     "template": [
-      "公会签到.png"
+      "交流.png"
     ],
     "action": "Click",
     "target_offset": [
-      3,
-      3,
+      5,
+      15,
       0,
       0
     ],
+    "post_delay": 2000,
     "next": [
       "确认",
       "公会签到奖励",
@@ -742,7 +825,7 @@
     "action": "Click",
     "recognition": "TemplateMatch",
     "template": [
-      "签到奖励.png"
+      "交流.png"
     ],
     "target_offset": [
       3,
@@ -780,7 +863,8 @@
       0
     ],
     "next": [
-      "确定返回主城"
+      "确定返回主城",
+	  "返回主城"
     ],
     "threshold": [
       0.85
