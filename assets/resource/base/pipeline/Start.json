@@ -68,8 +68,6 @@
   },
   "M-签到": {
     "next": [
-      "每日签到",
-      "关闭推荐商品",
       "领取旅馆",
       "领取小公主礼物",
       "Stop"
@@ -77,7 +75,7 @@
     "timeout_next": [
       "Stop"
     ],
-    "post_delay": 5000,
+    "post_delay": 10000,
     "focus": true
   },
   "M-关闭公告": {
@@ -106,7 +104,7 @@
     ],
     "focus": true
   },
-  "每日签到": {
+  "M-每日签到": {
     "recognition": "TemplateMatch",
     "template": [
       "签到.png"
@@ -114,7 +112,7 @@
     "next": [
       "领取奖励"
     ],
-    "is_sub": true
+    "focus": true
   },
   "关闭推荐商品": {
     "recognition": "TemplateMatch",
@@ -134,7 +132,9 @@
     "is_sub": true,
     "action": "Click",
     "next": [
-      "确认"
+      "关闭推荐商品",
+      "确认",
+	  "Stop"
     ]
   },
   "领取旅馆": {
@@ -149,6 +149,7 @@
       0,
       0
     ],
+    "post_delay": 5000,
     "is_sub": true,
     "roi": [
       [
