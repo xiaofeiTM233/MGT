@@ -598,7 +598,7 @@
   "M-进化石2": {
     "recognition": "TemplateMatch",
     "template": [
-      "伤害减免副本.png"
+      "单人进化石副本.png"
     ],
     "action": "Click",
     "target": true,
@@ -627,7 +627,7 @@
   "M-进化石3": {
     "recognition": "TemplateMatch",
     "template": [
-      "单人进化石副本.png"
+      "伤害减免副本.png"
     ],
     "action": "Click",
     "target": true,
@@ -775,7 +775,7 @@
   "公会可以签到": {
     "recognition": "TemplateMatch",
     "template": [
-      "公会签到.png"
+      "交流.png"
     ],
     "action": "Swipe",
     "begin": [
@@ -826,7 +826,7 @@
     "action": "Click",
     "recognition": "TemplateMatch",
     "template": [
-      "交流.png"
+      "签到奖励.png"
     ],
     "target_offset": [
       3,
