@@ -19,7 +19,8 @@
       0,
       0
     ],
-    "target": true
+    "target": true,
+    "is_sub": true
   },
   "X": {
     "recognition": "TemplateMatch",
@@ -114,16 +115,6 @@
     ],
     "focus": true
   },
-  "关闭推荐商品": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "推荐商品.png"
-    ],
-    "next": [
-      "2周内不再提示"
-    ],
-    "is_sub": true
-  },
   "领取奖励": {
     "recognition": "TemplateMatch",
     "template": [
@@ -132,7 +123,7 @@
     "is_sub": true,
     "action": "Click",
     "next": [
-      "关闭推荐商品",
+      "2周内不再提示",
       "确认",
 	  "Stop"
     ]
@@ -770,6 +761,219 @@
     ],
     "threshold": [
       0.999
+    ]
+  },
+  "M-TLS": {
+    "next": [
+      "goTLS",
+      "TLS"
+    ],
+    "focus": true
+  },
+  "goTLS": {
+    "recognition": "TemplateMatch",
+    "action": "Swipe",
+    "begin": [
+      1200,
+      180,
+      0,
+      0
+    ],
+    "end": [
+      800,
+      180,
+      0,
+      0
+    ],
+    "duration": 500,
+    "template": [
+      "TLS.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "inverse": true
+  },
+  "TLS": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "TLS.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      5,
+      5,
+      0,
+      0
+    ],
+    "post_delay": 2000,
+    "next": [
+	  "TLS体力不足",
+	  "TLS确认",
+	  "确认",
+      "TLS挑战开始",
+      "TLS难度6",
+      "TLS自动战斗",
+	  "TLS扫荡",
+      "Stop"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "TLS体力不足": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "TLS体力不足.png"
+    ],
+    "is_sub": true,
+    "next": [
+	  "TLS确认",
+	  "TLSX",
+	  "返回",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "threshold": [
+      0.999
+    ]
+  },
+  "TLS挑战开始": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "TLS挑战开始.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "TLS难度6": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "TLS难度6.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.999
+    ]
+  },
+  "TLS自动战斗": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "TLS自动战斗.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+	"next": [
+	  "TLS体力不足",
+	  "TLS确认",
+	  "确认",
+	  "TLS自动战斗M",
+	  "TLS扫荡",
+      "Stop"
+	],
+    "threshold": [
+      0.8
+    ]
+  },
+  "TLS自动战斗M": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "TLS自动战斗M.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.999
+    ]
+  },
+  "TLS扫荡": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "TLS扫荡.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "TLS确认": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "TLS确认.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "TLSX": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "TLSX.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.8
     ]
   },
   "公会可以签到": {
