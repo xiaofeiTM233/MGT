@@ -111,7 +111,10 @@
       "签到.png"
     ],
     "next": [
-      "领取奖励"
+      "确认",
+      "领取奖励",
+      "2周内不再提示",
+	  "Stop"
     ],
     "focus": true
   },
@@ -121,12 +124,7 @@
       "领取奖励.png"
     ],
     "is_sub": true,
-    "action": "Click",
-    "next": [
-      "2周内不再提示",
-      "确认",
-	  "Stop"
-    ]
+    "action": "Click"
   },
   "领取旅馆": {
     "recognition": "TemplateMatch",
@@ -134,12 +132,6 @@
       "金币2.png"
     ],
     "action": "Click",
-    "target_offset": [
-      3,
-      3,
-      0,
-      0
-    ],
     "post_delay": 5000,
     "is_sub": true,
     "roi": [
@@ -346,7 +338,6 @@
     ],
     "pre_delay": 1000,
     "duration": 1000,
-    "is_sub": true,
     "inverse": true
   },
   "守护者基地": {
@@ -354,29 +345,30 @@
     "template": [
       "守护者基地2.png"
     ],
+    "pre_delay": 10000,
     "action": "Click",
     "next": [
-      "领取",
       "确认",
+      "守护者基地领取",
       "X",
       "Stop"
     ],
     "threshold": [
       0.8
     ],
-    "is_sub": true,
-    "timeout_next": [
-      "Stop"
-    ]
+    "is_sub": true
+  },
+  "守护者基地领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "守护者基地领取.png"
+    ],
+    "action": "Click",
+    "is_sub": true
   },
   "M-守护者基地": {
     "next": [
-      "go守护者基地",
-      "守护者基地",
-      "Stop"
-    ],
-    "timeout_next": [
-      "Stop"
+      "go守护者基地"
     ],
     "focus": true
   },
@@ -449,27 +441,6 @@
       "Stop"
     ]
   },
-  "觉醒副本扫荡": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "觉醒0.png"
-    ],
-    "inverse": true,
-    "next": [
-      "确认",
-      "扫荡",
-      "战斗",
-      "Stop"
-    ],
-    "timeout_next": [
-      "Stop"
-    ],
-    "times_limit": 5,
-    "threshold": [
-      0.9
-    ],
-    "is_sub": true
-  },
   "M-裂痕": {
     "recognition": "TemplateMatch",
     "template": [
@@ -516,6 +487,79 @@
       "Stop"
     ]
   },
+  "M-活动裂痕": {
+    "next": [
+      "go活动",
+      "活动"
+    ],
+    "focus": true
+  },
+  "活动": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "gov2.94.png"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "活动裂痕",
+      "觉醒副本扫荡",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ]
+  },
+  "活动裂痕": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "活动裂痕v2.94.png"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true
+  },
+  "go活动": {
+    "recognition": "TemplateMatch",
+    "action": "Swipe",
+    "begin": [
+      1200,
+      180,
+      0,
+      0
+    ],
+    "end": [
+      800,
+      180,
+      0,
+      0
+    ],
+    "duration": 500,
+    "template": [
+      "gov2.94.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "inverse": true
+  },
   "M-觉醒副本": {
     "recognition": "TemplateMatch",
     "template": [
@@ -539,6 +583,27 @@
       "Stop"
     ],
     "focus": true
+  },
+  "觉醒副本扫荡": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "觉醒0.png",
+	  "活动裂痕0.png"
+    ],
+    "inverse": true,
+    "next": [
+      "确认",
+      "扫荡",
+      "战斗",
+      "Stop"
+    ],
+    "timeout_next": [
+      "Stop"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "is_sub": true
   },
   "M-返回": {
     "next": [
@@ -807,7 +872,7 @@
       0,
       0
     ],
-    "post_delay": 2000,
+    "post_delay": 10000,
     "next": [
 	  "TLS体力不足",
 	  "TLS确认",

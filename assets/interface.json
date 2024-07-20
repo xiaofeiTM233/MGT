@@ -68,6 +68,10 @@
             "entry": "M-进化石3"
         },
         {
+            "name": "M-活动裂痕",
+            "entry": "M-活动裂痕"
+        },
+        {
             "name": "M-TLS",
             "entry": "M-TLS"
         },
@@ -133,5 +137,5 @@
             ]
         }
     },
-    "version": "v1.0.6"
+    "version": "v1.0.7"
 }
