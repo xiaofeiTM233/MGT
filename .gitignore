@@ -446,7 +446,9 @@ install
 
 # Tools
 tools/ImageCropper/**/*.png
+
+# Debug
 .nicegui
-config
+config/*_option.json
 debug
 *.bat

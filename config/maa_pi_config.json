@@ -1,0 +1,83 @@
+{
+    "adb": {
+        "adb_path": "",
+        "address": "",
+        "config": {
+        }
+    },
+    "controller": {
+        "name": "安卓端"
+    },
+    "gpu": -1,
+    "resource": "官服",
+    "task": [
+        {
+            "name": "M-启动",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-关闭公告",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-每日签到",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-签到",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-进入公会",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-公会签到",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-游玩",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-裂痕",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-副本2",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-觉醒副本",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-推荐",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-返回",
+            "option": [
+            ]
+        },
+        {
+            "name": "M-任务",
+            "option": [
+            ]
+        }
+    ],
+    "win32": {
+        "_placeholder": 0
+    }
+}
