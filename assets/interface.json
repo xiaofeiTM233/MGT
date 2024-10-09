@@ -40,48 +40,40 @@
             "entry": "M-签到"
         },
         {
-            "name": "M-守护者基地",
-            "entry": "M-守护者基地"
-        },
-        {
-            "name": "M-领取周边",
-            "entry": "M-领取周边"
-        },
-        {
-            "name": "M-裂痕",
-            "entry": "M-裂痕"
-        },
-        {
-            "name": "M-觉醒副本",
-            "entry": "M-觉醒副本"
-        },
-        {
-            "name": "M-进化石1",
-            "entry": "M-进化石1"
-        },
-        {
-            "name": "M-进化石2",
-            "entry": "M-进化石2"
-        },
-        {
-            "name": "M-进化石3",
-            "entry": "M-进化石3"
-        },
-        {
-            "name": "M-活动裂痕",
-            "entry": "M-活动裂痕"
-        },
-        {
-            "name": "M-TLS",
-            "entry": "M-TLS"
-        },
-        {
             "name": "M-进入公会",
             "entry": "M-进入公会"
         },
         {
             "name": "M-公会签到",
             "entry": "M-公会签到"
+        },
+        {
+            "name": "M-游玩",
+            "entry": "M-游玩"
+        },
+        {
+            "name": "M-裂痕",
+            "entry": "M-裂痕"
+        },
+        {
+            "name": "M-副本2",
+            "entry": "M-副本2"
+        },
+        {
+            "name": "M-觉醒副本",
+            "entry": "M-觉醒副本"
+        },
+        {
+            "name": "M-推荐",
+            "entry": "M-推荐"
+        },
+        {
+            "name": "M-TLS",
+            "entry": "M-TLS"
+        },
+        {
+            "name": "M-觉醒副本",
+            "entry": "M-觉醒副本"
         },
         {
             "name": "M-任务",

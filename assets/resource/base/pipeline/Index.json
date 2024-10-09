@@ -1,0 +1,797 @@
+{
+  "确认": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "确认.png"
+    ],
+    "is_sub": true
+  },
+  "取消": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "取消.png"
+    ],
+    "is_sub": true
+  },
+  "2周内不再提示": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "2周内不再提示.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "target": true,
+    "is_sub": true
+  },
+  "X": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "X.png"
+    ],
+    "action": "Click",
+    "is_sub": true
+  },
+  "M-启动": {
+    "action": "StartApp",
+    "package": "com.bilibili.snake/com.bilibili.snake.PermissionActivity",
+    "post_delay": 20000,
+    "next": [
+      "StartIn"
+    ],
+    "focus": true
+  },
+  "StartIn": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "CADPA.png"
+    ],
+    "action": "Click",
+    "target": [
+      280,
+      550,
+      700,
+      150
+    ],
+    "post_delay": 25000,
+    "next": [
+      "Stop"
+    ],
+    "focus": true,
+    "is_sub": true
+  },
+  "M-关闭公告": {
+    "next": [
+      "关闭公告"
+    ],
+    "post_delay": 15000,
+    "timeout": 10000,
+    "focus": true
+  },
+  "关闭公告": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "公告.png"
+    ],
+    "next": [
+      "X",
+      "Stop"
+    ],
+    "timeout": 5000,
+    "focus": true
+  },
+  "M-每日签到": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "签到.png"
+    ],
+    "next": [
+      "确认领取",
+      "签到X",
+      "2周内不再提示",
+	  "Stop"
+    ],
+    "focus": true
+  },
+  "签到X": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "签到X.png"
+    ],
+    "is_sub": true,
+    "action": "Click"
+  },
+  "确认领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "确认领取.png"
+    ],
+    "is_sub": true,
+    "action": "Click"
+  },
+  "M-签到": {
+    "next": [
+      "领取旅馆",
+      "领取小公主礼物",
+      "Stop"
+    ],
+    "post_delay": 10000,
+    "focus": true
+  },
+  "领取旅馆": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "灵魂点数.png"
+    ],
+    "action": "Click",
+    "post_delay": 5000,
+    "is_sub": true
+  },
+  "领取小公主礼物": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "小公主的礼物.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "确认领取",
+      "Stop"
+    ],
+    "is_sub": true
+  },
+  "Stop": {
+    "action": "StopTask"
+  },
+  "返回": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "返回.png"
+    ],
+    "is_sub": true,
+    "action": "Click"
+  },
+  "M-任务": {
+    "next": [
+      "确认领取",
+      "全部领取",
+      "已获得",
+      "返回",
+      "任务",
+      "Stop"
+    ],
+    "post_delay": 5000
+  },
+  "任务": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "任务.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "全部领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "全部领取.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "已获得": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "已获得.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "M-商店": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "商店.png"
+    ],
+    "timeout": 10000,
+    "post_delay": 5000,
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+	  "确认领取",
+	  "立即领取",
+	  "资源",
+	  "免费金币",
+	  "免费",
+	  "返回",
+      "Stop"
+    ],
+    "focus": true
+  },
+  "立即领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "立即领取.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.9
+    ],
+    "is_sub": true
+  },
+  "资源": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "资源.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "免费金币": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "免费金币.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "免费": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "免费.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "M-好友": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "菜单.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+	  "好友",
+	  "好友领取",
+	  "确认领取",
+	  "返回",
+      "Stop"
+    ],
+    "focus": true
+  },
+  "好友": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "好友.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "好友领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "好友领取.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "M-邀请函": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "邀请函.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-邀请函1": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "邀请函1.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "全部领取",
+      "确认领取",
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-邀请函2": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "邀请函2.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "全部领取",
+      "确认领取",
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-游玩": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "游玩.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-裂痕": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "裂痕.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-推荐": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "推荐.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-副本1": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "副本1.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-副本2": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "副本2.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "Stop"
+    ],
+    "focus": true
+  },
+  "M-觉醒副本": {
+    "next": [
+      "觉醒副本扫荡",
+      "Stop"
+    ],
+    "focus": true
+  },
+  "觉醒副本扫荡": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "觉醒0.png",
+	  "活动裂痕0.png"
+    ],
+    "inverse": true,
+    "next": [
+      "确认",
+      "确认领取",
+      "扫荡",
+      "觉醒扫荡",
+      "Stop"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "is_sub": true
+  },
+  "觉醒扫荡": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "觉醒扫荡.png"
+    ],
+    "threshold": [
+      0.999
+    ],
+	"roi": [
+	  0,
+	  436,
+	  1280,
+	  284
+	],
+    "action": "Click",
+	"is_sub": true
+  },
+  "M-活动裂痕": {
+    "next": [
+      "go活动",
+      "活动"
+    ],
+    "focus": true
+  },
+  "活动": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "gov2.94.png"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "活动裂痕",
+      "觉醒副本扫荡",
+      "Stop"
+    ]
+  },
+  "活动裂痕": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "活动裂痕v2.94.png"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true
+  },
+  "go活动": {
+    "recognition": "TemplateMatch",
+    "action": "Swipe",
+    "begin": [
+      1200,
+      180,
+      0,
+      0
+    ],
+    "end": [
+      800,
+      180,
+      0,
+      0
+    ],
+    "duration": 500,
+    "template": [
+      "gov2.94.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "inverse": true
+  },
+  "M-返回": {
+    "next": [
+      "Stop"
+    ],
+    "recognition": "TemplateMatch",
+    "template": [
+      "返回.png"
+    ],
+    "threshold": [
+      0.9
+    ],
+    "action": "Click",
+    "focus": true
+  },
+  "M-TLS": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "TLS.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      5,
+      5,
+      0,
+      0
+    ],
+    "post_delay": 10000,
+    "next": [
+	  "体力不足",
+	  "确认领取",
+	  "确认",
+      "挑战开始",
+      "自动战斗",
+	  "扫荡",
+      "Stop"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "体力不足": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "体力不足.png"
+    ],
+    "is_sub": true,
+    "next": [
+	  "取消",
+	  "X",
+	  "返回",
+      "Stop"
+    ],
+    "threshold": [
+      0.9
+    ]
+  },
+  "挑战开始": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "挑战开始.png"
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "扫荡": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "扫荡.png"
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "自动战斗": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "自动战斗.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+	"next": [
+	  "体力不足",
+	  "确认",
+	  "自动战斗M",
+	  "扫荡",
+      "Stop"
+	],
+    "threshold": [
+      0.8
+    ]
+  },
+  "自动战斗M": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "自动战斗M.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.9
+    ]
+  },
+  "M-进入公会": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "公会.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "action": "Click",
+    "target_offset": [
+      3,
+      0,
+      0,
+      0
+    ],
+    "next": [
+	  "确认",
+	  "Stop"
+    ]
+  },
+  "M-公会签到": {
+    "pre_delay": 2000,
+    "next": [
+      "公会可以签到",
+      "公会签到",
+      "返回主城"
+    ]
+  },
+  "公会X": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "公会X.png"
+    ],
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "公会可以签到": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "交流.png"
+    ],
+    "action": "Swipe",
+    "begin": [
+      185,
+      495,
+      0,
+      0
+    ],
+    "end": [
+      185,
+      395,
+      0,
+      0
+    ],
+    "duration": 100,
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "inverse": true
+  },
+  "公会签到": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "交流.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      5,
+      15,
+      0,
+      0
+    ],
+    "post_delay": 2000,
+    "next": [
+      "确认领取",
+      "公会签到奖励",
+      "公会X",
+      "返回主城",
+      "Stop"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true
+  },
+  "公会签到奖励": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": [
+      "签到奖励.png"
+    ],
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "is_sub": true
+  },
+  "返回主城": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "返回主城.png"
+    ],
+    "action": "Click",
+    "target": true,
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "确认",
+	  "Stop"
+    ],
+    "threshold": [
+      0.85
+    ]
+  }
+}
