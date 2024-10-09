@@ -8,9 +8,8 @@
             "name": "桌面端",
             "type": "Win32",
             "win32": {
-                "method": "Search",
-                "class_name": ".*",
-                "window_name": "Visual Studio"
+                "class_regex": ".*",
+                "window_regex": "Visual Studio"
             }
         }
     ],
@@ -18,7 +17,14 @@
         {
             "name": "官服",
             "path": [
-                "{PROJECT_DIR}/resource/base"
+                "{PROJECT_DIR}/resource"
+            ]
+        },
+        {
+            "name": "B 服",
+            "path": [
+                "{PROJECT_DIR}/resource",
+                "{PROJECT_DIR}/resource_bilibili"
             ]
         }
     ],
@@ -92,6 +98,10 @@
             "entry": "X"
         },
         {
+            "name": "普通任务",
+            "entry": "MyTask1"
+        },
+        {
             "name": "选项任务",
             "entry": "MyTask2",
             "option": [
@@ -104,7 +114,7 @@
             "option": [
                 "任务选项1"
             ],
-            "param": {}
+            "pipeline_override": {}
         }
     ],
     "option": {
@@ -112,7 +122,7 @@
             "cases": [
                 {
                     "name": "文本1",
-                    "param": {
+                    "pipeline_override": {
                         "OcrTask": {
                             "text": "文本1"
                         }
@@ -120,7 +130,7 @@
                 },
                 {
                     "name": "文本2",
-                    "param": {
+                    "pipeline_override": {
                         "OcrTask": {
                             "text": "文本2"
                         }
@@ -129,5 +139,5 @@
             ]
         }
     },
-    "version": "v1.0.7"
+    "version": "v1.1.0"
 }
