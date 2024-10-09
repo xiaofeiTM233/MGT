@@ -15,9 +15,9 @@
 
 仅在 MuMu12 的 1600x900 分辨率下测试运行，其它分辨率未经测试，可行性未知。
 
-# 使用方法
+## 使用方法
 
 在 [Releases](https://github.com/xiaofeiTM233/MGT/releases/latest) 下载对应系统版本的压缩包，解压后按一定方式运行。
 
-# Dev
+## Dev
 Please contact us via email xiaofeitm233@vip.qq.com or join qq group 949370222
