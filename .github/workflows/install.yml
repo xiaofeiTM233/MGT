@@ -49,6 +49,38 @@ jobs:
       tag: ${{ steps.set_tag.outputs.tag }}
       is_release: ${{ steps.set_tag.outputs.is_release }}
 
+  gui:
+    needs: meta
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Download Latest MFAWPF  
+        uses: robinraju/release-downloader@v1  
+        with:  
+             repository: SweetSmellFox/MFAWPF  
+             filename: MFAWPF*
+             latest: true  
+             out-file-path: gui  
+             extract: true  
+
+      - name: gui resources          
+        shell: bash
+        run: |  
+           rm -f ./gui/*.zip
+           cp -r ./assets/resource/* ./gui/Resource/
+           jq --arg version_name "MGT" --arg url "https://api.github.com/repos/xiaofeiTM233/MGT/releases/latest" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' ./assets/interface.json > ./gui/interface.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MGT-win-x86_64-with-gui
+          path: "gui"
+
   windows:
     needs: meta
     runs-on: windows-latest
