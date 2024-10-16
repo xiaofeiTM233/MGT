@@ -1,5 +1,6 @@
 @echo off
 echo 来自https://github.com/MaaXYZ/M9A/issues/61
+echo 运行前请先记得 Switch controller
 start "" "D:\Program Files\Netease\MuMuPlayer-12.0\shell\MuMuPlayer.exe" -v 1
 echo Waiting for 10 seconds...
 ping 127.0.0.1 -n 10 > nul

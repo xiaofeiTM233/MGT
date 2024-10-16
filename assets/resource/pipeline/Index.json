@@ -92,9 +92,9 @@
       "签到.png"
     ],
     "next": [
+      "2周内不再提示",
       "确认领取",
       "签到X",
-      "2周内不再提示",
 	  "Stop"
     ],
     "focus": true
@@ -160,13 +160,14 @@
       "返回.png"
     ],
     "is_sub": true,
+    "post_delay": 2000,
     "action": "Click"
   },
   "M-任务": {
     "next": [
       "确认领取",
-      "全部领取",
       "已获得",
+      "全部领取",
       "返回",
       "任务",
       "Stop"
@@ -182,6 +183,7 @@
     "threshold": [
       0.8
     ],
+    "post_delay": 2000,
     "is_sub": true
   },
   "全部领取": {
@@ -567,7 +569,7 @@
       0,
       0
     ],
-    "post_delay": 10000,
+    "post_delay": 2000,
     "next": [
 	  "体力不足",
 	  "确认领取",
@@ -579,15 +581,13 @@
     ],
     "threshold": [
       0.8
-    ],
-    "is_sub": true
+    ]
   },
   "体力不足": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "体力不足.png"
+    "recognition": "OCR",
+    "text": [
+      "体力不足"
     ],
-    "is_sub": true,
     "next": [
 	  "取消",
 	  "X",
@@ -604,6 +604,7 @@
     "template": [
       "挑战开始.png"
     ],
+    "post_delay": 2000,
     "is_sub": true,
     "threshold": [
       0.8
@@ -669,15 +670,9 @@
       "公会.png"
     ],
     "threshold": [
-      0.8
+      0.6
     ],
     "action": "Click",
-    "target_offset": [
-      3,
-      0,
-      0,
-      0
-    ],
     "next": [
 	  "确认",
 	  "Stop"
@@ -688,7 +683,33 @@
     "next": [
       "公会可以签到",
       "公会签到",
-      "返回主城"
+      "回到主城"
+    ]
+  },
+  "公会签到": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "交流.png"
+    ],
+    "action": "Click",
+    "target_offset": [
+      5,
+      15,
+      0,
+      0
+    ],
+    "post_delay": 2000,
+    "next": [
+      "确认领取",
+      "公会签到奖励",
+      "公会X",
+      "确认",
+      "回到主城",
+      "确认回到主城",
+      "Stop"
+    ],
+    "threshold": [
+      0.8
     ]
   },
   "公会X": {
@@ -734,36 +755,12 @@
     "is_sub": true,
     "inverse": true
   },
-  "公会签到": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "交流.png"
-    ],
-    "action": "Click",
-    "target_offset": [
-      5,
-      15,
-      0,
-      0
-    ],
-    "post_delay": 2000,
-    "next": [
-      "确认领取",
-      "公会签到奖励",
-      "公会X",
-      "返回主城",
-      "Stop"
-    ],
-    "threshold": [
-      0.8
-    ],
-    "is_sub": true
-  },
   "公会签到奖励": {
     "action": "Click",
     "recognition": "TemplateMatch",
     "template": [
-      "签到奖励.png"
+      "签到奖励.png",
+      "已签到.png"
     ],
     "target_offset": [
       3,
@@ -773,25 +770,29 @@
     ],
     "is_sub": true
   },
-  "返回主城": {
+  "回到主城": {
     "recognition": "TemplateMatch",
     "template": [
-      "返回主城.png"
+      "回到主城.png"
     ],
     "action": "Click",
-    "target": true,
-    "target_offset": [
-      3,
-      3,
-      0,
-      0
-    ],
-    "next": [
-      "确认",
-	  "Stop"
-    ],
     "threshold": [
       0.85
+    ],
+    "is_sub": true
+  },
+  "确认回到主城": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "确认回到主城.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.85
+    ],
+    "next": [
+	  "确认",
+      "Stop"
     ]
   }
 }
