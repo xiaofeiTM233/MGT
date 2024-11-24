@@ -21,11 +21,8 @@
       "2周内不再提示.png"
     ],
     "action": "Click",
-    "target_offset": [
-      3,
-      3,
-      0,
-      0
+    "threshold": [
+      0.8
     ],
     "target": true,
     "is_sub": true
@@ -61,6 +58,7 @@
     ],
     "post_delay": 25000,
     "next": [
+      "确认",
       "Stop"
     ],
     "focus": true,
@@ -102,7 +100,8 @@
   "签到X": {
     "recognition": "TemplateMatch",
     "template": [
-      "签到X.png"
+      "签到X.png",
+	  "签到X2.png"
     ],
     "is_sub": true,
     "action": "Click"
@@ -112,6 +111,7 @@
     "template": [
       "确认领取.png"
     ],
+    "post_delay": 2000,
     "is_sub": true,
     "action": "Click"
   },
@@ -169,10 +169,16 @@
       "已获得",
       "全部领取",
       "任务",
+      "任务返回"
+    ],
+    "post_delay": 5000,
+    "focus": true
+  },
+  "任务返回": {
+    "next": [
       "返回",
       "Stop"
-    ],
-    "post_delay": 5000
+    ]
   },
   "任务": {
     "recognition": "TemplateMatch",
@@ -503,7 +509,7 @@
   "活动裂痕": {
     "recognition": "TemplateMatch",
     "template": [
-      "活动裂痕v2.94.png"
+      "活动裂痕.png"
     ],
     "threshold": [
       0.9
@@ -534,7 +540,7 @@
     ],
     "duration": 500,
     "template": [
-      "gov2.94.png"
+      "go活动裂痕.png"
     ],
     "threshold": [
       0.8
@@ -562,12 +568,6 @@
       "TLS.png"
     ],
     "action": "Click",
-    "target_offset": [
-      5,
-      5,
-      0,
-      0
-    ],
     "post_delay": 2000,
     "next": [
 	  "体力不足",
