@@ -5,6 +5,7 @@
     "template": [
       "确认.png"
     ],
+    "post_delay": 2000,
     "is_sub": true
   },
   "取消": {
@@ -13,6 +14,7 @@
     "template": [
       "取消.png"
     ],
+    "post_delay": 2000,
     "is_sub": true
   },
   "2周内不再提示": {
@@ -24,6 +26,7 @@
     "threshold": [
       0.8
     ],
+    "post_delay": 2000,
     "target": true,
     "is_sub": true
   },
@@ -32,6 +35,16 @@
     "template": [
       "X.png"
     ],
+    "post_delay": 2000,
+    "action": "Click",
+    "is_sub": true
+  },
+  "X2": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "X2.png"
+    ],
+    "post_delay": 2000,
     "action": "Click",
     "is_sub": true
   },
@@ -103,6 +116,7 @@
       "签到X.png",
 	  "签到X2.png"
     ],
+    "post_delay": 2000,
     "is_sub": true,
     "action": "Click"
   },
@@ -111,7 +125,7 @@
     "template": [
       "确认领取.png"
     ],
-    "post_delay": 2000,
+    "post_delay": 5000,
     "is_sub": true,
     "action": "Click"
   },
@@ -127,7 +141,8 @@
   "领取旅馆": {
     "recognition": "TemplateMatch",
     "template": [
-      "灵魂点数.png"
+      "灵魂点数.png",
+      "灵魂点数c.png"
     ],
     "action": "Click",
     "post_delay": 5000,
@@ -146,9 +161,9 @@
       0
     ],
     "next": [
-      "确认领取",
-      "Stop"
+      "确认领取"
     ],
+    "post_delay": 2000,
     "is_sub": true
   },
   "Stop": {
@@ -201,6 +216,7 @@
     "threshold": [
       0.8
     ],
+    "post_delay": 2000,
     "is_sub": true
   },
   "已获得": {
@@ -212,6 +228,7 @@
     "threshold": [
       0.8
     ],
+    "post_delay": 2000,
     "is_sub": true
   },
   "M-商店": {
@@ -245,6 +262,7 @@
     "threshold": [
       0.9
     ],
+    "post_delay": 2000,
     "is_sub": true
   },
   "资源": {
@@ -485,10 +503,42 @@
     ],
     "focus": true
   },
+  "M-活动目标": {
+    "next": [
+      "go活动",
+      "活动目标"
+    ],
+    "focus": true
+  },
+  "go活动": {
+    "recognition": "TemplateMatch",
+    "action": "Swipe",
+    "begin": [
+      1200,
+      180,
+      0,
+      0
+    ],
+    "end": [
+      800,
+      180,
+      0,
+      0
+    ],
+    "duration": 500,
+    "template": [
+      "go活动.png"
+    ],
+    "threshold": [
+      0.8
+    ],
+    "is_sub": true,
+    "inverse": true
+  },
   "活动": {
     "recognition": "TemplateMatch",
     "template": [
-      "gov2.94.png"
+      "go活动.png"
     ],
     "threshold": [
       0.9
@@ -523,30 +573,53 @@
     ],
     "is_sub": true
   },
-  "go活动": {
+  "活动目标": {
     "recognition": "TemplateMatch",
-    "action": "Swipe",
-    "begin": [
-      1200,
-      180,
-      0,
-      0
-    ],
-    "end": [
-      800,
-      180,
-      0,
-      0
-    ],
-    "duration": 500,
     "template": [
-      "go活动裂痕.png"
+      "go活动.png"
     ],
     "threshold": [
-      0.8
+      0.9
     ],
-    "is_sub": true,
-    "inverse": true
+    "action": "Click",
+    "target_offset": [
+      3,
+      3,
+      0,
+      0
+    ],
+    "next": [
+      "go活动目标"
+    ]
+  },
+  "go活动目标": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "活动目标.png"
+    ],
+    "post_delay": 2000,
+    "threshold": [
+      0.9
+    ],
+    "next": [
+      "确认领取",
+      "一键领取",
+      "X2",
+      "任务返回"
+    ],
+    "action": "Click"
+  },
+  "一键领取": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "一键领取.png"
+    ],
+    "post_delay": 2000,
+    "threshold": [
+      0.9
+    ],
+    "action": "Click",
+    "is_sub": true
   },
   "M-返回": {
     "next": [
