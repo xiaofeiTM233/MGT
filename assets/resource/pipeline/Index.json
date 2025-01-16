@@ -635,10 +635,10 @@
     "action": "Click",
     "focus": true
   },
-  "M-TLS": {
+  "M-英雄传": {
     "recognition": "TemplateMatch",
     "template": [
-      "TLS.png"
+      "T.png"
     ],
     "action": "Click",
     "post_delay": 2000,
@@ -646,7 +646,7 @@
 	  "体力不足",
 	  "确认领取",
 	  "确认",
-      "挑战开始",
+      "T扫荡",
       "自动战斗",
 	  "扫荡",
       "Stop"
@@ -670,11 +670,11 @@
       0.9
     ]
   },
-  "挑战开始": {
+  "T扫荡": {
     "recognition": "TemplateMatch",
     "action": "Click",
     "template": [
-      "挑战开始.png"
+      "T扫荡.png"
     ],
     "post_delay": 2000,
     "is_sub": true,
@@ -688,6 +688,43 @@
     "template": [
       "扫荡.png"
     ],
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "M-跳过剧情": {
+	"next": [
+	  "T跳过剧情"
+	]
+  },
+  "T跳过剧情": {
+    "is_sub": true,
+	"next": [
+	  "确认",
+	  "T跳过"
+	]
+  },
+  "T下一关卡": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": [
+      "T下一关卡.png"
+    ],
+    "target": true,
+    "is_sub": true,
+    "threshold": [
+      0.8
+    ]
+  },
+  "T跳过": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "timeout": 5000,
+    "template": [
+      "T跳过.png"
+    ],
+    "target": true,
     "is_sub": true,
     "threshold": [
       0.8
