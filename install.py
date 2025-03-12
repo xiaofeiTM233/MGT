@@ -50,7 +50,7 @@ def install_resource():
         install_path,
     )
     shutil.copytree(
-        working_dir / "config",
+        working_dir / "assets" / "config",
         install_path / "config",
         dirs_exist_ok=True,
     )

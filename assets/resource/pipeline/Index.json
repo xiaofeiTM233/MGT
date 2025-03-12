@@ -348,11 +348,27 @@
       0.8
     ],
     "next": [
+      "邀请函1",
       "Stop"
     ],
     "focus": true
   },
-  "M-邀请函1": {
+  "M-邀请赛": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "邀请赛.png"
+    ],
+    "action": "Click",
+    "threshold": [
+      0.8
+    ],
+    "next": [
+      "邀请函1",
+      "Stop"
+    ],
+    "focus": true
+  },
+  "邀请函1": {
     "recognition": "TemplateMatch",
     "template": [
       "邀请函1.png"
@@ -364,11 +380,11 @@
     "next": [
       "全部领取",
       "确认领取",
-      "Stop"
+      "邀请函2"
     ],
     "focus": true
   },
-  "M-邀请函2": {
+  "邀请函2": {
     "recognition": "TemplateMatch",
     "template": [
       "邀请函2.png"
@@ -595,7 +611,8 @@
   "go活动目标": {
     "recognition": "TemplateMatch",
     "template": [
-      "活动目标.png"
+      "活动目标.png",
+      "活动目标1.png"
     ],
     "post_delay": 2000,
     "threshold": [
