@@ -1,0 +1,101 @@
+{
+  "Resource": "官服",
+  "TaskItems": [
+    {
+      "name": "M-启动",
+      "entry": "M-启动",
+      "check": true
+    },
+    {
+      "name": "M-关闭公告",
+      "entry": "M-关闭公告",
+      "check": true
+    },
+    {
+      "name": "M-每日签到",
+      "entry": "M-每日签到",
+      "check": true
+    },
+    {
+      "name": "M-签到",
+      "entry": "M-签到",
+      "check": true
+    },
+    {
+      "name": "M-活动裂痕",
+      "entry": "M-活动裂痕",
+      "check": true
+    },
+    {
+      "name": "M-活动目标",
+      "entry": "M-活动目标",
+      "check": true
+    },
+    {
+      "name": "M-进入公会",
+      "entry": "M-进入公会",
+      "check": true
+    },
+    {
+      "name": "M-公会签到",
+      "entry": "M-公会签到",
+      "check": true
+    },
+    {
+      "name": "M-游玩",
+      "entry": "M-游玩",
+      "check": true
+    },
+    {
+      "name": "M-裂痕",
+      "entry": "M-裂痕",
+      "check": true
+    },
+    {
+      "name": "M-副本2",
+      "entry": "M-副本2",
+      "check": true
+    },
+    {
+      "name": "M-觉醒副本",
+      "entry": "M-觉醒副本",
+      "check": true
+    },
+    {
+      "name": "M-推荐",
+      "entry": "M-推荐",
+      "check": true
+    },
+    {
+      "name": "M-英雄传",
+      "entry": "M-英雄传",
+      "check": true
+    },
+    {
+      "name": "M-返回",
+      "entry": "M-返回",
+      "check": true
+    },
+    {
+      "name": "M-返回",
+      "entry": "M-返回",
+      "check": true
+    },
+    {
+      "name": "M-任务",
+      "entry": "M-任务",
+      "check": true
+    },
+    {
+      "name": "M-庆典邀请赛",
+      "entry": "M-庆典邀请赛",
+      "check": true
+    },
+    {
+      "name": "M-邀请赛",
+      "entry": "M-邀请赛",
+      "check": true
+    }
+  ],
+  "EnableEdit": false
+}
