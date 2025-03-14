@@ -559,6 +559,7 @@
     "threshold": [
       0.9
     ],
+    "post_delay": 5000,
     "action": "Click",
     "target_offset": [
       3,
@@ -568,7 +569,6 @@
     ],
     "next": [
       "活动裂痕",
-      "觉醒副本扫荡",
       "Stop"
     ]
   },
@@ -586,6 +586,28 @@
       3,
       0,
       0
+    ],
+    "next": [
+      "活动扫荡"
+    ],
+    "is_sub": true
+  },
+  
+  "活动扫荡": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "活动自动战斗.png"
+    ],
+    "inverse": true,
+    "next": [
+      "确认",
+      "确认领取",
+      "扫荡",
+      "返回",
+      "Stop"
+    ],
+    "threshold": [
+      0.9
     ],
     "is_sub": true
   },
@@ -660,12 +682,12 @@
     "action": "Click",
     "post_delay": 2000,
     "next": [
-	  "体力不足",
-	  "确认领取",
-	  "确认",
+	    "体力不足",
+	    "确认领取",
+	    "确认",
       "T扫荡",
       "自动战斗",
-	  "扫荡",
+	    "扫荡",
       "Stop"
     ],
     "threshold": [
@@ -761,13 +783,13 @@
       0
     ],
     "is_sub": true,
-	"next": [
-	  "体力不足",
-	  "确认",
-	  "自动战斗M",
-	  "扫荡",
+	  "next": [
+	    "体力不足",
+	    "确认",
+	    "自动战斗M",
+	    "扫荡",
       "Stop"
-	],
+	  ],
     "threshold": [
       0.8
     ]

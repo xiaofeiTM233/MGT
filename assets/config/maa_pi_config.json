@@ -1,108 +1,94 @@
 {
-    "adb": {
-        "adb_path": "",
-        "address": "",
-        "config": {
-        }
-    },
+    "resource": "官服",
     "controller": {
         "name": "安卓端"
     },
-    "gpu": -1,
-    "resource": "官服",
+    "adb": {
+        "adb_path": "D:/Program Files/Netease/MuMuPlayer-12.0/shell/adb.exe",
+        "address": "127.0.0.1:16416",
+        "config": {
+            "extras": {
+                "mumu": {
+                    "enable": true,
+                    "index": 1,
+                    "path": "D:/Program Files/Netease/MuMuPlayer-12.0"
+                }
+            }
+        }
+    },
     "task": [
         {
             "name": "M-启动",
-            "option": [
-            ]
+            "option": [],
+            "__vscExpand": false
         },
         {
             "name": "M-关闭公告",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-每日签到",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-签到",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-活动裂痕",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-活动目标",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-进入公会",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-公会签到",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-游玩",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-裂痕",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-副本2",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-觉醒副本",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-推荐",
-            "option": [
-            ]
+            "option": []
+        },
+        {
+            "name": "M-英雄传",
+            "option": []
         },
         {
             "name": "M-返回",
-            "option": [
-            ]
-        },
-        {
-            "name": "M-任务",
-            "option": [
-            ]
+            "option": []
         },
         {
             "name": "M-邀请函",
-            "option": [
-            ]
+            "option": []
         },
         {
-            "name": "M-邀请函2",
-            "option": [
-            ]
+            "name": "M-邀请赛",
+            "option": []
         },
         {
-            "name": "M-邀请函1",
-            "option": [
-            ]
+            "name": "M-任务",
+            "option": []
         }
-    ],
-    "win32": {
-        "_placeholder": 0
-    }
+    ]
 }
