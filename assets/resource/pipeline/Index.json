@@ -23,9 +23,7 @@
       "2周内不再提示.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "post_delay": 2000,
     "target": true,
     "is_sub": true
@@ -106,7 +104,7 @@
       "2周内不再提示",
       "签到X",
       "确认领取",
-	  "Stop"
+      "Stop"
     ],
     "focus": true
   },
@@ -114,7 +112,7 @@
     "recognition": "TemplateMatch",
     "template": [
       "签到X.png",
-	  "签到X2.png"
+      "签到X2.png"
     ],
     "post_delay": 2000,
     "is_sub": true,
@@ -201,9 +199,7 @@
       "任务.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "post_delay": 2000,
     "is_sub": true
   },
@@ -213,9 +209,7 @@
       "全部领取.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "post_delay": 2000,
     "is_sub": true
   },
@@ -225,9 +219,7 @@
       "已获得.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "post_delay": 2000,
     "is_sub": true
   },
@@ -239,16 +231,14 @@
     "timeout": 10000,
     "post_delay": 5000,
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "next": [
-	  "确认领取",
-	  "立即领取",
-	  "资源",
-	  "免费金币",
-	  "免费",
-	  "返回",
+      "确认领取",
+      "立即领取",
+      "资源",
+      "免费金币",
+      "免费",
+      "返回",
       "Stop"
     ],
     "focus": true
@@ -259,9 +249,7 @@
       "立即领取.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.9
-    ],
+    "threshold": 0.9,
     "post_delay": 2000,
     "is_sub": true
   },
@@ -271,9 +259,7 @@
       "资源.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "is_sub": true
   },
   "免费金币": {
@@ -282,9 +268,7 @@
       "免费金币.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "is_sub": true
   },
   "免费": {
@@ -293,9 +277,7 @@
       "免费.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "is_sub": true
   },
   "M-好友": {
@@ -304,14 +286,12 @@
       "菜单.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "next": [
-	  "好友",
-	  "好友领取",
-	  "确认领取",
-	  "返回",
+      "好友",
+      "好友领取",
+      "确认领取",
+      "返回",
       "Stop"
     ],
     "focus": true
@@ -322,9 +302,7 @@
       "好友.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "is_sub": true
   },
   "好友领取": {
@@ -333,23 +311,18 @@
       "好友领取.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "is_sub": true
   },
-  "M-邀请函": {
+  "M-庆典邀请赛": {
     "recognition": "TemplateMatch",
     "template": [
-      "邀请函.png"
+      "邀请赛2.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "next": [
-      "邀请函1",
-      "Stop"
+      "邀请函2"
     ],
     "focus": true
   },
@@ -359,12 +332,9 @@
       "邀请赛.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "next": [
-      "邀请函1",
-      "Stop"
+      "邀请函2"
     ],
     "focus": true
   },
@@ -374,13 +344,12 @@
       "邀请函1.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "next": [
       "全部领取",
       "确认领取",
-      "邀请函2"
+      "返回",
+      "Stop"
     ],
     "focus": true
   },
@@ -390,13 +359,11 @@
       "邀请函2.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "next": [
       "全部领取",
       "确认领取",
-      "Stop"
+      "邀请函1"
     ],
     "focus": true
   },
@@ -406,9 +373,7 @@
       "游玩.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "next": [
       "Stop"
     ],
@@ -420,9 +385,8 @@
       "裂痕.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "post_delay": 2000,
+    "threshold": 0.8,
     "next": [
       "Stop"
     ],
@@ -434,9 +398,7 @@
       "推荐.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "next": [
       "Stop"
     ],
@@ -448,9 +410,8 @@
       "副本1.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "post_delay": 2000,
+    "threshold": 0.8,
     "next": [
       "Stop"
     ],
@@ -462,9 +423,8 @@
       "副本2.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.8
-    ],
+    "post_delay": 2000,
+    "threshold": 0.8,
     "next": [
       "Stop"
     ],
@@ -482,6 +442,7 @@
     "template": [
       "觉醒0.png"
     ],
+    "post_delay": 2000,
     "inverse": true,
     "next": [
       "确认",
@@ -490,9 +451,7 @@
       "觉醒扫荡",
       "Stop"
     ],
-    "threshold": [
-      0.9
-    ],
+    "threshold": 0.9,
     "is_sub": true
   },
   "觉醒扫荡": {
@@ -500,17 +459,10 @@
     "template": [
       "觉醒扫荡.png"
     ],
-    "threshold": [
-      0.999
-    ],
-	"roi": [
-	  0,
-	  436,
-	  1280,
-	  284
-	],
+    "threshold": 0.999,
+    "index": 4,
     "action": "Click",
-	"is_sub": true
+    "is_sub": true
   },
   "M-活动裂痕": {
     "next": [
@@ -545,9 +497,7 @@
     "template": [
       "go活动.png"
     ],
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "is_sub": true,
     "inverse": true
   },
@@ -556,10 +506,7 @@
     "template": [
       "go活动.png"
     ],
-    "threshold": [
-      0.9
-    ],
-    "post_delay": 5000,
+    "threshold": 0.9,
     "action": "Click",
     "target_offset": [
       3,
@@ -569,6 +516,7 @@
     ],
     "next": [
       "活动裂痕",
+      "返回",
       "Stop"
     ]
   },
@@ -577,9 +525,7 @@
     "template": [
       "活动裂痕.png"
     ],
-    "threshold": [
-      0.9
-    ],
+    "threshold": 0.9,
     "action": "Click",
     "target_offset": [
       3,
@@ -592,7 +538,6 @@
     ],
     "is_sub": true
   },
-  
   "活动扫荡": {
     "recognition": "TemplateMatch",
     "template": [
@@ -606,9 +551,7 @@
       "返回",
       "Stop"
     ],
-    "threshold": [
-      0.9
-    ],
+    "threshold": 0.9,
     "is_sub": true
   },
   "活动目标": {
@@ -616,9 +559,7 @@
     "template": [
       "go活动.png"
     ],
-    "threshold": [
-      0.9
-    ],
+    "threshold": 0.9,
     "action": "Click",
     "target_offset": [
       3,
@@ -634,12 +575,11 @@
     "recognition": "TemplateMatch",
     "template": [
       "活动目标.png",
-      "活动目标1.png"
+      "活动目标1.png",
+      "活动目标2.png"
     ],
     "post_delay": 2000,
-    "threshold": [
-      0.9
-    ],
+    "threshold": 0.9,
     "next": [
       "确认领取",
       "一键领取",
@@ -654,9 +594,7 @@
       "一键领取.png"
     ],
     "post_delay": 2000,
-    "threshold": [
-      0.9
-    ],
+    "threshold": 0.9,
     "action": "Click",
     "is_sub": true
   },
@@ -668,9 +606,7 @@
     "template": [
       "返回.png"
     ],
-    "threshold": [
-      0.9
-    ],
+    "threshold": 0.9,
     "action": "Click",
     "focus": true
   },
@@ -680,19 +616,17 @@
       "T.png"
     ],
     "action": "Click",
-    "post_delay": 2000,
+    "post_delay": 5000,
     "next": [
-	    "体力不足",
-	    "确认领取",
-	    "确认",
+      "体力不足",
+      "确认领取",
+      "取消",
+      "确认",
+      "扫荡",
       "T扫荡",
-      "自动战斗",
-	    "扫荡",
       "Stop"
     ],
-    "threshold": [
-      0.8
-    ]
+    "threshold": 0.8
   },
   "体力不足": {
     "recognition": "OCR",
@@ -700,14 +634,12 @@
       "体力不足"
     ],
     "next": [
-	  "取消",
-	  "X",
-	  "返回",
+      "取消",
+      "X",
+      "返回",
       "Stop"
     ],
-    "threshold": [
-      0.9
-    ]
+    "threshold": 0.9
   },
   "T扫荡": {
     "recognition": "TemplateMatch",
@@ -715,11 +647,8 @@
     "template": [
       "T扫荡.png"
     ],
-    "post_delay": 2000,
     "is_sub": true,
-    "threshold": [
-      0.8
-    ]
+    "threshold": 0.99
   },
   "扫荡": {
     "recognition": "TemplateMatch",
@@ -727,22 +656,21 @@
     "template": [
       "扫荡.png"
     ],
+    "post_delay": 5000,
     "is_sub": true,
-    "threshold": [
-      0.8
-    ]
+    "threshold": 0.8
   },
   "M-跳过剧情": {
-	"next": [
-	  "T跳过剧情"
-	]
+    "next": [
+      "T跳过剧情"
+    ]
   },
   "T跳过剧情": {
     "is_sub": true,
-	"next": [
-	  "确认",
-	  "T跳过"
-	]
+    "next": [
+      "确认",
+      "T跳过"
+    ]
   },
   "T下一关卡": {
     "recognition": "TemplateMatch",
@@ -752,9 +680,7 @@
     ],
     "target": true,
     "is_sub": true,
-    "threshold": [
-      0.8
-    ]
+    "threshold": 0.8
   },
   "T跳过": {
     "recognition": "TemplateMatch",
@@ -765,9 +691,7 @@
     ],
     "target": true,
     "is_sub": true,
-    "threshold": [
-      0.8
-    ]
+    "threshold": 0.8
   },
   "自动战斗": {
     "recognition": "TemplateMatch",
@@ -783,16 +707,14 @@
       0
     ],
     "is_sub": true,
-	  "next": [
-	    "体力不足",
-	    "确认",
-	    "自动战斗M",
-	    "扫荡",
+    "next": [
+      "体力不足",
+      "确认",
+      "自动战斗M",
+      "扫荡",
       "Stop"
-	  ],
-    "threshold": [
-      0.8
-    ]
+    ],
+    "threshold": 0.8
   },
   "自动战斗M": {
     "recognition": "TemplateMatch",
@@ -808,22 +730,18 @@
       0
     ],
     "is_sub": true,
-    "threshold": [
-      0.9
-    ]
+    "threshold": 0.9
   },
   "M-进入公会": {
     "recognition": "TemplateMatch",
     "template": [
       "公会.png"
     ],
-    "threshold": [
-      0.6
-    ],
+    "threshold": 0.6,
     "action": "Click",
     "next": [
-	  "确认",
-	  "Stop"
+      "确认",
+      "Stop"
     ]
   },
   "M-公会签到": {
@@ -856,9 +774,7 @@
       "确认回到主城",
       "Stop"
     ],
-    "threshold": [
-      0.8
-    ]
+    "threshold": 0.8
   },
   "公会X": {
     "recognition": "TemplateMatch",
@@ -874,9 +790,7 @@
       0
     ],
     "is_sub": true,
-    "threshold": [
-      0.8
-    ]
+    "threshold": 0.8
   },
   "公会可以签到": {
     "recognition": "TemplateMatch",
@@ -897,9 +811,7 @@
       0
     ],
     "duration": 100,
-    "threshold": [
-      0.8
-    ],
+    "threshold": 0.8,
     "is_sub": true,
     "inverse": true
   },
@@ -924,9 +836,7 @@
       "回到主城.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.85
-    ],
+    "threshold": 0.85,
     "is_sub": true
   },
   "确认回到主城": {
@@ -935,11 +845,9 @@
       "确认回到主城.png"
     ],
     "action": "Click",
-    "threshold": [
-      0.85
-    ],
+    "threshold": 0.85,
     "next": [
-	  "确认",
+      "确认",
       "Stop"
     ]
   }
