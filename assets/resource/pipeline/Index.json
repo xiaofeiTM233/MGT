@@ -431,9 +431,13 @@
     "focus": true
   },
   "M-觉醒副本": {
-    "next": [
-      "觉醒副本扫荡",
-      "Stop"
+    "post_delay": 2000,
+    "next": "觉醒副本扫荡",
+    "interrupt": [
+      "确认",
+      "确认领取",
+      "扫荡",
+      "快捷扫荡0"
     ],
     "focus": true
   },
@@ -442,27 +446,18 @@
     "template": [
       "觉醒0.png"
     ],
-    "post_delay": 2000,
-    "inverse": true,
-    "next": [
-      "确认",
-      "确认领取",
-      "扫荡",
-      "觉醒扫荡",
-      "Stop"
-    ],
+    "next": "Stop",
     "threshold": 0.9,
     "is_sub": true
   },
-  "觉醒扫荡": {
+  "快捷扫荡0": {
     "recognition": "TemplateMatch",
     "template": [
-      "觉醒扫荡.png"
+      "快捷扫荡.png"
     ],
-    "threshold": 0.999,
-    "index": 4,
-    "action": "Click",
-    "is_sub": true
+    "threshold": 0.8,
+    "index": 0,
+    "action": "Click"
   },
   "M-活动裂痕": {
     "next": [
@@ -507,6 +502,7 @@
       "go活动.png"
     ],
     "threshold": 0.9,
+    "post_delay": 3000,
     "action": "Click",
     "target_offset": [
       3,
@@ -526,6 +522,7 @@
       "活动裂痕.png"
     ],
     "threshold": 0.9,
+    "post_delay": 3000,
     "action": "Click",
     "target_offset": [
       3,
@@ -578,7 +575,7 @@
       "活动目标1.png",
       "活动目标2.png"
     ],
-    "post_delay": 2000,
+    "post_delay": 3000,
     "threshold": 0.9,
     "next": [
       "确认领取",
@@ -619,6 +616,7 @@
     "post_delay": 5000,
     "next": [
       "体力不足",
+      "自动战斗M",
       "确认领取",
       "确认",
       "扫荡",
