@@ -20,4 +20,4 @@
 在 [Releases](https://github.com/xiaofeiTM233/MGT/releases/latest) 下载对应系统版本的压缩包，解压后按一定方式运行。
 
 ## Dev
-Please contact us via email xiaofeitm233@vip.qq.com or join qq group 949370222
+Please contact us via email __arona@hitfun.top__
