@@ -1,39 +1,17 @@
 {
-    // 本文件主要定义了通用 UI 的行为和显示内容
-    // 可参考文档和示例添加更多您需要的功能
-    // 文档：https://maafw.xyz/docs/3.3-ProjectInterfaceV2
-    // 示例：https://github.com/MaaXYZ/MaaFramework/blob/main/sample/interface.json
     "interface_version": 2,
-    "name": "MaaXXX",
-    "description": "这是一个使用 MaaFramework 创建的新项目。",
-    "contact": "QQ群: 123456789",
+    "name": "MGT",
+    "github": "https://github.com/xiaofeiTM233/MGT",
+    "version": "2.0.0",
+    "contact": "https://github.com/xiaofeiTM233/MGT",
     "license": "MIT",
-    "welcome": "首次使用！欢迎使用 MAA!",
-    // 填写项目地址和版本号可实现自动更新功能
-    "github": "https://github.com/MaaXYZ/MaaPracticeBoilerplate",
-    "version": "1.0.0",
-    // Mirror酱为第三方分发服务，新项目默认关闭
-    // 若有需要请联系 Mirror酱 开通，直接自行开启是无法使用的
-    // "mirrorchyan_rid": "MaaXXX",
-    // "mirrorchyan_multiplatform": true,
+    "welcome": "首次使用！欢迎使用 MGT!",
+    "description": "这是一个使用 MaaFramework 创建的新项目。",
     "controller": [
         {
             "name": "安卓端",
             "type": "Adb",
-            "display_short_side": 720 // 默认缩放分辨率的短边长度
-        },
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "Visual Studio",
-                // 截图及控制方式，请根据项目实际情况修改
-                // 文档: https://maafw.xyz/docs/2.4-ControlMethods
-                "screencap": "PrintWindow", // 截图方式
-                "mouse": "PostMessageWithCursorPos", // 鼠标控制方式
-                "keyboard": "PostMessageWithCursorPos" // 键盘控制方式
-            }
+            "display_short_side": 720
         }
     ],
     "resource": [
@@ -42,67 +20,342 @@
             "path": [
                 "./resource"
             ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "./resource",
-                "./resource_bilibili"
-            ]
         }
     ],
-    // 可选的 agent 示例
-    // "agent": {
-    //     "child_exec": "python",
-    //     "child_args": [
-    //         "./agent/main.py"
-    //     ]
-    // },
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "启动登录",
+            "entry": "M-启动登录",
+            "default_check": true,
+            "description": "从系统桌面启动并登录游戏，在游戏主页结束任务。需用户提前确认账号可自动登录。"
         },
         {
-            "name": "选项任务",
-            "entry": "MyTask2",
+            "name": "每日体力",
+            "entry": "M-每日体力",
+            "default_check": true,
+            "description": "进入游玩指南，进行裂痕扫荡和英雄传扫荡。",
             "option": [
-                "任务选项1"
+                "启用副本类型",
+                "焕发副本类型",
+                "扫荡次数"
             ]
         },
         {
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "pipeline_override": {}
+            "name": "领取邀请赛",
+            "entry": "M-领取邀请赛",
+            "default_check": true,
+            "description": "领取邀请赛"
         },
         {
-            "name": "带Custom的任务",
-            "entry": "MyTask4"
+            "name": "领取活动",
+            "entry": "M-领取活动",
+            "default_check": true,
+            "description": "领取活动目标或进行活动裂痕扫荡。"
+        },
+        {
+            "name": "公会签到",
+            "entry": "M-公会签到",
+            "default_check": true,
+            "description": "进入公会进行签到。"
+        },
+        {
+            "name": "每日商店",
+            "entry": "M-每日商店",
+            "default_check": true,
+            "description": "进入卡马逊商店自动购买商品，目前只支持购买免费/金币商品。"
+        },
+        {
+            "name": "领取任务",
+            "entry": "M-领取任务",
+            "default_check": true,
+            "description": "领取每日任务奖励。"
         }
     ],
     "option": {
-        "任务选项1": {
+        "英雄传扫荡": {
+            "type": "switch",
+            "description": "启用英雄传扫荡，默认启用。",
             "cases": [
                 {
-                    "name": "文本1",
+                    "name": "Yes",
+                    "icon": "启用",
+                    "description": "启用英雄传扫荡。",
                     "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
+                        "Menu-英雄传": {
+                            "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "文本2",
+                    "name": "No",
+                    "label": "禁用",
+                    "description": "禁用英雄传扫荡。",
                     "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
+                        "Menu-英雄传": {
+                            "enabled": false
+                        }
+                    }
+                }
+            ],
+            "default_case": "Yes"
+        },
+        "扫荡次数": {
+            "type": "input",
+            "description": "设置扫荡的增加+N次数，建议配合“焕发副本类型”选项使用。",
+            "inputs": [
+                {
+                    "name": "扫荡增加次数",
+                    "description": "扫荡增加的次数。默认为14，即普通无焕发副本将扫荡1+14=15次，若启用焕发则将扫荡10+14=24次。",
+                    "default": "14",
+                    "pipeline_type": "int"
+                }
+            ],
+            "pipeline_override": {
+                "Sweep-自动战斗加": {
+                    "repeat": "{扫荡增加次数}"
+                }
+            }
+        },
+        "焕发副本类型": {
+            "type": "select",
+            "description": "只使用自动焕发战斗次数副本类型。默认将按照执行先后顺序先执行的先焕发，可通过配置该设置以选择以启用只自动使用焕发次数的副本，若已无焕发次数则不会执行。建议只启用一项。",
+            "cases": [
+                {
+                    "name": "进化石副本",
+                    "description": "选择以启用进化石副本自动使用焕发次数。",
+                    "pipeline_override": {
+                        "Sweep-Auto-石头没满": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "资源副本",
+                    "description": "选择以启用资源副本自动使用焕发次数。",
+                    "pipeline_override": {
+                        "Sweep-Auto-资源Yes": {
+                            "enabled": "true"
+                        }
+                    }
+                }
+            ],
+            "default_case": "进化石副本"
+        },
+        "启用副本类型": {
+            "type": "select",
+            "description": "选择以启用进化石副本，建议只启用一项，若扫荡前识别到当前选择的进化石已满将跳过扫荡。",
+            "cases": [
+                {
+                    "name": "进化石副本",
+                    "description": "选择以展示进化石副本选项。",
+                    "option": [
+                        "启用进化石副本"
+                    ]
+                },
+                {
+                    "name": "开花石副本",
+                    "description": "选择以展示进化石副本选项。",
+                    "option": [
+                        "启用开花石副本"
+                    ]
+                },
+                {
+                    "name": "资源副本",
+                    "description": "选择以展示资源副本选项。",
+                    "option": [
+                        "启用资源副本"
+                    ]
+                }
+            ]
+        },
+        "启用进化石副本": {
+            "type": "select",
+            "description": "选择以启用进化石副本，建议只启用一项，若扫荡前识别到当前选择的进化石已满将跳过扫荡。",
+            "cases": [
+                {
+                    "name": "副本-虚进石",
+                    "label": "虚属性进化石副本",
+                    "description": "选择以启用扫荡虚属性进化石副本。",
+                    "pipeline_override": {
+                        "副本-虚进石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-光进石",
+                    "label": "光属性进化石副本",
+                    "description": "选择以启用扫荡光属性进化石副本。",
+                    "pipeline_override": {
+                        "副本-光进石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-暗进石",
+                    "label": "暗属性进化石副本",
+                    "description": "选择以启用扫荡暗属性进化石副本。",
+                    "pipeline_override": {
+                        "副本-暗进石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-土进石",
+                    "label": "土属性进化石副本",
+                    "description": "选择以启用扫荡土属性进化石副本。",
+                    "pipeline_override": {
+                        "副本-土进石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-火进石",
+                    "label": "火属性进化石副本",
+                    "description": "选择以启用扫荡火属性进化石副本。",
+                    "pipeline_override": {
+                        "副本-火进石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-水进石",
+                    "label": "水属性进化石副本",
+                    "description": "选择以启用扫荡水属性进化石副本。",
+                    "pipeline_override": {
+                        "副本-水进石": {
+                            "enabled": "true"
                         }
                     }
                 }
             ]
+        },
+        "启用开花石副本": {
+            "type": "select",
+            "description": "选择以启用开花石副本，建议只启用一项，若扫荡前识别到当前选择的开花石已满将跳过扫荡。",
+            "cases": [
+                {
+                    "name": "副本-虚花石",
+                    "label": "虚属性开花石副本",
+                    "description": "选择以启用扫荡虚属性开花石副本。",
+                    "pipeline_override": {
+                        "副本-虚花石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-光花石",
+                    "label": "光属性开花石副本",
+                    "description": "选择以启用扫荡光属性开花石副本。",
+                    "pipeline_override": {
+                        "副本-光花石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-暗花石",
+                    "label": "暗属性开花石副本",
+                    "description": "选择以启用扫荡暗属性开花石副本。",
+                    "pipeline_override": {
+                        "副本-暗花石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-土花石",
+                    "label": "土属性开花石副本",
+                    "description": "选择以启用扫荡土属性开花石副本。",
+                    "pipeline_override": {
+                        "副本-土花石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-火花石",
+                    "label": "火属性开花石副本",
+                    "description": "选择以启用扫荡火属性开花石副本。",
+                    "pipeline_override": {
+                        "副本-火花石": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-水花石",
+                    "label": "水属性开花石副本",
+                    "description": "选择以启用扫荡水属性开花石副本。",
+                    "pipeline_override": {
+                        "副本-水花石": {
+                            "enabled": "true"
+                        }
+                    }
+                }
+            ]
+        },
+        "启用资源副本": {
+            "type": "select",
+            "description": "选择以启用资源副本，建议一般资源副本只启用一项。",
+            "cases": [
+                {
+                    "name": "副本-觉醒副本",
+                    "label": "觉醒副本",
+                    "description": "选择以启用扫荡觉醒副本。",
+                    "pipeline_override": {
+                        "副本-觉醒副本": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-红色碎片副本",
+                    "label": "红色碎片副本",
+                    "description": "选择以启用扫荡红色碎片副本。",
+                    "pipeline_override": {
+                        "副本-红色碎片副本": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-金币副本",
+                    "label": "金币副本",
+                    "description": "选择以启用扫荡金币副本。",
+                    "pipeline_override": {
+                        "副本-金币副本": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-经验副本",
+                    "label": "经验副本",
+                    "description": "选择以启用扫荡经验副本。",
+                    "pipeline_override": {
+                        "副本-经验副本": {
+                            "enabled": "true"
+                        }
+                    }
+                },
+                {
+                    "name": "副本-道具副本",
+                    "label": "道具副本",
+                    "description": "选择以启用扫荡道具副本。",
+                    "pipeline_override": {
+                        "副本-道具副本": {
+                            "enabled": "true"
+                        }
+                    }
+                }
+            ],
+            "default_case": "副本-觉醒副本"
         }
     }
 }
