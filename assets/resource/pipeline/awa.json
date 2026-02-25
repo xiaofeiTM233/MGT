@@ -3,12 +3,12 @@
         "$__mpe_code": {
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
             "filename": "awa",
-            "lastSyncTime": 1771994738150,
+            "lastSyncTime": 1772033714631,
             "prefix": "",
             "savedViewport": {
-                "x": 877,
-                "y": 2445,
-                "zoom": 0.87
+                "x": 1281,
+                "y": 2594,
+                "zoom": 1.09
             },
             "version": "v1.2.0"
         }
@@ -854,6 +854,9 @@
                 ],
                 "template": [
                     "Rift/Tab/开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -1022,6 +1025,9 @@
                 ],
                 "template": [
                     "Rift/Tab/资源副本.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -1058,6 +1064,9 @@
                 ],
                 "template": [
                     "Rift/Tab/进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -1613,7 +1622,8 @@
         "recognition": {
             "param": {
                 "template": [
-                    "Ui/全部领取0.png"
+                    "Ui/全部领取0.png",
+                    "Ui/已完成今日所有日常任务.png"
                 ],
                 "threshold": [
                     0.9

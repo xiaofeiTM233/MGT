@@ -1,0 +1,10 @@
+{
+    "Default": {
+        "rate_limit": 10000
+    },
+    "TemplateMatch": {
+        "recognition": "TemplateMatch",
+        "threshold": 0.8,
+        "order_by": "Score"
+    }
+}
