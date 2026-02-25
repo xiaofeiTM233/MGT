@@ -3,12 +3,12 @@
         "$__mpe_code": {
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
             "filename": "awa",
-            "lastSyncTime": 1771954219303,
+            "lastSyncTime": 1771994738150,
             "prefix": "",
             "savedViewport": {
-                "x": 1507,
-                "y": 857,
-                "zoom": 0.53
+                "x": 877,
+                "y": 2445,
+                "zoom": 0.87
             },
             "version": "v1.2.0"
         }
@@ -81,6 +81,18 @@
             "position": {
                 "x": -1995,
                 "y": -1276
+            },
+            "width": 200
+        }
+    },
+    "$__mpe_sticker_领取浮游城_awa": {
+        "$__mpe_code": {
+            "color": "yellow",
+            "content": "",
+            "height": 160,
+            "position": {
+                "x": -2772,
+                "y": -92
             },
             "width": 200
         }
@@ -191,7 +203,10 @@
                     220
                 ],
                 "template": [
-                    "Menu/完成度.png"
+                    "Menu/游玩.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -247,8 +262,13 @@
         },
         "next": [
             "[JumpBack]启动游戏",
-            "[JumpBack]还没登录或已成功",
+            "[JumpBack]未达登录界面纯点",
             "登录确认"
+        ],
+        "on_error": [
+            "下载资源",
+            "[JumpBack]活动公告",
+            "L-Menu-任务"
         ]
     },
     "M-每日体力": {
@@ -277,7 +297,7 @@
         "$__mpe_code": {
             "position": {
                 "x": -2543,
-                "y": -377
+                "y": -364
             }
         },
         "next": [
@@ -296,6 +316,18 @@
             "Menu-活动"
         ]
     },
+    "M-领取浮游城": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2543,
+                "y": -92
+            }
+        },
+        "next": [
+            "在个人空间",
+            "在浮游城"
+        ]
+    },
     "M-领取邀请赛": {
         "$__mpe_code": {
             "position": {
@@ -311,7 +343,7 @@
         "$__mpe_code": {
             "position": {
                 "x": -2300,
-                "y": -377
+                "y": -363
             }
         },
         "action": {
@@ -620,10 +652,6 @@
                 "y": -133
             }
         },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "next": [
             "Sweep-扫荡结束"
         ],
@@ -862,6 +890,31 @@
             "type": "TemplateMatch"
         }
     },
+    "Tab-日常": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1795,
+                "y": -334
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "Ui/日常0.png",
+                    "Ui/日常1.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
     "Tab-活动1": {
         "$__mpe_code": {
             "position": {
@@ -1014,12 +1067,11 @@
         "$__mpe_code": {
             "position": {
                 "x": -2044,
-                "y": -377
+                "y": -363
             }
         },
         "next": [
-            "[JumpBack]全部领取1",
-            "全部领取0"
+            "Tab-日常"
         ],
         "recognition": {
             "param": {
@@ -1042,10 +1094,6 @@
                 "x": -30,
                 "y": -1965
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
         },
         "next": [
             "公会签到0",
@@ -1365,6 +1413,9 @@
             "param": {
                 "template": [
                     "Ui/一键领取0.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -1388,6 +1439,9 @@
             "param": {
                 "template": [
                     "Ui/一键领取1.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -1438,7 +1492,7 @@
         "$__mpe_code": {
             "position": {
                 "x": -2044,
-                "y": -537
+                "y": -536
             }
         },
         "action": {
@@ -1449,6 +1503,9 @@
             "param": {
                 "template": [
                     "Menu/任务快捷领取.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -1545,8 +1602,8 @@
     "全部领取0": {
         "$__mpe_code": {
             "position": {
-                "x": -1789,
-                "y": -346
+                "x": -1539,
+                "y": -363
             }
         },
         "next": [
@@ -1557,6 +1614,9 @@
             "param": {
                 "template": [
                     "Ui/全部领取0.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -1580,12 +1640,15 @@
             "param": {
                 "template": [
                     "Ui/全部领取1.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
         }
     },
-    "公会签到0": {
+    "公会签到1": {
         "$__mpe_code": {
             "position": {
                 "x": 228,
@@ -1605,22 +1668,18 @@
         "recognition": {
             "param": {
                 "template": [
-                    "Group/签到.png"
+                    "Group/签到1.png"
                 ]
             },
             "type": "TemplateMatch"
         }
     },
-    "公会签到1": {
+    "公会签到0": {
         "$__mpe_code": {
             "position": {
                 "x": 481,
                 "y": -1930
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
         },
         "next": [
             "Title-公会-返回"
@@ -1628,7 +1687,7 @@
         "recognition": {
             "param": {
                 "template": [
-                    "Group/签到1.png"
+                    "Group/签到0.png"
                 ]
             },
             "type": "TemplateMatch"
@@ -2516,16 +2575,70 @@
             "type": "TemplateMatch"
         }
     },
-    "已获得0": {
+    "在个人空间": {
         "$__mpe_code": {
             "position": {
-                "x": -1532,
-                "y": -348
+                "x": -2283,
+                "y": -92
             }
         },
         "action": {
             "param": {},
             "type": "Click"
+        },
+        "enabled": false,
+        "next": [
+            "在浮游城"
+        ],
+        "recognition": {
+            "param": {
+                "roi": [
+                    1100,
+                    0,
+                    180,
+                    720
+                ],
+                "template": [
+                    "Menu/浮游城.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "在浮游城": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2023,
+                "y": -92
+            }
+        },
+        "next": [
+            "[JumpBack]领取灵魂点数",
+            "[JumpBack]领取小公主礼物",
+            "返回个人空间",
+            "L-检查主页完毕"
+        ],
+        "recognition": {
+            "param": {
+                "roi": [
+                    1100,
+                    0,
+                    180,
+                    720
+                ],
+                "template": [
+                    "Menu/个人空间.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "已获得0": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1287,
+                "y": -363
+            }
         },
         "next": [
             "L-返回并结束任务"
@@ -2534,6 +2647,9 @@
             "param": {
                 "template": [
                     "Ui/已获得0.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -2542,8 +2658,8 @@
     "已获得1": {
         "$__mpe_code": {
             "position": {
-                "x": -1524,
-                "y": -537
+                "x": -1287,
+                "y": -553
             }
         },
         "action": {
@@ -2557,6 +2673,9 @@
             "param": {
                 "template": [
                     "Ui/已获得1.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             },
             "type": "TemplateMatch"
@@ -2577,6 +2696,36 @@
                 "template": [
                     "Sweep/挑战券0-觉醒副本.png",
                     "Sweep/挑战券00-觉醒副本.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "未达登录界面纯点": {
+        "$__mpe_code": {
+            "position": {
+                "x": -34,
+                "y": -2486
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    50,
+                    50,
+                    50,
+                    50
+                ]
+            },
+            "type": "Click"
+        },
+        "inverse": true,
+        "recognition": {
+            "param": {
+                "template": [
+                    "Start/适龄提示.png",
+                    "Start/活动公告.png",
+                    "Menu/游玩.png"
                 ]
             },
             "type": "TemplateMatch"
@@ -2889,7 +3038,7 @@
         "$__mpe_code": {
             "position": {
                 "x": -34,
-                "y": -2240
+                "y": -2259
             }
         },
         "action": {
@@ -2909,7 +3058,7 @@
             "[JumpBack]活动公告",
             "L-Menu-任务"
         ],
-        "post_delay": 4000,
+        "post_delay": 10000,
         "recognition": {
             "param": {
                 "template": [
@@ -2917,7 +3066,8 @@
                 ]
             },
             "type": "TemplateMatch"
-        }
+        },
+        "timeout": -1
     },
     "石头满了": {
         "$__mpe_code": {
@@ -3069,36 +3219,31 @@
             "type": "TemplateMatch"
         }
     },
-    "还没登录或已成功": {
+    "返回个人空间": {
         "$__mpe_code": {
             "position": {
-                "x": -36,
-                "y": -2476
+                "x": -1507,
+                "y": -92
             }
         },
         "action": {
-            "param": {
-                "target": [
-                    50,
-                    50,
-                    0,
-                    0
-                ]
-            },
+            "param": {},
             "type": "Click"
         },
-        "inverse": true,
+        "enabled": false,
         "next": [
-            "下载资源",
-            "[JumpBack]活动公告",
-            "L-Menu-任务"
+            "L-检查主页完毕"
         ],
         "recognition": {
             "param": {
+                "roi": [
+                    1100,
+                    0,
+                    180,
+                    720
+                ],
                 "template": [
-                    "Start/适龄提示.png",
-                    "Start/活动公告.png",
-                    "Menu/游玩.png"
+                    "Menu/个人空间.png"
                 ]
             },
             "type": "TemplateMatch"
@@ -3129,7 +3274,8 @@
                 ]
             },
             "type": "TemplateMatch"
-        }
+        },
+        "timeout": 3000
     },
     "邀请函目标": {
         "$__mpe_code": {
@@ -3202,6 +3348,62 @@
             "param": {
                 "template": [
                     "Pass/邀请赛2.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "领取小公主礼物": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1763,
+                "y": 80
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "关闭弹窗带延迟"
+        ],
+        "recognition": {
+            "param": {
+                "roi": [
+                    320,
+                    140,
+                    700,
+                    400
+                ],
+                "template": [
+                    "Menu/小公主的礼物1.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "领取灵魂点数": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1763,
+                "y": -92
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "roi": [
+                    320,
+                    140,
+                    700,
+                    400
+                ],
+                "template": [
+                    "Menu/灵魂点数.png",
+                    "Menu/灵魂点数1.png"
                 ]
             },
             "type": "TemplateMatch"
