@@ -6,9 +6,9 @@
             "lastSyncTime": 1772376335554,
             "prefix": "",
             "savedViewport": {
-                "x": 1704,
-                "y": 690,
-                "zoom": 0.65
+                "x": 1774,
+                "y": 917,
+                "zoom": 0.87
             },
             "version": "v1.2.0"
         }
@@ -1629,7 +1629,7 @@
     "任务-全部领取0": {
         "$__mpe_code": {
             "position": {
-                "x": -780,
+                "x": -770,
                 "y": -573
             }
         },
@@ -1736,8 +1736,8 @@
     "全部领取0": {
         "$__mpe_code": {
             "position": {
-                "x": -780,
-                "y": -401
+                "x": -770,
+                "y": -396
             }
         },
         "recognition": {
@@ -1756,7 +1756,7 @@
     "全部领取1": {
         "$__mpe_code": {
             "position": {
-                "x": -780,
+                "x": -770,
                 "y": -749
             }
         },
@@ -3527,11 +3527,11 @@
             "type": "TemplateMatch"
         }
     },
-    "邀请函奖励": {
+    "邀请函奖励1": {
         "$__mpe_code": {
             "position": {
-                "x": -1272,
-                "y": -573
+                "x": -1018,
+                "y": -749
             }
         },
         "action": {
@@ -3556,7 +3556,36 @@
         },
         "timeout": 3000
     },
-    "邀请函目标": {
+    "邀请函奖励2": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1018,
+                "y": -454
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "Pass/邀请函奖励0.png",
+                    "Pass/邀请函奖励1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            "type": "TemplateMatch"
+        },
+        "timeout": 3000
+    },
+    "邀请函目标1": {
         "$__mpe_code": {
             "position": {
                 "x": -1272,
@@ -3567,6 +3596,36 @@
             "param": {},
             "type": "Click"
         },
+        "max_hit": 1,
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "Pass/邀请函目标0.png",
+                    "Pass/邀请函目标1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "邀请函目标2": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1272,
+                "y": -454
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "max_hit": 1,
         "next": [
             "[JumpBack]全部领取1",
             "全部领取0"
@@ -3597,8 +3656,8 @@
         },
         "max_hit": 1,
         "next": [
-            "[JumpBack]邀请函目标",
-            "邀请函奖励"
+            "[JumpBack]邀请函目标1",
+            "邀请函奖励1"
         ],
         "recognition": {
             "param": {
@@ -3612,8 +3671,8 @@
     "邀请赛2": {
         "$__mpe_code": {
             "position": {
-                "x": -1523,
-                "y": -547
+                "x": -1524,
+                "y": -454
             }
         },
         "action": {
@@ -3622,8 +3681,8 @@
         },
         "max_hit": 1,
         "next": [
-            "[JumpBack]邀请函目标",
-            "邀请函奖励"
+            "[JumpBack]邀请函目标2",
+            "邀请函奖励2"
         ],
         "recognition": {
             "param": {
