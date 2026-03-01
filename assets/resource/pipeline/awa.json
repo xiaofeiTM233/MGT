@@ -3,12 +3,12 @@
         "$__mpe_code": {
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
             "filename": "awa",
-            "lastSyncTime": 1772335174030,
+            "lastSyncTime": 1772376335554,
             "prefix": "",
             "savedViewport": {
-                "x": 2129,
-                "y": 1121,
-                "zoom": 0.5
+                "x": 1704,
+                "y": 690,
+                "zoom": 0.65
             },
             "version": "v1.2.0"
         }
@@ -103,8 +103,8 @@
             "content": "",
             "height": 160,
             "position": {
-                "x": -2024,
-                "y": -740
+                "x": -2543,
+                "y": -749
             },
             "width": 200
         }
@@ -343,8 +343,8 @@
     "M-领取邀请赛": {
         "$__mpe_code": {
             "position": {
-                "x": -1782,
-                "y": -740
+                "x": -2291,
+                "y": -748
             }
         },
         "next": [
@@ -513,8 +513,8 @@
     "Menu-邀请赛": {
         "$__mpe_code": {
             "position": {
-                "x": -1532,
-                "y": -740
+                "x": -2044,
+                "y": -748
             }
         },
         "action": {
@@ -918,7 +918,7 @@
         },
         "next": [
             "[JumpBack]全部领取1",
-            "全部领取0"
+            "任务-全部领取0"
         ],
         "recognition": {
             "param": {
@@ -933,8 +933,8 @@
     "Tab-活动1": {
         "$__mpe_code": {
             "position": {
-                "x": -1020,
-                "y": -1285
+                "x": -1018,
+                "y": -1309
             }
         },
         "action": {
@@ -946,6 +946,7 @@
             "活动1-主页",
             "[JumpBack]Tab-活动1-Re"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "roi": [
@@ -978,8 +979,8 @@
     "Tab-活动2": {
         "$__mpe_code": {
             "position": {
-                "x": -1020,
-                "y": -1055
+                "x": -1018,
+                "y": -1050
             }
         },
         "action": {
@@ -991,6 +992,7 @@
             "活动2-主页",
             "[JumpBack]Tab-活动2-Re"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "roi": [
@@ -1034,8 +1036,9 @@
         "max_hit": 1,
         "next": [
             "活动3-主页",
-            "[JumpBack]Tab-活动4-Re"
+            "[JumpBack]Tab-活动3-Re"
         ],
+        "post_delay": 1000,
         "recognition": {
             "param": {
                 "roi": [
@@ -1051,7 +1054,7 @@
             "type": "TemplateMatch"
         }
     },
-    "Tab-活动4-Re": {
+    "Tab-活动3-Re": {
         "$__mpe_code": {
             "position": {
                 "x": -1272,
@@ -1079,7 +1082,7 @@
         "max_hit": 1,
         "next": [
             "[JumpBack]Tab-资源副本",
-            "Tab-进化石副本",
+            "[JumpBack]Tab-进化石副本",
             "[JumpBack]Tab-开花石副本"
         ],
         "recognition": {
@@ -1490,8 +1493,8 @@
     "Title-邀请赛": {
         "$__mpe_code": {
             "position": {
-                "x": -1287,
-                "y": -742
+                "x": -1795,
+                "y": -748
             }
         },
         "next": [
@@ -1623,6 +1626,30 @@
             "type": "TemplateMatch"
         }
     },
+    "任务-全部领取0": {
+        "$__mpe_code": {
+            "position": {
+                "x": -780,
+                "y": -573
+            }
+        },
+        "next": [
+            "[JumpBack]已获得1",
+            "[JumpBack]已获得0"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "Ui/全部领取0.png",
+                    "Ui/已完成今日所有日常任务.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
     "任务快捷领取": {
         "$__mpe_code": {
             "position": {
@@ -1709,14 +1736,10 @@
     "全部领取0": {
         "$__mpe_code": {
             "position": {
-                "x": -1539,
-                "y": -363
+                "x": -780,
+                "y": -401
             }
         },
-        "next": [
-            "[JumpBack]已获得1",
-            "[JumpBack]已获得0"
-        ],
         "recognition": {
             "param": {
                 "template": [
@@ -1733,8 +1756,8 @@
     "全部领取1": {
         "$__mpe_code": {
             "position": {
-                "x": -523,
-                "y": -580
+                "x": -780,
+                "y": -749
             }
         },
         "action": {
@@ -1742,7 +1765,8 @@
             "type": "Click"
         },
         "next": [
-            "关闭弹窗带延迟"
+            "[JumpBack]关闭弹窗带延迟",
+            "无关闭弹窗"
         ],
         "recognition": {
             "param": {
@@ -1828,7 +1852,7 @@
         "$__mpe_code": {
             "position": {
                 "x": -285,
-                "y": -580
+                "y": -576
             }
         },
         "action": {
@@ -2773,8 +2797,8 @@
     "已获得0": {
         "$__mpe_code": {
             "position": {
-                "x": -1287,
-                "y": -363
+                "x": -525,
+                "y": -576
             }
         },
         "next": [
@@ -2795,8 +2819,8 @@
     "已获得1": {
         "$__mpe_code": {
             "position": {
-                "x": -1287,
-                "y": -553
+                "x": -525,
+                "y": -751
             }
         },
         "action": {
@@ -3038,7 +3062,7 @@
         "$__mpe_code": {
             "position": {
                 "x": -770,
-                "y": -1055
+                "y": -1049
             }
         },
         "inverse": true,
@@ -3058,8 +3082,8 @@
     "活动2-确认活动目标": {
         "$__mpe_code": {
             "position": {
-                "x": -523,
-                "y": -1055
+                "x": -525,
+                "y": -1050
             }
         },
         "action": {
@@ -3506,8 +3530,8 @@
     "邀请函奖励": {
         "$__mpe_code": {
             "position": {
-                "x": -525,
-                "y": -781
+                "x": -1272,
+                "y": -573
             }
         },
         "action": {
@@ -3515,7 +3539,8 @@
             "type": "Click"
         },
         "next": [
-            "全部领取1"
+            "[JumpBack]全部领取1",
+            "全部领取0"
         ],
         "recognition": {
             "param": {
@@ -3534,8 +3559,8 @@
     "邀请函目标": {
         "$__mpe_code": {
             "position": {
-                "x": -770,
-                "y": -781
+                "x": -1272,
+                "y": -748
             }
         },
         "action": {
@@ -3544,7 +3569,7 @@
         },
         "next": [
             "[JumpBack]全部领取1",
-            "邀请函奖励"
+            "全部领取0"
         ],
         "recognition": {
             "param": {
@@ -3562,8 +3587,8 @@
     "邀请赛1": {
         "$__mpe_code": {
             "position": {
-                "x": -1018,
-                "y": -778
+                "x": -1523,
+                "y": -749
             }
         },
         "action": {
@@ -3572,7 +3597,8 @@
         },
         "max_hit": 1,
         "next": [
-            "邀请函目标"
+            "[JumpBack]邀请函目标",
+            "邀请函奖励"
         ],
         "recognition": {
             "param": {
@@ -3586,8 +3612,8 @@
     "邀请赛2": {
         "$__mpe_code": {
             "position": {
-                "x": -1018,
-                "y": -580
+                "x": -1523,
+                "y": -547
             }
         },
         "action": {
@@ -3596,7 +3622,8 @@
         },
         "max_hit": 1,
         "next": [
-            "邀请函目标"
+            "[JumpBack]邀请函目标",
+            "邀请函奖励"
         ],
         "recognition": {
             "param": {
