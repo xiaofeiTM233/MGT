@@ -3,12 +3,12 @@
         "$__mpe_code": {
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
             "filename": "awa",
-            "lastSyncTime": 1772172456293,
+            "lastSyncTime": 1772335174030,
             "prefix": "",
             "savedViewport": {
-                "x": 2411,
-                "y": 791,
-                "zoom": 0.76
+                "x": 2129,
+                "y": 1121,
+                "zoom": 0.5
             },
             "version": "v1.2.0"
         }
@@ -186,7 +186,7 @@
     "L-检查主页完毕": {
         "$__mpe_code": {
             "position": {
-                "x": 1576,
+                "x": 1566,
                 "y": -2240
             }
         },
@@ -212,20 +212,17 @@
             "type": "TemplateMatch"
         }
     },
-    "L-返回并结束任务": {
+    "L-返回": {
         "$__mpe_code": {
             "position": {
-                "x": 1323,
-                "y": -2240
+                "x": 1566,
+                "y": -2035
             }
         },
         "action": {
             "param": {},
             "type": "Click"
         },
-        "next": [
-            "L-检查主页完毕"
-        ],
         "post_delay": 2000,
         "recognition": {
             "param": {
@@ -242,6 +239,19 @@
             },
             "type": "TemplateMatch"
         }
+    },
+    "L-返回并结束任务": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1323,
+                "y": -2240
+            }
+        },
+        "next": [
+            "[JumpBack]L-返回",
+            "L-检查主页完毕"
+        ],
+        "post_delay": 2000
     },
     "M-公会签到": {
         "$__mpe_code": {
@@ -1069,8 +1079,8 @@
         "max_hit": 1,
         "next": [
             "[JumpBack]Tab-资源副本",
-            "[JumpBack]Tab-开花石副本",
-            "Tab-进化石副本"
+            "Tab-进化石副本",
+            "[JumpBack]Tab-开花石副本"
         ],
         "recognition": {
             "param": {
@@ -1411,9 +1421,9 @@
             }
         },
         "next": [
-            "[JumpBack]Tab-裂痕",
             "[JumpBack]Tab-推荐",
-            "Title-返回"
+            "[JumpBack]Tab-裂痕",
+            "L-返回并结束任务"
         ],
         "recognition": {
             "param": {
@@ -1535,7 +1545,8 @@
             "type": "Click"
         },
         "next": [
-            "[JumpBack]关闭弹窗"
+            "[JumpBack]关闭弹窗",
+            "无关闭弹窗"
         ],
         "recognition": {
             "param": {
@@ -2822,6 +2833,23 @@
                 "template": [
                     "Sweep/挑战券0-觉醒副本.png",
                     "Sweep/挑战券00-觉醒副本.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "无关闭弹窗": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1543,
+                "y": -2476
+            }
+        },
+        "inverse": true,
+        "recognition": {
+            "param": {
+                "template": [
+                    "Popup/点击空白处关闭弹窗.png"
                 ]
             },
             "type": "TemplateMatch"
