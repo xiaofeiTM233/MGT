@@ -1,16 +1,14 @@
 {
     "$__mpe_config_awa": {
         "$__mpe_code": {
-            "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
             "filename": "awa",
-            "lastSyncTime": 1772376335554,
             "prefix": "",
             "savedViewport": {
-                "x": 1774,
-                "y": 917,
-                "zoom": 0.87
+                "x": 415,
+                "y": 1468,
+                "zoom": 1
             },
-            "version": "v1.2.0"
+            "version": "v1.2.2"
         }
     },
     "$__mpe_sticker_公会签到_awa": {
@@ -140,6 +138,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "L-Menu-任务",
         "next": [
             "L-Title-任务"
         ],
@@ -165,6 +164,7 @@
                 "y": -2240
             }
         },
+        "focus": "L-Title-任务",
         "next": [
             "L-返回并结束任务"
         ],
@@ -194,6 +194,7 @@
             "param": {},
             "type": "StopTask"
         },
+        "focus": "L-检查主页完毕",
         "recognition": {
             "param": {
                 "roi": [
@@ -216,13 +217,14 @@
         "$__mpe_code": {
             "position": {
                 "x": 1566,
-                "y": -2035
+                "y": -2014
             }
         },
         "action": {
             "param": {},
             "type": "Click"
         },
+        "focus": "L-返回",
         "post_delay": 2000,
         "recognition": {
             "param": {
@@ -247,6 +249,7 @@
                 "y": -2240
             }
         },
+        "focus": "L-返回并结束任务",
         "next": [
             "[JumpBack]L-返回",
             "L-检查主页完毕"
@@ -362,6 +365,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Menu-任务",
         "next": [
             "Title-任务"
         ],
@@ -391,6 +395,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Menu-公会",
         "next": [
             "[JumpBack]Title-协力讨伐",
             "Title-公会"
@@ -419,6 +424,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Menu-商店",
         "next": [
             "Title-商店"
         ],
@@ -446,6 +452,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Menu-活动",
         "next": [
             "Title-活动"
         ],
@@ -475,6 +482,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Menu-游玩",
         "next": [
             "Title-游玩指南"
         ],
@@ -498,6 +506,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Menu-英雄传",
         "next": [
             "Title-英雄传"
         ],
@@ -521,6 +530,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Menu-邀请赛",
         "next": [
             "Title-邀请赛"
         ],
@@ -571,6 +581,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Sweep-Auto-自动战斗",
         "next": [
             "Sweep-Auto-自动战斗弹窗"
         ],
@@ -645,6 +656,9 @@
             "param": {},
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "Sweep-开始扫荡"
+        },
         "next": [
             "Sweep-扫荡弹窗"
         ],
@@ -684,6 +698,9 @@
                 "x": 3142,
                 "y": 19
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "Sweep-扫荡结束"
         },
         "next": [
             "[JumpBack]Sweep-确认",
@@ -770,6 +787,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Sweep-自动战斗",
         "next": [
             "Sweep-自动战斗弹窗"
         ],
@@ -846,6 +864,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-开花石副本",
         "max_hit": 1,
         "next": [
             "[JumpBack]副本-虚花石",
@@ -885,6 +904,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-推荐",
         "max_hit": 1,
         "next": [
             "Menu-英雄传"
@@ -916,6 +936,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-日常",
         "next": [
             "[JumpBack]全部领取1",
             "任务-全部领取0"
@@ -941,6 +962,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-活动1",
         "max_hit": 1,
         "next": [
             "活动1-主页",
@@ -987,6 +1009,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-活动2",
         "max_hit": 1,
         "next": [
             "活动2-主页",
@@ -1033,6 +1056,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-活动3",
         "max_hit": 1,
         "next": [
             "活动3-主页",
@@ -1079,6 +1103,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-裂痕",
         "max_hit": 1,
         "next": [
             "[JumpBack]Tab-资源副本",
@@ -1112,6 +1137,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-资源副本",
         "max_hit": 1,
         "next": [
             "[JumpBack]副本-觉醒副本",
@@ -1150,6 +1176,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Tab-进化石副本",
         "max_hit": 1,
         "next": [
             "[JumpBack]副本-虚进石",
@@ -1185,6 +1212,7 @@
                 "y": -363
             }
         },
+        "focus": "Title-任务",
         "next": [
             "Tab-日常"
         ],
@@ -1210,6 +1238,7 @@
                 "y": -1965
             }
         },
+        "focus": "Title-公会",
         "next": [
             "[JumpBack]公会签到1",
             "公会签到0"
@@ -1240,6 +1269,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Title-公会-返回",
         "next": [
             "L-Menu-任务",
             "L-返回并结束任务"
@@ -1261,6 +1291,7 @@
                 "y": -1773
             }
         },
+        "focus": "Title-协力讨伐",
         "max_hit": 1,
         "next": [
             "Title-协力讨伐-确认",
@@ -1312,6 +1343,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Title-协力讨伐-返回",
         "recognition": {
             "param": {
                 "roi": [
@@ -1335,6 +1367,7 @@
                 "y": -1520
             }
         },
+        "focus": "Title-商店",
         "next": [
             "[JumpBack]商店-资源",
             "[JumpBack]商店-英雄成长",
@@ -1393,6 +1426,7 @@
                 "y": -1276
             }
         },
+        "focus": "Title-活动",
         "next": [
             "[JumpBack]活动帮助叉",
             "[JumpBack]Tab-活动1",
@@ -1423,6 +1457,7 @@
                 "y": -132
             }
         },
+        "focus": "Title-游玩指南",
         "next": [
             "[JumpBack]Tab-推荐",
             "[JumpBack]Tab-裂痕",
@@ -1450,6 +1485,7 @@
                 "y": 153
             }
         },
+        "focus": "Title-英雄传",
         "next": [
             "英雄传-无券",
             "英雄传-有券"
@@ -1474,6 +1510,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "Title-返回",
         "recognition": {
             "param": {
                 "roi": [
@@ -1497,6 +1534,7 @@
                 "y": -748
             }
         },
+        "focus": "Title-邀请赛",
         "next": [
             "[JumpBack]邀请赛1",
             "[JumpBack]邀请赛2",
@@ -1592,6 +1630,7 @@
                 "y": -2681
             }
         },
+        "focus": "识别到下载资源",
         "max_hit": 1,
         "next": [
             "下载资源-确认"
@@ -1653,13 +1692,17 @@
     "任务快捷领取": {
         "$__mpe_code": {
             "position": {
-                "x": -2044,
-                "y": -536
+                "x": -2300,
+                "y": -626
             }
         },
         "action": {
             "param": {},
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Failed": "任务快捷领取完成",
+            "Node.Recognition.Succeeded": "任务快捷领取"
         },
         "next": [
             "[JumpBack]关闭弹窗"
@@ -1667,7 +1710,8 @@
         "recognition": {
             "param": {
                 "template": [
-                    "Menu/任务快捷领取.png"
+                    "Menu/任务快捷领取.png",
+                    "Menu/任务快捷领取1.png"
                 ],
                 "threshold": [
                     0.9
@@ -1908,6 +1952,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-光花石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -1937,6 +1982,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-光进石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -1967,6 +2013,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-土花石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -1996,6 +2043,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-土进石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2026,6 +2074,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-暗花石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2055,6 +2104,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-暗进石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2085,6 +2135,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-水花石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2114,6 +2165,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-水进石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2144,6 +2196,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-火花石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2173,6 +2226,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-火进石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2203,6 +2257,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-红色碎片副本",
         "max_hit": 1,
         "next": [
             "Sweep-自动战斗"
@@ -2231,6 +2286,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-经验副本",
         "max_hit": 1,
         "next": [
             "Sweep-Auto-资源Yes",
@@ -2268,6 +2324,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-虚花石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2297,6 +2354,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-虚进石",
         "max_hit": 1,
         "next": [
             "石头满了",
@@ -2327,6 +2385,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-觉醒副本",
         "max_hit": 1,
         "next": [
             "挑战券兑换",
@@ -2356,6 +2415,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-道具副本",
         "max_hit": 1,
         "next": [
             "Sweep-Auto-资源Yes",
@@ -2385,6 +2445,7 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": "副本-金币副本",
         "max_hit": 1,
         "next": [
             "Sweep-Auto-资源Yes",
@@ -2413,6 +2474,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "参与裂痕",
         "max_hit": 1,
         "next": [
             "活动裂痕副本"
@@ -2482,6 +2544,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "商店-英雄成长",
         "max_hit": 1,
         "next": [
             "商店-英雄成长-传说中的觉醒石"
@@ -2512,6 +2575,9 @@
         "action": {
             "param": {},
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "商店-英雄成长-传说中的觉醒石"
         },
         "next": [
             "商店-英雄成长-加"
@@ -2570,6 +2636,9 @@
             "param": {},
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "完成英雄成长购买"
+        },
         "next": [
             "关闭弹窗"
         ],
@@ -2593,6 +2662,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "商店-装备",
         "max_hit": 1,
         "next": [
             "商店-装备-强化锤"
@@ -2624,6 +2694,9 @@
             "param": {},
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "商店-装备-强化锤"
+        },
         "next": [
             "商店-装备-购买"
         ],
@@ -2646,6 +2719,9 @@
         "action": {
             "param": {},
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "完成装备购买"
         },
         "next": [
             "关闭弹窗"
@@ -2670,6 +2746,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "商店-资源",
         "max_hit": 1,
         "next": [
             "商店-资源-金币"
@@ -2701,6 +2778,9 @@
             "param": {},
             "type": "Click"
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "完成资源购买"
+        },
         "next": [
             "关闭弹窗"
         ],
@@ -2723,6 +2803,9 @@
         "action": {
             "param": {},
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "商店-资源-金币"
         },
         "next": [
             "商店-资源-购买"
@@ -2748,6 +2831,9 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": {
+            "Node.Recognition.Succeeded": "在个人空间"
+        },
         "next": [
             "在浮游城"
         ],
@@ -2772,6 +2858,9 @@
                 "x": -2023,
                 "y": -92
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "在浮游城"
         },
         "next": [
             "[JumpBack]领取灵魂点数",
@@ -2849,6 +2938,9 @@
                 "y": 235
             }
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "挑战券没了"
+        },
         "next": [
             "Title-返回"
         ],
@@ -2883,7 +2975,7 @@
         "$__mpe_code": {
             "position": {
                 "x": -34,
-                "y": -2486
+                "y": -2487
             }
         },
         "action": {
@@ -2943,6 +3035,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "活动1-兑换所",
         "max_hit": 1,
         "next": [
             "活动裂痕副本挑战券"
@@ -2974,6 +3067,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "活动1-活动奖励",
         "max_hit": 1,
         "next": [
             "[JumpBack]一键领取1",
@@ -3005,6 +3099,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "活动1-活动目标",
         "max_hit": 1,
         "next": [
             "[JumpBack]一键领取1",
@@ -3036,6 +3131,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "活动1-确认活动目标",
         "max_hit": 1,
         "next": [
             "[JumpBack]活动1-活动目标",
@@ -3090,6 +3186,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "活动2-确认活动目标",
         "max_hit": 1,
         "next": [
             "[JumpBack]一键领取1",
@@ -3142,6 +3239,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "活动3-确认活动目标",
         "max_hit": 1,
         "next": [
             "[JumpBack]一键领取1",
@@ -3195,6 +3293,7 @@
                 "y": -2476
             }
         },
+        "focus": "识别到活动公告",
         "next": [
             "关闭活动公告"
         ],
@@ -3247,6 +3346,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "活动折叠",
         "recognition": {
             "param": {
                 "roi": [
@@ -3271,6 +3371,7 @@
                 "y": -1278
             }
         },
+        "focus": "活动裂痕副本",
         "next": [
             "挑战券兑换",
             "Sweep-Auto-自动战斗"
@@ -3295,6 +3396,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "活动裂痕副本挑战券",
         "next": [
             "兑换所-加"
         ],
@@ -3325,13 +3427,14 @@
             },
             "type": "Click"
         },
+        "focus": "登录确认",
         "max_hit": 1,
         "next": [
             "[JumpBack]下载资源",
             "[JumpBack]活动公告",
             "L-Menu-任务"
         ],
-        "post_delay": 10000,
+        "post_delay": 20000,
         "recognition": {
             "param": {
                 "template": [
@@ -3348,6 +3451,9 @@
                 "x": 3142,
                 "y": 235
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "石头满了"
         },
         "recognition": {
             "param": {
@@ -3460,6 +3566,7 @@
                 "y": 338
             }
         },
+        "focus": "英雄传-无券",
         "next": [
             "Title-返回"
         ],
@@ -3482,6 +3589,7 @@
                 "y": 153
             }
         },
+        "focus": "英雄传-有券",
         "next": [
             "英雄传-扫荡"
         ],
@@ -3509,6 +3617,9 @@
             "type": "Click"
         },
         "enabled": false,
+        "focus": {
+            "Node.Recognition.Succeeded": "返回个人空间"
+        },
         "next": [
             "L-检查主页完毕"
         ],
@@ -3654,6 +3765,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "邀请赛1",
         "max_hit": 1,
         "next": [
             "[JumpBack]邀请函目标1",
@@ -3679,6 +3791,7 @@
             "param": {},
             "type": "Click"
         },
+        "focus": "邀请赛2",
         "max_hit": 1,
         "next": [
             "[JumpBack]邀请函目标2",
@@ -3703,6 +3816,9 @@
         "action": {
             "param": {},
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "领取小公主礼物"
         },
         "next": [
             "关闭弹窗带延迟"
@@ -3732,6 +3848,9 @@
         "action": {
             "param": {},
             "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "领取灵魂点数"
         },
         "recognition": {
             "param": {
