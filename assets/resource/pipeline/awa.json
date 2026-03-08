@@ -138,7 +138,6 @@
             "param": {},
             "type": "Click"
         },
-        "focus": "L-Menu-任务",
         "next": [
             "L-Title-任务"
         ],
@@ -164,7 +163,6 @@
                 "y": -2240
             }
         },
-        "focus": "L-Title-任务",
         "next": [
             "L-返回并结束任务"
         ],
