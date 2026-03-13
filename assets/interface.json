@@ -2,7 +2,7 @@
     "interface_version": 2,
     "name": "MGT",
     "github": "https://github.com/xiaofeiTM233/MGT",
-    "version": "2.0.7",
+    "version": "2.0.8",
     "contact": "https://github.com/xiaofeiTM233/MGT",
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MGT!",
@@ -33,7 +33,7 @@
             "name": "每日商店",
             "entry": "M-每日商店",
             "default_check": true,
-            "description": "进入卡马逊商店自动购买商品，目前只支持购买免费/金币商品。"
+            "description": "进入卡马逊商店自动购买商品，目前只支持购买免费/金币商品及领取订阅卡。"
         },
         {
             "name": "公会签到",
@@ -45,7 +45,7 @@
             "name": "每日体力",
             "entry": "M-每日体力",
             "default_check": true,
-            "description": "进入游玩指南，进行英雄传扫荡和裂痕扫荡。需要用户提前确认进入裂痕页面默认处于相应等级副本处。",
+            "description": "进入游玩指南，进行英雄传扫荡和裂痕扫荡。注意！用户需提前确认进入裂痕页面默认处于相应等级副本处。",
             "option": [
                 "英雄传扫荡",
                 "副本扫荡次数",

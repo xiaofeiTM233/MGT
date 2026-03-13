@@ -1,14 +1,16 @@
 {
     "$__mpe_config_awa": {
         "$__mpe_code": {
+            "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
             "filename": "awa",
+            "lastSyncTime": 1773400335136,
             "prefix": "",
             "savedViewport": {
-                "x": 415,
-                "y": 1468,
-                "zoom": 1
+                "x": 2247,
+                "y": 2184,
+                "zoom": 0.62
             },
-            "version": "v1.2.2"
+            "version": "v1.2.3"
         }
     },
     "$__mpe_sticker_公会签到_awa": {
@@ -1090,6 +1092,53 @@
             "type": "Click"
         }
     },
+    "Tab-活动4": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2015,
+                "y": -1594
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "focus": "Tab-活动4",
+        "max_hit": 1,
+        "next": [
+            "活动4-主页",
+            "[JumpBack]Tab-活动4-Re"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    300,
+                    720
+                ],
+                "template": [
+                    "Event/Banner/开心宾果乐.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "Tab-活动4-Re": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1272,
+                "y": -1590
+            }
+        },
+        "action": {
+            "param": {
+                "target": "Tab-活动4"
+            },
+            "type": "Click"
+        }
+    },
     "Tab-裂痕": {
         "$__mpe_code": {
             "position": {
@@ -1367,6 +1416,7 @@
         },
         "focus": "Title-商店",
         "next": [
+            "[JumpBack]商店-订阅卡",
             "[JumpBack]商店-资源",
             "[JumpBack]商店-英雄成长",
             "[JumpBack]商店-装备",
@@ -1390,8 +1440,8 @@
     "Title-商店-返回": {
         "$__mpe_code": {
             "position": {
-                "x": 511,
-                "y": -1702
+                "x": 1000,
+                "y": -1728
             }
         },
         "action": {
@@ -1430,6 +1480,7 @@
             "[JumpBack]Tab-活动1",
             "[JumpBack]Tab-活动2",
             "[JumpBack]Tab-活动3",
+            "[JumpBack]Tab-活动4",
             "L-返回并结束任务"
         ],
         "post_delay": 1000,
@@ -2733,6 +2784,64 @@
             "type": "TemplateMatch"
         }
     },
+    "商店-订阅卡": {
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1728
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "focus": "商店-订阅卡",
+        "max_hit": 1,
+        "next": [
+            "商店-订阅卡-立即领取"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "订阅卡"
+                ],
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": 3000
+    },
+    "商店-订阅卡-立即领取": {
+        "$__mpe_code": {
+            "position": {
+                "x": 756,
+                "y": -1728
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "完成领取订阅卡"
+        },
+        "next": [
+            "关闭弹窗"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "Shop/立即领取.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
     "商店-资源": {
         "$__mpe_code": {
             "position": {
@@ -3253,6 +3362,58 @@
                 ],
                 "template": [
                     "Event/活动目标-路线图.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "活动4-主页": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1766,
+                "y": -1590
+            }
+        },
+        "inverse": true,
+        "next": [
+            "[JumpBack]活动4-确认活动目标"
+        ],
+        "recognition": {
+            "param": {
+                "template": [
+                    "Event/进行中的活动.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "活动4-确认活动目标": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1524,
+                "y": -1590
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "focus": "活动4-确认活动目标",
+        "max_hit": 1,
+        "next": [
+            "[JumpBack]一键领取1",
+            "一键领取3"
+        ],
+        "recognition": {
+            "param": {
+                "roi": [
+                    0,
+                    470,
+                    250,
+                    250
+                ],
+                "template": [
+                    "Event/活动目标-开心宾果乐.png"
                 ]
             },
             "type": "TemplateMatch"
