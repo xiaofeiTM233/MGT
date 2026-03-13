@@ -3,12 +3,8 @@
         "timeout": 10000,
         "post_delay": 500,
         "focus": {
-            "Node.Recognition.Succeeded": {
-                "content": "{name} 识别成功"
-            },
-            "Node.Recognition.Failed": {
-                "content": "❌ {name} 识别失败"
-            }
+            "Node.Recognition.Succeeded": "✔️ {name} 识别成功",
+            "Node.Recognition.Failed": "❌ {name} 识别失败"
         }
     },
     "TemplateMatch": {
