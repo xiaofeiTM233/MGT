@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
             "filename": "awa",
-            "lastSyncTime": 1773400335136,
+            "lastSyncTime": 1773760108569,
             "prefix": "",
             "savedViewport": {
-                "x": 2247,
-                "y": 2184,
-                "zoom": 0.62
+                "x": 1677,
+                "y": 1458,
+                "zoom": 0.76
             },
-            "version": "v1.2.3"
+            "version": "v1.3.0"
         }
     },
     "$__mpe_sticker_公会签到_awa": {
@@ -941,6 +941,7 @@
             "param": {},
             "type": "Click"
         },
+        "enabled": false,
         "max_hit": 1,
         "next": [
             "活动1-主页",
@@ -960,8 +961,7 @@
                 ]
             },
             "type": "TemplateMatch"
-        },
-		"enabled": false
+        }
     },
     "Tab-活动1-Re": {
         "$__mpe_code": {
@@ -3322,7 +3322,7 @@
             "param": {
                 "roi": [
                     0,
-                    470,
+                    0,
                     250,
                     250
                 ],
@@ -3497,8 +3497,8 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Recognition.Succeeded": "{name} 识别成功",
-            "Node.NextList.Starting": "{name} 进入下一步"
+            "Node.NextList.Starting": "{name} 进入下一步",
+            "Node.Recognition.Succeeded": "{name} 识别成功"
         },
         "max_hit": 1,
         "next": [
