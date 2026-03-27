@@ -2,7 +2,7 @@
     "interface_version": 2,
     "name": "MGT",
     "github": "https://github.com/xiaofeiTM233/MGT",
-    "version": "2.0.9",
+    "version": "2.0.10",
     "contact": "https://github.com/xiaofeiTM233/MGT",
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MGT!",
@@ -637,6 +637,98 @@
                     "name": "No",
                     "label": "禁用",
                     "description": "禁用道具副本。"
+                }
+            ],
+            "default_case": "No"
+        },
+        "Tab-活动1": {
+            "type": "switch",
+            "label": "活动1-活动裂痕",
+            "description": "选择启用活动1，默认禁用。",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "icon": "启用",
+                    "description": "启用活动1。",
+                    "pipeline_override": {
+                        "Tab-活动1": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "label": "禁用",
+                    "description": "禁用活动1。"
+                }
+            ],
+            "default_case": "No"
+        },
+        "Tab-活动2": {
+            "type": "switch",
+            "label": "活动2-浮游城大富翁",
+            "description": "选择启用活动2，默认禁用。",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "icon": "启用",
+                    "description": "启用活动2。",
+                    "pipeline_override": {
+                        "Tab-活动2": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "label": "禁用",
+                    "description": "禁用活动2。"
+                }
+            ],
+            "default_case": "No"
+        },
+        "Tab-活动3": {
+            "type": "switch",
+            "label": "活动3-线路图",
+            "description": "选择启用活动3，默认禁用。",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "icon": "启用",
+                    "description": "启用活动3。",
+                    "pipeline_override": {
+                        "Tab-活动3": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "label": "禁用",
+                    "description": "禁用活动3。"
+                }
+            ],
+            "default_case": "No"
+        },
+        "Tab-活动4": {
+            "type": "switch",
+            "label": "活动4-开心宾果乐",
+            "description": "选择启用活动4，默认禁用。",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "icon": "启用",
+                    "description": "启用活动4。",
+                    "pipeline_override": {
+                        "Tab-活动4": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "label": "禁用",
+                    "description": "禁用活动4。"
                 }
             ],
             "default_case": "No"

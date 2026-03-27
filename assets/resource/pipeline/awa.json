@@ -988,6 +988,7 @@
             "param": {},
             "type": "Click"
         },
+        "enabled": false,
         "max_hit": 1,
         "next": [
             "活动2-主页",
@@ -1034,6 +1035,7 @@
             "param": {},
             "type": "Click"
         },
+        "enabled": false,
         "max_hit": 1,
         "next": [
             "活动3-主页",
@@ -1080,6 +1082,7 @@
             "param": {},
             "type": "Click"
         },
+        "enabled": false,
         "max_hit": 1,
         "next": [
             "活动4-主页",
