@@ -2,7 +2,7 @@
     "interface_version": 2,
     "name": "MGT",
     "github": "https://github.com/xiaofeiTM233/MGT",
-    "version": "2.0.10",
+    "version": "2.0.11",
     "contact": "https://github.com/xiaofeiTM233/MGT",
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MGT!",
@@ -74,7 +74,13 @@
             "name": "领取活动",
             "entry": "M-领取活动",
             "default_check": true,
-            "description": "领取活动目标或进行活动裂痕扫荡。"
+            "description": "领取活动目标或进行活动裂痕扫荡。",
+            "option": [
+                "Tab-活动1",
+                "Tab-活动2",
+                "Tab-活动3",
+                "Tab-活动4"
+            ]
         },
         {
             "name": "领取任务",

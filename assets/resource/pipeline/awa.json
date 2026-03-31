@@ -3,14 +3,16 @@
         "$__mpe_code": {
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
             "filename": "awa",
-            "lastSyncTime": 1773760108569,
+            "isDeleted": true,
+            "isModifiedExternally": true,
+            "lastSyncTime": 1774955218507,
             "prefix": "",
             "savedViewport": {
-                "x": 1677,
-                "y": 1458,
-                "zoom": 0.76
+                "x": 559,
+                "y": 1068,
+                "zoom": 0.57
             },
-            "version": "v1.3.0"
+            "version": "v1.3.1"
         }
     },
     "$__mpe_sticker_公会签到_awa": {
@@ -1133,7 +1135,8 @@
         "next": [
             "[JumpBack]Tab-资源副本",
             "[JumpBack]Tab-进化石副本",
-            "[JumpBack]Tab-开花石副本"
+            "[JumpBack]Tab-开花石副本",
+            "副本-结束"
         ],
         "recognition": {
             "param": {
@@ -2543,6 +2546,9 @@
         "next": [
             "商店-英雄成长-传说中的觉醒石"
         ],
+        "on_error": [
+            "Title-商店"
+        ],
         "recognition": {
             "param": {
                 "expected": [
@@ -2654,6 +2660,9 @@
         "next": [
             "商店-装备-强化锤"
         ],
+        "on_error": [
+            "Title-商店"
+        ],
         "recognition": {
             "param": {
                 "expected": [
@@ -2734,6 +2743,9 @@
         "next": [
             "商店-订阅卡-立即领取"
         ],
+        "on_error": [
+            "Title-商店"
+        ],
         "recognition": {
             "param": {
                 "expected": [
@@ -2791,6 +2803,9 @@
         "next": [
             "商店-资源-金币"
         ],
+        "on_error": [
+            "Title-商店"
+        ],
         "recognition": {
             "param": {
                 "expected": [
@@ -2846,6 +2861,9 @@
         },
         "next": [
             "商店-资源-购买"
+        ],
+        "on_error": [
+            "Title-商店"
         ],
         "recognition": {
             "param": {
