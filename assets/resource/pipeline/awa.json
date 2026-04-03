@@ -5,12 +5,12 @@
             "filename": "awa",
             "isDeleted": true,
             "isModifiedExternally": true,
-            "lastSyncTime": 1774955218507,
+            "lastSyncTime": 1774958566453,
             "prefix": "",
             "savedViewport": {
-                "x": 559,
-                "y": 1068,
-                "zoom": 0.57
+                "x": 407,
+                "y": 2750,
+                "zoom": 1
             },
             "version": "v1.3.1"
         }
@@ -1384,7 +1384,7 @@
     "Title-商店": {
         "$__mpe_code": {
             "position": {
-                "x": 225,
+                "x": 228,
                 "y": -1520
             }
         },
@@ -1671,6 +1671,9 @@
             "param": {},
             "type": "Click"
         },
+        "next": [
+            "登录确认"
+        ],
         "post_delay": 8000,
         "recognition": {
             "param": {
@@ -2713,9 +2716,6 @@
             "param": {},
             "type": "Click"
         },
-        "focus": {
-            "Node.Recognition.Succeeded": "完成装备购买"
-        },
         "next": [
             "关闭弹窗"
         ],
@@ -2773,9 +2773,6 @@
             "param": {},
             "type": "Click"
         },
-        "focus": {
-            "Node.Recognition.Succeeded": "完成领取订阅卡"
-        },
         "next": [
             "关闭弹窗"
         ],
@@ -2832,9 +2829,6 @@
         "action": {
             "param": {},
             "type": "Click"
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "完成资源购买"
         },
         "next": [
             "关闭弹窗"
@@ -3915,6 +3909,7 @@
                     400
                 ],
                 "template": [
+                    "Menu/小公主的礼物1.png",
                     "Menu/小公主的礼物1.png"
                 ]
             },
