@@ -1,151 +1,139 @@
 {
     "$__mpe_config_awa": {
         "$__mpe_code": {
+            "prefix": "",
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
-            "filename": "awa",
+            "lastSyncTime": 1776785700081,
             "isDeleted": true,
             "isModifiedExternally": true,
-            "lastSyncTime": 1774958566453,
-            "prefix": "",
             "savedViewport": {
-                "x": 407,
-                "y": 2750,
-                "zoom": 1
+                "x": 1708,
+                "y": -43,
+                "zoom": 1.31
             },
-            "version": "v1.3.1"
+            "filename": "awa",
+            "version": "v1.4.1"
         }
     },
     "$__mpe_sticker_公会签到_awa": {
         "$__mpe_code": {
-            "color": "yellow",
-            "content": "",
-            "height": 160,
             "position": {
                 "x": -770,
                 "y": -1965
             },
-            "width": 200
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
         }
     },
     "$__mpe_sticker_启动登录_awa": {
         "$__mpe_code": {
-            "color": "blue",
-            "content": "",
-            "height": 160,
             "position": {
                 "x": -560,
                 "y": -2677
             },
-            "width": 200
+            "content": "",
+            "color": "blue",
+            "width": 200,
+            "height": 160
         }
     },
     "$__mpe_sticker_每日体力_awa": {
         "$__mpe_code": {
-            "color": "green",
-            "content": "",
-            "height": 160,
             "position": {
                 "x": -560,
                 "y": -134
             },
-            "width": 200
+            "content": "",
+            "color": "green",
+            "width": 200,
+            "height": 160
         }
     },
     "$__mpe_sticker_每日商店_awa": {
         "$__mpe_code": {
-            "color": "yellow",
-            "content": "",
-            "height": 160,
             "position": {
                 "x": -535,
                 "y": -1520
             },
-            "width": 200
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
         }
     },
     "$__mpe_sticker_领取任务_awa": {
         "$__mpe_code": {
-            "color": "yellow",
-            "content": "",
-            "height": 160,
             "position": {
                 "x": -2543,
                 "y": -565
             },
-            "width": 200
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
         }
     },
     "$__mpe_sticker_领取活动_awa": {
         "$__mpe_code": {
-            "color": "yellow",
-            "content": "",
-            "height": 160,
             "position": {
                 "x": -1995,
                 "y": -1276
             },
-            "width": 200
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
         }
     },
     "$__mpe_sticker_领取浮游城_awa": {
         "$__mpe_code": {
-            "color": "yellow",
-            "content": "",
-            "height": 160,
             "position": {
                 "x": -2772,
                 "y": -92
             },
-            "width": 200
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
         }
     },
     "$__mpe_sticker_领取邀请赛_awa": {
         "$__mpe_code": {
-            "color": "yellow",
-            "content": "",
-            "height": 160,
             "position": {
                 "x": -2543,
                 "y": -749
             },
-            "width": 200
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
         }
     },
     "2周内不再提示": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/2周内不再提示.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
                 "x": 832,
                 "y": -2677
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/2周内不再提示.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "L-Menu-任务": {
-        "$__mpe_code": {
-            "position": {
-                "x": 820,
-                "y": -2240
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "L-Title-任务"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -156,21 +144,25 @@
                 "template": [
                     "Menu/完成度.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "L-Title-任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 820,
+                "y": -2240
+            }
         }
     },
     "L-Title-任务": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1065,
-                "y": -2240
-            }
-        },
-        "next": [
-            "L-返回并结束任务"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -181,22 +173,21 @@
                 "template": [
                     "Title/任务指南.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "L-返回并结束任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1065,
+                "y": -2240
+            }
         }
     },
     "L-检查主页完毕": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1566,
-                "y": -2240
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "StopTask"
-        },
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -210,23 +201,22 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "L-返回": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1566,
-                "y": -2014
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "StopTask",
+            "param": {}
         },
-        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1566,
+                "y": -2240
+            }
+        }
+    },
+    "L-返回": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -238,41 +228,46 @@
                     "Ui/返回按钮.png",
                     "Ui/返回按钮0.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1566,
+                "y": -2014
+            }
         }
     },
     "L-返回并结束任务": {
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]L-返回",
+            "L-检查主页完毕"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 1323,
                 "y": -2240
             }
-        },
-        "next": [
-            "[JumpBack]L-返回",
-            "L-检查主页完毕"
-        ],
-        "post_delay": 2000
+        }
     },
     "M-公会签到": {
+        "next": [
+            "Menu-公会"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -535,
                 "y": -1965
             }
-        },
-        "next": [
-            "Menu-公会"
-        ]
+        }
     },
     "M-启动登录": {
-        "$__mpe_code": {
-            "position": {
-                "x": -329,
-                "y": -2681
-            }
-        },
+        "timeout": -1,
         "next": [
             "[JumpBack]启动游戏",
             "[JumpBack]未达登录界面纯点",
@@ -283,91 +278,84 @@
             "[JumpBack]活动公告",
             "L-Menu-任务"
         ],
-        "timeout": -1
+        "$__mpe_code": {
+            "position": {
+                "x": -329,
+                "y": -2681
+            }
+        }
     },
     "M-每日体力": {
+        "next": [
+            "Menu-游玩"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -329,
                 "y": -132
             }
-        },
-        "next": [
-            "Menu-游玩"
-        ]
+        }
     },
     "M-每日商店": {
+        "next": [
+            "Menu-商店"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -281,
                 "y": -1520
             }
-        },
-        "next": [
-            "Menu-商店"
-        ]
+        }
     },
     "M-领取任务": {
+        "next": [
+            "[JumpBack]任务快捷领取",
+            "Menu-任务"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -2543,
                 "y": -364
             }
-        },
-        "next": [
-            "[JumpBack]任务快捷领取",
-            "Menu-任务"
-        ]
+        }
     },
     "M-领取活动": {
+        "next": [
+            "Menu-活动"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -1766,
                 "y": -1277
             }
-        },
-        "next": [
-            "Menu-活动"
-        ]
+        }
     },
     "M-领取浮游城": {
+        "next": [
+            "在个人空间",
+            "在浮游城"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -2543,
                 "y": -92
             }
-        },
-        "next": [
-            "在个人空间",
-            "在浮游城"
-        ]
+        }
     },
     "M-领取邀请赛": {
+        "next": [
+            "Menu-邀请赛"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -2291,
                 "y": -748
             }
-        },
-        "next": [
-            "Menu-邀请赛"
-        ]
+        }
     },
     "Menu-任务": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2300,
-                "y": -363
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Title-任务"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -378,26 +366,25 @@
                 "template": [
                     "Menu/完成度.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Menu-公会": {
-        "$__mpe_code": {
-            "position": {
-                "x": -285,
-                "y": -1965
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "next": [
-            "[JumpBack]Title-协力讨伐",
-            "Title-公会"
+            "Title-任务"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2300,
+                "y": -363
+            }
+        }
+    },
+    "Menu-公会": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Menu/公会.png",
@@ -406,25 +393,26 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Menu-商店": {
-        "$__mpe_code": {
-            "position": {
-                "x": -31,
-                "y": -1520
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "next": [
-            "Title-商店"
+            "[JumpBack]Title-协力讨伐",
+            "Title-公会"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": -285,
+                "y": -1965
+            }
+        }
+    },
+    "Menu-商店": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Menu/商店T.png",
@@ -433,25 +421,25 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Menu-活动": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1524,
-                "y": -1276
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "next": [
-            "Title-活动"
+            "Title-商店"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": -31,
+                "y": -1520
+            }
+        }
+    },
+    "Menu-活动": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     1000,
@@ -462,71 +450,71 @@
                 "template": [
                     "Menu/活动.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Title-活动"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1524,
+                "y": -1276
+            }
         }
     },
     "Menu-游玩": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Menu/游玩.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Title-游玩指南"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -92,
                 "y": -132
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Title-游玩指南"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Menu/游玩.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Menu-英雄传": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Rift/忒提斯英雄传.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Title-英雄传"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 401,
                 "y": 153
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Title-英雄传"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Rift/忒提斯英雄传.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Menu-邀请赛": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2044,
-                "y": -748
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Title-邀请赛"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     1000,
@@ -537,154 +525,168 @@
                 "template": [
                     "Menu/邀请赛.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Title-邀请赛"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2044,
+                "y": -748
+            }
         }
     },
     "Sweep-Auto-石头没满": {
+        "enabled": false,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/满.png"
+                ]
+            }
+        },
+        "inverse": true,
+        "next": [
+            "Sweep-Auto-自动战斗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 2163,
                 "y": 117
             }
-        },
-        "enabled": false,
-        "inverse": true,
-        "next": [
-            "Sweep-Auto-自动战斗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/满.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Sweep-Auto-自动战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/自动战斗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Sweep-Auto-自动战斗弹窗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 2403,
                 "y": 28
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Sweep-Auto-自动战斗弹窗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/自动战斗.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Sweep-Auto-自动战斗弹窗": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2646,
-                "y": 29
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/设置自动战斗次数.png"
+                ]
             }
         },
         "next": [
             "Sweep-开始扫荡"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/设置自动战斗次数.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 2646,
+                "y": 29
+            }
         }
     },
     "Sweep-Auto-资源Yes": {
+        "enabled": false,
+        "next": [
+            "Sweep-Auto-自动战斗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 2403,
                 "y": 183
             }
-        },
-        "enabled": false,
-        "next": [
-            "Sweep-Auto-自动战斗"
-        ]
+        }
     },
     "Sweep-关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/点击空白处关闭弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
                 "x": 3643,
                 "y": -133
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/点击空白处关闭弹窗.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Sweep-开始扫荡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/扫荡-弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Sweep-扫荡弹窗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 3142,
                 "y": -133
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Sweep-扫荡弹窗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/扫荡-弹窗.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Sweep-扫荡弹窗": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3386,
-                "y": -133
-            }
-        },
-        "next": [
-            "Sweep-扫荡结束"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Popup/扫荡.png",
                     "Sweep/正在扫荡.png",
                     "Sweep/扫荡结束.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "Sweep-扫荡结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3386,
+                "y": -133
+            }
         }
     },
     "Sweep-扫荡结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3142,
-                "y": 19
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "扫荡结束"
+                ]
             }
         },
         "next": [
@@ -692,113 +694,99 @@
             "[JumpBack]Sweep-关闭弹窗",
             "Sweep-无关闭弹窗"
         ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "扫荡结束"
-                ]
-            },
-            "type": "OCR"
+        "$__mpe_code": {
+            "position": {
+                "x": 3142,
+                "y": 19
+            }
         }
     },
     "Sweep-无关闭弹窗": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3643,
-                "y": 19
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/点击空白处关闭弹窗.png"
+                ]
             }
         },
         "inverse": true,
         "next": [
             "Title-返回"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/点击空白处关闭弹窗.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 3643,
+                "y": 19
+            }
         }
     },
     "Sweep-石头没满": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2163,
-                "y": -133
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/满.png"
+                ]
             }
         },
         "inverse": true,
         "next": [
             "Sweep-自动战斗"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/满.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 2163,
+                "y": -133
+            }
         }
     },
     "Sweep-确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/确认.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
                 "x": 3386,
                 "y": 19
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/确认.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Sweep-自动战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/自动战斗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Sweep-自动战斗弹窗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 2403,
                 "y": -132
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Sweep-自动战斗弹窗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/自动战斗.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Sweep-自动战斗加": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2886,
-                "y": -132
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Sweep-开始扫荡"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     640,
@@ -812,53 +800,47 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
         },
         "repeat": 14,
-        "repeat_delay": 500
-    },
-    "Sweep-自动战斗弹窗": {
+        "repeat_delay": 500,
+        "next": [
+            "Sweep-开始扫荡"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 2646,
+                "x": 2886,
                 "y": -132
+            }
+        }
+    },
+    "Sweep-自动战斗弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/设置自动战斗次数.png"
+                ]
             }
         },
         "next": [
             "Sweep-自动战斗加"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/设置自动战斗次数.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 2646,
+                "y": -132
+            }
         }
     },
     "Tab-开花石副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1110,
-                "y": -683
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "max_hit": 1,
-        "next": [
-            "[JumpBack]副本-虚花石",
-            "[JumpBack]副本-光花石",
-            "[JumpBack]副本-暗花石",
-            "[JumpBack]副本-土花石",
-            "[JumpBack]副本-火花石",
-            "[JumpBack]副本-水花石",
-            "副本-结束"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -872,26 +854,32 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Tab-推荐": {
-        "$__mpe_code": {
-            "position": {
-                "x": 147,
-                "y": 63
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "max_hit": 1,
         "next": [
-            "Menu-英雄传"
+            "[JumpBack]副本-虚花石",
+            "[JumpBack]副本-光花石",
+            "[JumpBack]副本-暗花石",
+            "[JumpBack]副本-土花石",
+            "[JumpBack]副本-火花石",
+            "[JumpBack]副本-水花石",
+            "副本-结束"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1110,
+                "y": -683
+            }
+        }
+    },
+    "Tab-推荐": {
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -903,54 +891,52 @@
                     "Rift/Tab/推荐0.png",
                     "Rift/Tab/推荐1.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Tab-日常": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1795,
-                "y": -334
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "next": [
-            "[JumpBack]全部领取1",
-            "任务-全部领取0"
+            "Menu-英雄传"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 147,
+                "y": 63
+            }
+        }
+    },
+    "Tab-日常": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/日常0.png",
                     "Ui/日常1.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Tab-活动1": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1018,
-                "y": -1309
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "next": [
+            "[JumpBack]全部领取1",
+            "任务-全部领取0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1795,
+                "y": -334
+            }
+        }
+    },
+    "Tab-活动1": {
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "活动1-主页",
-            "[JumpBack]Tab-活动1-Re"
-        ],
-        "post_delay": 1000,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -961,43 +947,43 @@
                 "template": [
                     "Event/Banner/活动裂痕.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 3000,
+        "next": [
+            "活动1-主页",
+            "[JumpBack]Tab-活动1-Re"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1018,
+                "y": -1309
+            }
         }
     },
     "Tab-活动1-Re": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": "Tab-活动1"
+            }
+        },
         "$__mpe_code": {
             "position": {
                 "x": -770,
                 "y": -1447
             }
-        },
-        "action": {
-            "param": {
-                "target": "Tab-活动1"
-            },
-            "type": "Click"
         }
     },
     "Tab-活动2": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1018,
-                "y": -1050
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "活动2-主页",
-            "[JumpBack]Tab-活动2-Re"
-        ],
-        "post_delay": 1000,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1008,43 +994,43 @@
                 "template": [
                     "Event/Banner/浮游城大富翁.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 3000,
+        "next": [
+            "活动2-主页",
+            "[JumpBack]Tab-活动2-Re"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1018,
+                "y": -1050
+            }
         }
     },
     "Tab-活动2-Re": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": "Tab-活动2"
+            }
+        },
         "$__mpe_code": {
             "position": {
                 "x": -285,
                 "y": -911
             }
-        },
-        "action": {
-            "param": {
-                "target": "Tab-活动2"
-            },
-            "type": "Click"
         }
     },
     "Tab-活动3": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2015,
-                "y": -1050
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "活动3-主页",
-            "[JumpBack]Tab-活动3-Re"
-        ],
-        "post_delay": 1000,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1055,43 +1041,43 @@
                 "template": [
                     "Event/Banner/路线图.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 3000,
+        "next": [
+            "活动3-主页",
+            "[JumpBack]Tab-活动3-Re"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2015,
+                "y": -1050
+            }
         }
     },
     "Tab-活动3-Re": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": "Tab-活动3"
+            }
+        },
         "$__mpe_code": {
             "position": {
                 "x": -1272,
                 "y": -1049
             }
-        },
-        "action": {
-            "param": {
-                "target": "Tab-活动3"
-            },
-            "type": "Click"
         }
     },
     "Tab-活动4": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2015,
-                "y": -1594
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "活动4-主页",
-            "[JumpBack]Tab-活动4-Re"
-        ],
-        "post_delay": 1000,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1102,43 +1088,42 @@
                 "template": [
                     "Event/Banner/开心宾果乐.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 3000,
+        "next": [
+            "活动4-主页",
+            "[JumpBack]Tab-活动4-Re"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2015,
+                "y": -1594
+            }
         }
     },
     "Tab-活动4-Re": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": "Tab-活动4"
+            }
+        },
         "$__mpe_code": {
             "position": {
                 "x": -1272,
                 "y": -1590
             }
-        },
-        "action": {
-            "param": {
-                "target": "Tab-活动4"
-            },
-            "type": "Click"
         }
     },
     "Tab-裂痕": {
-        "$__mpe_code": {
-            "position": {
-                "x": 401,
-                "y": -133
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "max_hit": 1,
-        "next": [
-            "[JumpBack]Tab-资源副本",
-            "[JumpBack]Tab-进化石副本",
-            "[JumpBack]Tab-开花石副本",
-            "副本-结束"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1150,31 +1135,29 @@
                     "Rift/Tab/裂痕0.png",
                     "Rift/Tab/裂痕1.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Tab-资源副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1355,
-                "y": -134
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "max_hit": 1,
         "next": [
-            "[JumpBack]副本-觉醒副本",
-            "[JumpBack]副本-红色碎片副本",
-            "[JumpBack]副本-金币副本",
-            "[JumpBack]副本-经验副本",
-            "[JumpBack]副本-道具副本",
+            "[JumpBack]Tab-资源副本",
+            "[JumpBack]Tab-进化石副本",
+            "[JumpBack]Tab-开花石副本",
             "副本-结束"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 401,
+                "y": -133
+            }
+        }
+    },
+    "Tab-资源副本": {
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1188,32 +1171,31 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Tab-进化石副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": 401,
-                "y": -407
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "max_hit": 1,
         "next": [
-            "[JumpBack]副本-虚进石",
-            "[JumpBack]副本-光进石",
-            "[JumpBack]副本-暗进石",
-            "[JumpBack]副本-土进石",
-            "[JumpBack]副本-火进石",
-            "[JumpBack]副本-水进石",
+            "[JumpBack]副本-觉醒副本",
+            "[JumpBack]副本-红色碎片副本",
+            "[JumpBack]副本-金币副本",
+            "[JumpBack]副本-经验副本",
+            "[JumpBack]副本-道具副本",
             "副本-结束"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1355,
+                "y": -134
+            }
+        }
+    },
+    "Tab-进化石副本": {
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1227,21 +1209,31 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]副本-虚进石",
+            "[JumpBack]副本-光进石",
+            "[JumpBack]副本-暗进石",
+            "[JumpBack]副本-土进石",
+            "[JumpBack]副本-火进石",
+            "[JumpBack]副本-水进石",
+            "副本-结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 401,
+                "y": -407
+            }
         }
     },
     "Title-任务": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2044,
-                "y": -363
-            }
-        },
-        "next": [
-            "Tab-日常"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1252,22 +1244,21 @@
                 "template": [
                     "Title/任务指南.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Title-公会": {
-        "$__mpe_code": {
-            "position": {
-                "x": -30,
-                "y": -1965
             }
         },
         "next": [
-            "[JumpBack]公会签到1",
-            "公会签到0"
+            "Tab-日常"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2044,
+                "y": -363
+            }
+        }
+    },
+    "Title-公会": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1278,48 +1269,48 @@
                 "template": [
                     "Title/公会.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "[JumpBack]公会签到1",
+            "公会签到0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -30,
+                "y": -1965
+            }
         }
     },
     "Title-公会-返回": {
-        "$__mpe_code": {
-            "position": {
-                "x": 724,
-                "y": -1930
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "L-Menu-任务",
-            "L-返回并结束任务"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/返回按钮.png",
                     "Ui/返回按钮0.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "L-Menu-任务",
+            "L-返回并结束任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 724,
+                "y": -1930
+            }
         }
     },
     "Title-协力讨伐": {
-        "$__mpe_code": {
-            "position": {
-                "x": -30,
-                "y": -1773
-            }
-        },
         "max_hit": 1,
-        "next": [
-            "Title-协力讨伐-确认",
-            "Title-协力讨伐-返回"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1330,42 +1321,42 @@
                 "template": [
                     "Group/剩余挑战次数.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "Title-协力讨伐-确认",
+            "Title-协力讨伐-返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -30,
+                "y": -1773
+            }
         }
     },
     "Title-协力讨伐-确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/确认.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
                 "x": 228,
                 "y": -1878
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/确认.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "Title-协力讨伐-返回": {
-        "$__mpe_code": {
-            "position": {
-                "x": 228,
-                "y": -1721
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1377,25 +1368,22 @@
                     "Ui/返回按钮.png",
                     "Ui/返回按钮0.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "Title-商店": {
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
                 "x": 228,
-                "y": -1520
+                "y": -1721
             }
-        },
-        "next": [
-            "[JumpBack]商店-订阅卡",
-            "[JumpBack]商店-资源",
-            "[JumpBack]商店-英雄成长",
-            "[JumpBack]商店-装备",
-            "Title-商店-返回"
-        ],
+        }
+    },
+    "Title-商店": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1406,25 +1394,25 @@
                 "template": [
                     "Title/商店.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "[JumpBack]商店-订阅卡",
+            "[JumpBack]商店-资源",
+            "[JumpBack]商店-英雄成长",
+            "[JumpBack]商店-装备",
+            "Title-商店-返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 228,
+                "y": -1520
+            }
         }
     },
     "Title-商店-返回": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1000,
-                "y": -1728
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "L-检查主页完毕"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1436,27 +1424,25 @@
                     "Ui/返回按钮.png",
                     "Ui/返回按钮0.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "L-检查主页完毕"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1000,
+                "y": -1728
+            }
         }
     },
     "Title-活动": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1272,
-                "y": -1276
-            }
-        },
-        "next": [
-            "[JumpBack]活动帮助叉",
-            "[JumpBack]Tab-活动1",
-            "[JumpBack]Tab-活动2",
-            "[JumpBack]Tab-活动3",
-            "[JumpBack]Tab-活动4",
-            "L-返回并结束任务"
-        ],
-        "post_delay": 1000,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1467,23 +1453,27 @@
                 "template": [
                     "Title/活动.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]活动帮助叉",
+            "[JumpBack]Tab-活动1",
+            "[JumpBack]Tab-活动2",
+            "[JumpBack]Tab-活动3",
+            "[JumpBack]Tab-活动4",
+            "L-返回并结束任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1272,
+                "y": -1276
+            }
         }
     },
     "Title-游玩指南": {
-        "$__mpe_code": {
-            "position": {
-                "x": 147,
-                "y": -132
-            }
-        },
-        "next": [
-            "[JumpBack]Tab-推荐",
-            "[JumpBack]Tab-裂痕",
-            "L-返回并结束任务"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1494,42 +1484,43 @@
                 "template": [
                     "Title/游玩指南.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "[JumpBack]Tab-推荐",
+            "[JumpBack]Tab-裂痕",
+            "L-返回并结束任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 147,
+                "y": -132
+            }
         }
     },
     "Title-英雄传": {
-        "$__mpe_code": {
-            "position": {
-                "x": 639,
-                "y": 153
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Title/忒提斯英雄传.png"
+                ]
             }
         },
         "next": [
             "英雄传-无券",
             "英雄传-有券"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Title/忒提斯英雄传.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 639,
+                "y": 153
+            }
         }
     },
     "Title-返回": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3643,
-                "y": 230
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1541,23 +1532,22 @@
                     "Ui/返回按钮.png",
                     "Ui/返回按钮0.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3643,
+                "y": 230
+            }
         }
     },
     "Title-邀请赛": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1795,
-                "y": -748
-            }
-        },
-        "next": [
-            "[JumpBack]邀请赛1",
-            "[JumpBack]邀请赛2",
-            "L-返回并结束任务"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -1568,18 +1558,23 @@
                 "template": [
                     "Title/邀请赛.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "[JumpBack]邀请赛1",
+            "[JumpBack]邀请赛2",
+            "L-返回并结束任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1795,
+                "y": -748
+            }
         }
     },
     "一键领取0": {
-        "$__mpe_code": {
-            "position": {
-                "x": 221,
-                "y": -1129
-            }
-        },
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/一键领取0.png"
@@ -1587,26 +1582,18 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "一键领取1": {
+            }
+        },
         "$__mpe_code": {
             "position": {
                 "x": 221,
-                "y": -1304
+                "y": -1129
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "[JumpBack]关闭弹窗",
-            "无关闭弹窗"
-        ],
+        }
+    },
+    "一键领取1": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/一键领取1.png"
@@ -1614,21 +1601,26 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]关闭弹窗",
+            "无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 221,
+                "y": -1304
+            }
         }
     },
     "一键领取3": {
-        "$__mpe_code": {
-            "position": {
-                "x": -285,
-                "y": -771
-            }
-        },
-        "next": [
-            "活动任务叉"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/一键领取0.png"
@@ -1636,66 +1628,65 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "活动任务叉"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -285,
+                "y": -771
+            }
         }
     },
     "下载资源": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/下载资源.png"
+                ]
+            }
+        },
+        "next": [
+            "下载资源-确认"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 275,
                 "y": -2681
             }
-        },
-        "max_hit": 1,
-        "next": [
-            "下载资源-确认"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/下载资源.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "下载资源-确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/确认.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 8000,
+        "next": [
+            "登录确认"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 557,
                 "y": -2681
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "登录确认"
-        ],
-        "post_delay": 8000,
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/确认.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "任务-全部领取0": {
-        "$__mpe_code": {
-            "position": {
-                "x": -770,
-                "y": -573
-            }
-        },
-        "next": [
-            "[JumpBack]已获得1",
-            "[JumpBack]已获得0"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/全部领取0.png",
@@ -1704,29 +1695,22 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "[JumpBack]已获得1",
+            "[JumpBack]已获得0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -770,
+                "y": -573
+            }
         }
     },
     "任务快捷领取": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2300,
-                "y": -626
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "focus": {
-            "Node.Recognition.Failed": "任务快捷领取完成",
-            "Node.Recognition.Succeeded": "任务快捷领取"
-        },
-        "next": [
-            "[JumpBack]关闭弹窗"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Menu/任务快捷领取.png",
@@ -1735,25 +1719,29 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "兑换所-加": {
-        "$__mpe_code": {
-            "position": {
-                "x": 511,
-                "y": -743
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
+        },
+        "focus": {
+            "Node.Recognition.Failed": "任务快捷领取完成",
+            "Node.Recognition.Succeeded": "任务快捷领取"
         },
         "next": [
-            "兑换所-购买"
+            "[JumpBack]关闭弹窗"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2300,
+                "y": -626
+            }
+        }
+    },
+    "兑换所-加": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     640,
@@ -1767,43 +1755,50 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
         },
         "repeat": 3,
-        "repeat_delay": 500
+        "repeat_delay": 500,
+        "next": [
+            "兑换所-购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -743
+            }
+        }
     },
     "兑换所-购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Event/4币.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "关闭弹窗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 759,
                 "y": -757
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "关闭弹窗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Event/4币.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "全部领取0": {
-        "$__mpe_code": {
-            "position": {
-                "x": -770,
-                "y": -396
-            }
-        },
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/全部领取0.png",
@@ -1812,26 +1807,18 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "全部领取1": {
+            }
+        },
         "$__mpe_code": {
             "position": {
                 "x": -770,
-                "y": -749
+                "y": -396
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "[JumpBack]关闭弹窗带延迟",
-            "无关闭弹窗"
-        ],
+        }
+    },
+    "全部领取1": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/全部领取1.png"
@@ -1839,21 +1826,26 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]关闭弹窗带延迟",
+            "无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -770,
+                "y": -749
+            }
         }
     },
     "公会签到0": {
-        "$__mpe_code": {
-            "position": {
-                "x": 481,
-                "y": -1930
-            }
-        },
-        "next": [
-            "Title-公会-返回"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Group/签到0.png"
@@ -1861,87 +1853,97 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "Title-公会-返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 481,
+                "y": -1930
+            }
         }
     },
     "公会签到1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 228,
-                "y": -2086
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Group/签到1.png"
+                ]
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "max_hit": 1,
         "next": [
             "[JumpBack]关闭弹窗",
             "[JumpBack]确认",
             "公会签到0"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Group/签到1.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 228,
+                "y": -2086
+            }
         }
     },
     "关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/点击空白处关闭弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
                 "x": 1323,
                 "y": -2476
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        }
+    },
+    "关闭弹窗带延迟": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Popup/点击空白处关闭弹窗.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "关闭弹窗带延迟": {
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
         "$__mpe_code": {
             "position": {
                 "x": -285,
                 "y": -576
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "post_delay": 1000,
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/点击空白处关闭弹窗.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "关闭活动公告": {
-        "$__mpe_code": {
-            "position": {
-                "x": 557,
-                "y": -2476
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Start/叉.png"
+                ]
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "next": [
             "[JumpBack]关闭弹窗",
@@ -1950,33 +1952,18 @@
             "[JumpBack]签到1",
             "L-Menu-任务"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Start/叉.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 557,
+                "y": -2476
+            }
         }
     },
     "副本-光花石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1602,
-                "y": -683
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "石头满了",
-            "Sweep-石头没满"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/开花石副本/光属性开花石副本.png"
@@ -1984,29 +1971,28 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-光进石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 877,
-                "y": -407
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
-            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1602,
+                "y": -683
+            }
+        }
+    },
+    "副本-光进石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/进化石副本/光属性进化石副本.png"
@@ -2014,28 +2000,29 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-土花石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1355,
-                "y": -407
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
+            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 877,
+                "y": -407
+            }
+        }
+    },
+    "副本-土花石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/开花石副本/土属性开花石副本.png"
@@ -2043,29 +2030,28 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-土进石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 639,
-                "y": -132
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
-            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1355,
+                "y": -407
+            }
+        }
+    },
+    "副本-土进石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/进化石副本/土属性进化石副本.png"
@@ -2073,28 +2059,29 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-暗花石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1847,
-                "y": -683
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
+            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 639,
+                "y": -132
+            }
+        }
+    },
+    "副本-暗花石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/开花石副本/暗属性开花石副本.png"
@@ -2102,29 +2089,28 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-暗进石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1113,
-                "y": -407
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
-            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1847,
+                "y": -683
+            }
+        }
+    },
+    "副本-暗进石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/进化石副本/暗属性进化石副本.png"
@@ -2132,28 +2118,29 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-水花石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1846,
-                "y": -407
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
+            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1113,
+                "y": -407
+            }
+        }
+    },
+    "副本-水花石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/开花石副本/水属性开花石副本.png"
@@ -2161,29 +2148,28 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-水进石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1112,
-                "y": -133
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
-            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1846,
+                "y": -407
+            }
+        }
+    },
+    "副本-水进石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/进化石副本/水属性进化石副本.png"
@@ -2191,28 +2177,29 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-火花石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1601,
-                "y": -407
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
+            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1112,
+                "y": -133
+            }
+        }
+    },
+    "副本-火花石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/开花石副本/火属性开花石副本.png"
@@ -2220,29 +2207,28 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-火进石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 877,
-                "y": -133
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
-            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1601,
+                "y": -407
+            }
+        }
+    },
+    "副本-火进石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/进化石副本/火属性进化石副本.png"
@@ -2250,27 +2236,29 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-红色碎片副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1847,
-                "y": -132
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "next": [
+            "石头满了",
+            "Sweep-Auto-石头没满",
+            "Sweep-石头没满"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 877,
+                "y": -133
+            }
+        }
+    },
+    "副本-红色碎片副本": {
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "Sweep-自动战斗"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/资源副本/红色碎片副本.png"
@@ -2278,28 +2266,27 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-经验副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1602,
-                "y": 142
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
-            "Sweep-Auto-资源Yes",
             "Sweep-自动战斗"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1847,
+                "y": -132
+            }
+        }
+    },
+    "副本-经验副本": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/资源副本/经验副本.png"
@@ -2307,8 +2294,21 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Sweep-Auto-资源Yes",
+            "Sweep-自动战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1602,
+                "y": 142
+            }
         }
     },
     "副本-结束": {
@@ -2320,23 +2320,10 @@
         }
     },
     "副本-虚花石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1355,
-                "y": -683
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "石头满了",
-            "Sweep-石头没满"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/开花石副本/虚属性开花石副本.png"
@@ -2344,29 +2331,28 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-虚进石": {
-        "$__mpe_code": {
-            "position": {
-                "x": 639,
-                "y": -407
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "石头满了",
-            "Sweep-Auto-石头没满",
             "Sweep-石头没满"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1355,
+                "y": -683
+            }
+        }
+    },
+    "副本-虚进石": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/进化石副本/虚属性进化石副本.png"
@@ -2374,28 +2360,29 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-觉醒副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1602,
-                "y": -134
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "next": [
+            "石头满了",
+            "Sweep-Auto-石头没满",
+            "Sweep-石头没满"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 639,
+                "y": -407
+            }
+        }
+    },
+    "副本-觉醒副本": {
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "挑战券兑换",
-            "Sweep-Auto-自动战斗"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/资源副本/觉醒副本.png"
@@ -2403,28 +2390,28 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-道具副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1847,
-                "y": 142
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "next": [
+            "挑战券兑换",
+            "Sweep-Auto-自动战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1602,
+                "y": -134
+            }
+        }
+    },
+    "副本-道具副本": {
         "enabled": false,
         "max_hit": 1,
-        "next": [
-            "Sweep-Auto-资源Yes",
-            "Sweep-自动战斗"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/资源副本/道具副本.png"
@@ -2432,28 +2419,28 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "副本-金币副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1355,
-                "y": 142
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "enabled": false,
-        "max_hit": 1,
         "next": [
             "Sweep-Auto-资源Yes",
             "Sweep-自动战斗"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1847,
+                "y": 142
+            }
+        }
+    },
+    "副本-金币副本": {
+        "enabled": false,
+        "max_hit": 1,
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Rift/资源副本/金币副本.png"
@@ -2461,26 +2448,54 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Sweep-Auto-资源Yes",
+            "Sweep-自动战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1355,
+                "y": 142
+            }
         }
     },
     "参与裂痕": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Event/参与裂痕.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "活动裂痕副本"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -525,
                 "y": -1285
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        }
+    },
+    "参与裂痕-Re": {
         "max_hit": 1,
-        "next": [
-            "活动裂痕副本"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Event/参与裂痕.png"
@@ -2488,124 +2503,97 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "参与裂痕-Re": {
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "活动裂痕副本"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -285,
                 "y": -1141
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "max_hit": 1,
-        "next": [
-            "活动裂痕副本"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Event/参与裂痕.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "启动游戏": {
+        "max_hit": 1,
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.bilibili.snake/com.bilibili.snake.PermissionActivity"
+            }
+        },
         "$__mpe_code": {
             "position": {
                 "x": -34,
                 "y": -2681
             }
-        },
-        "action": {
-            "param": {
-                "package": "com.bilibili.snake/com.bilibili.snake.PermissionActivity"
-            },
-            "type": "StartApp"
-        },
-        "max_hit": 1
+        }
     },
     "商店-英雄成长": {
-        "$__mpe_code": {
-            "position": {
-                "x": 511,
-                "y": -1004
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ],
+                "expected": [
+                    "英雄成长"
+                ]
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "max_hit": 1,
+        "timeout": 3000,
         "next": [
             "商店-英雄成长-传说中的觉醒石"
         ],
         "on_error": [
             "Title-商店"
         ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "英雄成长"
-                ],
-                "roi": [
-                    0,
-                    0,
-                    250,
-                    720
-                ]
-            },
-            "type": "OCR"
-        },
-        "timeout": 3000
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1004
+            }
+        }
     },
     "商店-英雄成长-传说中的觉醒石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Shop/传说中的觉醒石.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "商店-英雄成长-加"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 758,
                 "y": -1031
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "商店-英雄成长-加"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Shop/传说中的觉醒石.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "商店-英雄成长-加": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1000,
-                "y": -1031
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "商店-英雄成长-购买"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     640,
@@ -2619,239 +2607,253 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
         },
         "repeat": 3,
-        "repeat_delay": 500
+        "repeat_delay": 500,
+        "next": [
+            "商店-英雄成长-购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1000,
+                "y": -1031
+            }
+        }
     },
     "商店-英雄成长-购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Shop/45000.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "关闭弹窗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 1247,
                 "y": -1031
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "关闭弹窗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Shop/45000.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "商店-装备": {
-        "$__mpe_code": {
-            "position": {
-                "x": 511,
-                "y": -1259
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ],
+                "expected": [
+                    "装备"
+                ]
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "max_hit": 1,
+        "timeout": 3000,
         "next": [
             "商店-装备-强化锤"
         ],
         "on_error": [
             "Title-商店"
         ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "装备"
-                ],
-                "roi": [
-                    0,
-                    0,
-                    250,
-                    720
-                ]
-            },
-            "type": "OCR"
-        },
-        "timeout": 3000
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1259
+            }
+        }
     },
     "商店-装备-强化锤": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Shop/强化锤.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "商店-装备-购买"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 756,
                 "y": -1278
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "商店-装备-购买"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Shop/强化锤.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "商店-装备-购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Shop/1000.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "关闭弹窗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 1000,
                 "y": -1278
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "关闭弹窗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Shop/1000.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "商店-订阅卡": {
-        "$__mpe_code": {
-            "position": {
-                "x": 511,
-                "y": -1728
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ],
+                "expected": [
+                    "订阅卡"
+                ]
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "max_hit": 1,
+        "timeout": 3000,
         "next": [
             "商店-订阅卡-立即领取"
         ],
         "on_error": [
             "Title-商店"
         ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "订阅卡"
-                ],
-                "roi": [
-                    0,
-                    0,
-                    250,
-                    720
-                ]
-            },
-            "type": "OCR"
-        },
-        "timeout": 3000
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1728
+            }
+        }
     },
     "商店-订阅卡-立即领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Shop/立即领取.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "关闭弹窗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 756,
                 "y": -1728
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "关闭弹窗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Shop/立即领取.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "商店-资源": {
-        "$__mpe_code": {
-            "position": {
-                "x": 511,
-                "y": -1520
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ],
+                "expected": [
+                    "资源"
+                ]
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "max_hit": 1,
+        "timeout": 3000,
         "next": [
             "商店-资源-金币"
         ],
         "on_error": [
             "Title-商店"
         ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "资源"
-                ],
-                "roi": [
-                    0,
-                    0,
-                    250,
-                    720
-                ]
-            },
-            "type": "OCR"
-        },
-        "timeout": 3000
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1520
+            }
+        }
     },
     "商店-资源-购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/免费.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "关闭弹窗"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 1000,
                 "y": -1520
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "关闭弹窗"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/免费.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "商店-资源-金币": {
-        "$__mpe_code": {
-            "position": {
-                "x": 756,
-                "y": -1520
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Shop/免费.png"
+                ]
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "next": [
             "商店-资源-购买"
@@ -2859,31 +2861,17 @@
         "on_error": [
             "Title-商店"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Shop/免费.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 756,
+                "y": -1520
+            }
         }
     },
     "在个人空间": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2283,
-                "y": -92
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "enabled": false,
-        "next": [
-            "在浮游城"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     1100,
@@ -2894,24 +2882,25 @@
                 "template": [
                     "Menu/浮游城.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "在浮游城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2283,
+                "y": -92
+            }
         }
     },
     "在浮游城": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2023,
-                "y": -92
-            }
-        },
-        "next": [
-            "[JumpBack]领取灵魂点数",
-            "[JumpBack]领取小公主礼物",
-            "返回个人空间",
-            "L-检查主页完毕"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     1100,
@@ -2922,21 +2911,24 @@
                 "template": [
                     "Menu/个人空间.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "已获得0": {
-        "$__mpe_code": {
-            "position": {
-                "x": -525,
-                "y": -576
             }
         },
         "next": [
-            "L-返回并结束任务"
+            "[JumpBack]领取灵魂点数",
+            "[JumpBack]领取小公主礼物",
+            "返回个人空间",
+            "L-检查主页完毕"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2023,
+                "y": -92
+            }
+        }
+    },
+    "已获得0": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/已获得0.png"
@@ -2944,25 +2936,21 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "已获得1": {
+            }
+        },
+        "next": [
+            "L-返回并结束任务"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -525,
-                "y": -751
+                "y": -576
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "关闭弹窗带延迟"
-        ],
+        }
+    },
+    "已获得1": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Ui/已获得1.png"
@@ -2970,15 +2958,30 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "关闭弹窗带延迟"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -525,
+                "y": -751
+            }
         }
     },
     "挑战券兑换": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3386,
-                "y": 235
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/挑战券0-觉醒副本.png",
+                    "Sweep/挑战券00-觉醒副本.png"
+                ]
             }
         },
         "focus": {
@@ -2987,41 +2990,44 @@
         "next": [
             "Title-返回"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/挑战券0-觉醒副本.png",
-                    "Sweep/挑战券00-觉醒副本.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 3386,
+                "y": 235
+            }
         }
     },
     "无关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/点击空白处关闭弹窗.png"
+                ]
+            }
+        },
+        "inverse": true,
         "$__mpe_code": {
             "position": {
                 "x": 1543,
                 "y": -2476
             }
-        },
-        "inverse": true,
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/点击空白处关闭弹窗.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "未达登录界面纯点": {
-        "$__mpe_code": {
-            "position": {
-                "x": -34,
-                "y": -2487
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Start/适龄提示.png",
+                    "Start/活动公告.png",
+                    "Menu/游玩.png"
+                ]
             }
         },
+        "inverse": true,
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     50,
@@ -3029,26 +3035,22 @@
                     50,
                     50
                 ]
-            },
-            "type": "Click"
+            }
         },
-        "inverse": true,
-        "recognition": {
-            "param": {
-                "template": [
-                    "Start/适龄提示.png",
-                    "Start/活动公告.png",
-                    "Menu/游玩.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": -34,
+                "y": -2487
+            }
         }
     },
     "活动1-主页": {
-        "$__mpe_code": {
-            "position": {
-                "x": -770,
-                "y": -1285
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Event/进行中的活动.png"
+                ]
             }
         },
         "inverse": true,
@@ -3058,127 +3060,110 @@
             "[JumpBack]参与裂痕-Re",
             "活动折叠"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Event/进行中的活动.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": -770,
+                "y": -1285
+            }
         }
     },
     "活动1-兑换所": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    320,
+                    500
+                ],
+                "expected": [
+                    "兑换所"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 3000,
+        "next": [
+            "活动裂痕副本挑战券"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -31,
                 "y": -597
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        }
+    },
+    "活动1-活动奖励": {
         "max_hit": 1,
-        "next": [
-            "活动裂痕副本挑战券"
-        ],
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "兑换所"
-                ],
                 "roi": [
                     0,
                     0,
                     320,
                     500
+                ],
+                "expected": [
+                    "活动奖励"
                 ]
-            },
-            "type": "OCR"
+            }
         },
-        "timeout": 3000
-    },
-    "活动1-活动奖励": {
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]一键领取1",
+            "一键领取0"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -30,
                 "y": -826
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        }
+    },
+    "活动1-活动目标": {
         "max_hit": 1,
-        "next": [
-            "[JumpBack]一键领取1",
-            "一键领取0"
-        ],
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "活动奖励"
-                ],
                 "roi": [
                     0,
                     0,
                     320,
                     500
+                ],
+                "expected": [
+                    "活动目标"
                 ]
-            },
-            "type": "OCR"
-        }
-    },
-    "活动1-活动目标": {
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]一键领取1",
+            "一键领取0"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -31,
                 "y": -1055
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "max_hit": 1,
-        "next": [
-            "[JumpBack]一键领取1",
-            "一键领取0"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "活动目标"
-                ],
-                "roi": [
-                    0,
-                    0,
-                    320,
-                    500
-                ]
-            },
-            "type": "OCR"
         }
     },
     "活动1-确认活动目标": {
-        "$__mpe_code": {
-            "position": {
-                "x": -34,
-                "y": -1285
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "max_hit": 1,
-        "next": [
-            "[JumpBack]活动1-活动目标",
-            "[JumpBack]活动1-活动奖励",
-            "[JumpBack]活动1-兑换所",
-            "活动任务叉"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     1000,
@@ -3189,15 +3174,32 @@
                 "template": [
                     "Event/活动目标-活动裂痕.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]活动1-活动目标",
+            "[JumpBack]活动1-活动奖励",
+            "[JumpBack]活动1-兑换所",
+            "活动任务叉"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -34,
+                "y": -1285
+            }
         }
     },
     "活动2-主页": {
-        "$__mpe_code": {
-            "position": {
-                "x": -770,
-                "y": -1049
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Event/进行中的活动.png"
+                ]
             }
         },
         "inverse": true,
@@ -3205,32 +3207,17 @@
             "[JumpBack]活动2-确认活动目标",
             "活动折叠"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Event/进行中的活动.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": -770,
+                "y": -1049
+            }
         }
     },
     "活动2-确认活动目标": {
-        "$__mpe_code": {
-            "position": {
-                "x": -525,
-                "y": -1050
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "max_hit": 1,
-        "next": [
-            "[JumpBack]一键领取1",
-            "一键领取3"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -3241,15 +3228,30 @@
                 "template": [
                     "Event/活动目标-浮游城大富翁.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]一键领取1",
+            "一键领取3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -525,
+                "y": -1050
+            }
         }
     },
     "活动3-主页": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1766,
-                "y": -1050
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Event/进行中的活动.png"
+                ]
             }
         },
         "inverse": true,
@@ -3257,32 +3259,17 @@
             "[JumpBack]活动3-确认活动目标",
             "活动折叠"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Event/进行中的活动.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": -1766,
+                "y": -1050
+            }
         }
     },
     "活动3-确认活动目标": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1524,
-                "y": -1050
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "max_hit": 1,
-        "next": [
-            "[JumpBack]一键领取1",
-            "一键领取3"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -3293,47 +3280,47 @@
                 "template": [
                     "Event/活动目标-路线图.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]一键领取1",
+            "一键领取3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1524,
+                "y": -1050
+            }
         }
     },
     "活动4-主页": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1766,
-                "y": -1590
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Event/进行中的活动.png"
+                ]
             }
         },
         "inverse": true,
         "next": [
             "[JumpBack]活动4-确认活动目标"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Event/进行中的活动.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": -1766,
+                "y": -1590
+            }
         }
     },
     "活动4-确认活动目标": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1524,
-                "y": -1590
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "max_hit": 1,
-        "next": [
-            "[JumpBack]一键领取1",
-            "一键领取3"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -3344,22 +3331,26 @@
                 "template": [
                     "Event/活动目标-开心宾果乐.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "活动任务叉": {
-        "$__mpe_code": {
-            "position": {
-                "x": 221,
-                "y": -959
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "next": [
+            "[JumpBack]一键领取1",
+            "一键领取3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1524,
+                "y": -1590
+            }
+        }
+    },
+    "活动任务叉": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     1180,
@@ -3370,15 +3361,26 @@
                 "template": [
                     "Popup/活动任务叉.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 221,
+                "y": -959
+            }
         }
     },
     "活动公告": {
-        "$__mpe_code": {
-            "position": {
-                "x": 275,
-                "y": -2476
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Start/活动公告.png"
+                ]
             }
         },
         "next": [
@@ -3387,27 +3389,16 @@
         "on_error": [
             "L-Menu-任务"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Start/活动公告.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 275,
+                "y": -2476
+            }
         }
     },
     "活动帮助叉": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1018,
-                "y": -1484
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     900,
@@ -3418,22 +3409,22 @@
                 "template": [
                     "Popup/叉.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "活动折叠": {
-        "$__mpe_code": {
-            "position": {
-                "x": 221,
-                "y": -606
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "$__mpe_code": {
+            "position": {
+                "x": -1018,
+                "y": -1484
+            }
+        }
+    },
+    "活动折叠": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -3446,61 +3437,74 @@
                     "Event/折叠1.png",
                     "Event/折叠2.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 221,
+                "y": -606
+            }
         }
     },
     "活动裂痕副本": {
-        "$__mpe_code": {
-            "position": {
-                "x": -285,
-                "y": -1278
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "活动裂痕副本"
+                ]
             }
         },
         "next": [
             "挑战券兑换",
             "Sweep-Auto-自动战斗"
         ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "活动裂痕副本"
-                ]
-            },
-            "type": "OCR"
+        "$__mpe_code": {
+            "position": {
+                "x": -285,
+                "y": -1278
+            }
         }
     },
     "活动裂痕副本挑战券": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Event/活动裂痕副本挑战券.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "兑换所-加"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 221,
                 "y": -757
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "兑换所-加"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Event/活动裂痕副本挑战券.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "登录确认": {
-        "$__mpe_code": {
-            "position": {
-                "x": -34,
-                "y": -2259
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Start/适龄提示.png"
+                ]
             }
         },
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     50,
@@ -3508,81 +3512,68 @@
                     0,
                     0
                 ]
-            },
-            "type": "Click"
+            }
         },
+        "post_delay": 20000,
+        "timeout": -1,
         "focus": {
             "Node.NextList.Starting": "{name} 进入下一步",
             "Node.Recognition.Succeeded": "{name} 识别成功"
         },
-        "max_hit": 1,
         "next": [
             "[JumpBack]下载资源",
             "[JumpBack]活动公告",
             "L-Menu-任务"
         ],
-        "post_delay": 20000,
-        "recognition": {
-            "param": {
-                "template": [
-                    "Start/适龄提示.png"
-                ]
-            },
-            "type": "TemplateMatch"
-        },
-        "timeout": -1
-    },
-    "石头满了": {
         "$__mpe_code": {
             "position": {
-                "x": 3142,
-                "y": 235
+                "x": -34,
+                "y": -2259
+            }
+        }
+    },
+    "石头满了": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/满.png"
+                ]
             }
         },
         "focus": {
             "Node.Recognition.Succeeded": "⚠️石头满了"
         },
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/满.png"
-                ]
-            },
-            "type": "TemplateMatch"
+        "$__mpe_code": {
+            "position": {
+                "x": 3142,
+                "y": 235
+            }
         }
     },
     "确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Popup/确认.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
                 "x": 481,
                 "y": -2086
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "template": [
-                    "Popup/确认.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "签到1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1076,
-                "y": -2677
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     900,
@@ -3593,22 +3584,22 @@
                 "template": [
                     "Popup/叉.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "签到2": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1323,
-                "y": -2651
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "$__mpe_code": {
+            "position": {
+                "x": 1076,
+                "y": -2677
+            }
+        }
+    },
+    "签到2": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     900,
@@ -3619,44 +3610,45 @@
                 "template": [
                     "Popup/签到叉.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1323,
+                "y": -2651
+            }
         }
     },
     "英雄传-扫荡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Sweep/扫荡-英雄传.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Sweep-开始扫荡"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 1113,
                 "y": 153
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "Sweep-开始扫荡"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Sweep/扫荡-英雄传.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "英雄传-无券": {
-        "$__mpe_code": {
-            "position": {
-                "x": 877,
-                "y": 338
-            }
-        },
-        "next": [
-            "Title-返回"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Sweep/挑战券0-英雄传.png"
@@ -3664,21 +3656,21 @@
                 "threshold": [
                     0.98
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "英雄传-有券": {
-        "$__mpe_code": {
-            "position": {
-                "x": 877,
-                "y": 153
             }
         },
         "next": [
-            "英雄传-扫荡"
+            "Title-返回"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 877,
+                "y": 338
+            }
+        }
+    },
+    "英雄传-有券": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Sweep/挑战券1-英雄传.png"
@@ -3686,26 +3678,22 @@
                 "threshold": [
                     0.98
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "next": [
+            "英雄传-扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 877,
+                "y": 153
+            }
         }
     },
     "返回个人空间": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1507,
-                "y": -92
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "enabled": false,
-        "next": [
-            "L-检查主页完毕"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     1100,
@@ -3716,26 +3704,54 @@
                 "template": [
                     "Menu/个人空间.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "L-检查主页完毕"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1507,
+                "y": -92
+            }
         }
     },
     "邀请函奖励1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Pass/邀请函奖励0.png",
+                    "Pass/邀请函奖励1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 3000,
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -1018,
                 "y": -749
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "[JumpBack]全部领取1",
-            "全部领取0"
-        ],
+        }
+    },
+    "邀请函奖励2": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Pass/邀请函奖励0.png",
@@ -3744,57 +3760,57 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
+            }
         },
-        "timeout": 3000
-    },
-    "邀请函奖励2": {
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 3000,
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -1018,
                 "y": -454
             }
+        }
+    },
+    "邀请函目标1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Pass/邀请函目标0.png",
+                    "Pass/邀请函目标1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "next": [
             "[JumpBack]全部领取1",
             "全部领取0"
         ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Pass/邀请函奖励0.png",
-                    "Pass/邀请函奖励1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            },
-            "type": "TemplateMatch"
-        },
-        "timeout": 3000
-    },
-    "邀请函目标1": {
         "$__mpe_code": {
             "position": {
                 "x": -1272,
                 "y": -748
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        }
+    },
+    "邀请函目标2": {
         "max_hit": 1,
-        "next": [
-            "[JumpBack]全部领取1",
-            "全部领取0"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "Pass/邀请函目标0.png",
@@ -3803,104 +3819,76 @@
                 "threshold": [
                     0.9
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "邀请函目标2": {
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -1272,
                 "y": -454
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "max_hit": 1,
-        "next": [
-            "[JumpBack]全部领取1",
-            "全部领取0"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Pass/邀请函目标0.png",
-                    "Pass/邀请函目标1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "邀请赛1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Pass/邀请赛1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]邀请函目标1",
+            "邀请函奖励1"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -1523,
                 "y": -749
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "max_hit": 1,
-        "next": [
-            "[JumpBack]邀请函目标1",
-            "邀请函奖励1"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Pass/邀请赛1.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "邀请赛2": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Pass/邀请赛2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]邀请函目标2",
+            "邀请函奖励2"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -1524,
                 "y": -454
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "max_hit": 1,
-        "next": [
-            "[JumpBack]邀请函目标2",
-            "邀请函奖励2"
-        ],
-        "recognition": {
-            "param": {
-                "template": [
-                    "Pass/邀请赛2.png"
-                ]
-            },
-            "type": "TemplateMatch"
         }
     },
     "领取小公主礼物": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1763,
-                "y": 80
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "next": [
-            "关闭弹窗带延迟"
-        ],
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     320,
@@ -3912,22 +3900,26 @@
                     "Menu/小公主的礼物1.png",
                     "Menu/小公主的礼物1.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "领取灵魂点数": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1763,
-                "y": -92
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "next": [
+            "关闭弹窗带延迟",
+            "无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1763,
+                "y": 80
+            }
+        }
+    },
+    "领取灵魂点数": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     320,
@@ -3939,8 +3931,21 @@
                     "Menu/灵魂点数.png",
                     "Menu/灵魂点数1.png"
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "关闭弹窗带延迟",
+            "无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1763,
+                "y": -92
+            }
         }
     }
 }
