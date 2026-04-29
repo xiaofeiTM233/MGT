@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
-            "lastSyncTime": 1776785700081,
+            "lastSyncTime": 1776785543731,
             "isDeleted": true,
             "isModifiedExternally": true,
             "savedViewport": {
-                "x": 1708,
-                "y": -43,
-                "zoom": 1.31
+                "x": 4265,
+                "y": 163,
+                "zoom": 1
             },
             "filename": "awa",
-            "version": "v1.4.1"
+            "version": "v1.4.3"
         }
     },
     "$__mpe_sticker_公会签到_awa": {
@@ -121,8 +121,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -147,8 +146,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "L-Title-任务"
@@ -204,8 +202,7 @@
             }
         },
         "action": {
-            "type": "StopTask",
-            "param": {}
+            "type": "StopTask"
         },
         "$__mpe_code": {
             "position": {
@@ -231,8 +228,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 2000,
         "$__mpe_code": {
@@ -369,8 +365,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Title-任务"
@@ -396,8 +391,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]Title-协力讨伐",
@@ -424,8 +418,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Title-商店"
@@ -453,8 +446,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Title-活动"
@@ -476,8 +468,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Title-游玩指南"
@@ -499,8 +490,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Title-英雄传"
@@ -528,8 +518,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Title-邀请赛"
@@ -572,8 +561,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Sweep-Auto-自动战斗弹窗"
@@ -626,8 +614,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -646,8 +633,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Sweep-扫荡弹窗"
@@ -751,8 +737,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -771,8 +756,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Sweep-自动战斗弹窗"
@@ -803,8 +787,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "repeat": 14,
         "repeat_delay": 500,
@@ -857,8 +840,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]副本-虚花石",
@@ -894,8 +876,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Menu-英雄传"
@@ -918,8 +899,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]全部领取1",
@@ -950,8 +930,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 3000,
         "next": [
@@ -997,8 +976,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 3000,
         "next": [
@@ -1044,8 +1022,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 3000,
         "next": [
@@ -1091,8 +1068,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 3000,
         "next": [
@@ -1138,8 +1114,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]Tab-资源副本",
@@ -1174,8 +1149,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]副本-觉醒副本",
@@ -1212,8 +1186,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]副本-虚进石",
@@ -1293,8 +1266,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "L-Menu-任务",
@@ -1344,8 +1316,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -1371,8 +1342,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -1427,8 +1397,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "L-检查主页完毕"
@@ -1535,13 +1504,12 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
                 "x": 3643,
-                "y": 230
+                "y": 235
             }
         }
     },
@@ -1604,8 +1572,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]关闭弹窗",
@@ -1670,8 +1637,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 8000,
         "next": [
@@ -1722,15 +1688,15 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "focus": {
             "Node.Recognition.Failed": "任务快捷领取完成",
             "Node.Recognition.Succeeded": "任务快捷领取"
         },
         "next": [
-            "[JumpBack]关闭弹窗"
+            "[JumpBack]关闭弹窗",
+            "无关闭弹窗"
         ],
         "$__mpe_code": {
             "position": {
@@ -1758,8 +1724,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "repeat": 3,
         "repeat_delay": 500,
@@ -1783,8 +1748,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭弹窗"
@@ -1829,8 +1793,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]关闭弹窗带延迟",
@@ -1876,8 +1839,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]关闭弹窗",
@@ -1901,8 +1863,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -1921,8 +1882,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 1000,
         "$__mpe_code": {
@@ -1942,8 +1902,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]关闭弹窗",
@@ -1974,8 +1933,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2003,8 +1961,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2033,8 +1990,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2062,8 +2018,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2092,8 +2047,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2121,8 +2075,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2151,8 +2104,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2180,8 +2132,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2210,8 +2161,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2239,8 +2189,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2269,8 +2218,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Sweep-自动战斗"
@@ -2297,8 +2245,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Sweep-Auto-资源Yes",
@@ -2334,8 +2281,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2363,8 +2309,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "石头满了",
@@ -2393,8 +2338,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "挑战券兑换",
@@ -2422,8 +2366,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Sweep-Auto-资源Yes",
@@ -2451,8 +2394,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Sweep-Auto-资源Yes",
@@ -2479,8 +2421,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "活动裂痕副本"
@@ -2506,8 +2447,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "活动裂痕副本"
@@ -2551,8 +2491,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 3000,
         "next": [
@@ -2578,8 +2517,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "商店-英雄成长-加"
@@ -2610,8 +2548,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "repeat": 3,
         "repeat_delay": 500,
@@ -2635,8 +2572,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭弹窗"
@@ -2665,8 +2601,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 3000,
         "next": [
@@ -2692,8 +2627,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "商店-装备-购买"
@@ -2715,8 +2649,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭弹窗"
@@ -2745,8 +2678,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 3000,
         "next": [
@@ -2772,8 +2704,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭弹窗"
@@ -2802,8 +2733,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 3000,
         "next": [
@@ -2829,8 +2759,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭弹窗"
@@ -2852,8 +2781,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "商店-资源-购买"
@@ -2885,8 +2813,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "在浮游城"
@@ -2961,8 +2888,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭弹窗带延迟"
@@ -3009,7 +2935,7 @@
         "inverse": true,
         "$__mpe_code": {
             "position": {
-                "x": 1543,
+                "x": 1566,
                 "y": -2476
             }
         }
@@ -3084,8 +3010,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 3000,
         "next": [
@@ -3115,8 +3040,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]一键领取1",
@@ -3146,8 +3070,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]一键领取1",
@@ -3177,8 +3100,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]活动1-活动目标",
@@ -3231,8 +3153,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]一键领取1",
@@ -3283,8 +3204,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]一键领取1",
@@ -3334,8 +3254,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]一键领取1",
@@ -3364,8 +3283,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -3412,8 +3330,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -3440,8 +3357,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -3480,8 +3396,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "兑换所-加"
@@ -3561,8 +3476,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -3587,8 +3501,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -3613,8 +3526,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -3633,8 +3545,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "Sweep-开始扫荡"
@@ -3707,8 +3618,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "L-检查主页完毕"
@@ -3734,8 +3644,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 3000,
         "next": [
@@ -3763,8 +3672,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 3000,
         "next": [
@@ -3793,8 +3701,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]全部领取1",
@@ -3822,8 +3729,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]全部领取1",
@@ -3847,8 +3753,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]邀请函目标1",
@@ -3872,8 +3777,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "[JumpBack]邀请函目标2",
@@ -3898,13 +3802,13 @@
                 ],
                 "template": [
                     "Menu/小公主的礼物1.png",
-                    "Menu/小公主的礼物1.png"
+                    "Menu/小公主的礼物1.png",
+                    "Menu/小公主的礼物2.png"
                 ]
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭弹窗带延迟",
@@ -3929,13 +3833,13 @@
                 ],
                 "template": [
                     "Menu/灵魂点数.png",
-                    "Menu/灵魂点数1.png"
+                    "Menu/灵魂点数1.png",
+                    "Menu/灵魂点数2.png"
                 ]
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "关闭弹窗带延迟",
