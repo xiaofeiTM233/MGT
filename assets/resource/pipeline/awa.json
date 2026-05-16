@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
-            "lastSyncTime": 1778951746630,
+            "lastSyncTime": 1778953033782,
             "isDeleted": true,
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -265,
-                "y": 2662,
-                "zoom": 1
+                "x": 3357,
+                "y": 2572,
+                "zoom": 1.15
             },
             "filename": "awa",
             "version": "v1.5.3"
@@ -2816,6 +2816,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 5000,
         "next": [
             "在浮游城"
         ],
@@ -3229,7 +3230,8 @@
         },
         "inverse": true,
         "next": [
-            "[JumpBack]活动4-确认活动目标"
+            "[JumpBack]活动4-确认活动目标",
+            "活动折叠"
         ],
         "$__mpe_code": {
             "position": {
@@ -3910,7 +3912,8 @@
         },
         "inverse": true,
         "next": [
-            "[JumpBack]活动5-确认活动目标"
+            "[JumpBack]活动5-确认活动目标",
+            "活动折叠"
         ],
         "$__mpe_code": {
             "position": {
