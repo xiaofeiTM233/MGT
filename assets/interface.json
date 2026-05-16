@@ -2,7 +2,7 @@
     "interface_version": 2,
     "name": "MGT",
     "github": "https://github.com/xiaofeiTM233/MGT",
-    "version": "2.0.16",
+    "version": "2.0.17",
     "contact": "https://github.com/xiaofeiTM233/MGT",
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MGT!",
@@ -79,7 +79,8 @@
                 "Tab-活动1",
                 "Tab-活动2",
                 "Tab-活动3",
-                "Tab-活动4"
+                "Tab-活动4",
+                "Tab-活动5"
             ]
         },
         {
@@ -735,6 +736,29 @@
                     "name": "No",
                     "label": "禁用",
                     "description": "禁用活动4。"
+                }
+            ],
+            "default_case": "No"
+        },
+        "Tab-活动5": {
+            "type": "switch",
+            "label": "活动5-巨型扭蛋机",
+            "description": "选择启用活动5，默认禁用。",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "icon": "启用",
+                    "description": "启用活动5。",
+                    "pipeline_override": {
+                        "Tab-活动5": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "label": "禁用",
+                    "description": "禁用活动5。"
                 }
             ],
             "default_case": "No"

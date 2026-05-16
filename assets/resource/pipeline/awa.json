@@ -3,16 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
-            "lastSyncTime": 1776785543731,
+            "lastSyncTime": 1778944765758,
             "isDeleted": true,
-            "isModifiedExternally": true,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 4265,
-                "y": 163,
-                "zoom": 1
+                "x": 3529,
+                "y": 2754,
+                "zoom": 1.14
             },
             "filename": "awa",
-            "version": "v1.4.3"
+            "version": "v1.5.3"
         }
     },
     "$__mpe_sticker_公会签到_awa": {
@@ -149,6 +150,7 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]L-Menu-任务-Re",
             "L-Title-任务"
         ],
         "$__mpe_code": {
@@ -493,6 +495,7 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]下载资源",
             "Title-英雄传"
         ],
         "$__mpe_code": {
@@ -1431,6 +1434,7 @@
             "[JumpBack]Tab-活动2",
             "[JumpBack]Tab-活动3",
             "[JumpBack]Tab-活动4",
+            "[JumpBack]Tab-活动5",
             "L-返回并结束任务"
         ],
         "$__mpe_code": {
@@ -1640,9 +1644,6 @@
             "type": "Click"
         },
         "post_delay": 8000,
-        "next": [
-            "登录确认"
-        ],
         "$__mpe_code": {
             "position": {
                 "x": 557,
@@ -3199,7 +3200,7 @@
                     250
                 ],
                 "template": [
-                    "Event/活动目标-路线图.png"
+                    "Event/活动目标.png"
                 ]
             }
         },
@@ -3849,6 +3850,127 @@
             "position": {
                 "x": -1763,
                 "y": -92
+            }
+        }
+    },
+    "Tab-活动5": {
+        "enabled": false,
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    300,
+                    720
+                ],
+                "template": [
+                    "Event/Banner/巨型扭蛋机.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "活动5-主页",
+            "[JumpBack]Tab-活动5-Re"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2015,
+                "y": -1907
+            }
+        }
+    },
+    "Tab-活动5-Re": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": "Tab-活动5"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -1272,
+                "y": -1907
+            }
+        }
+    },
+    "活动5-主页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "Event/进行中的活动.png"
+                ]
+            }
+        },
+        "inverse": true,
+        "next": [
+            "[JumpBack]活动5-确认活动目标"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1766,
+                "y": -1907
+            }
+        }
+    },
+    "活动5-确认活动目标": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1100,
+                    520,
+                    180,
+                    240
+                ],
+                "template": [
+                    "Event/活动目标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]一键领取1",
+            "一键领取3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1524,
+                "y": -1907
+            }
+        }
+    },
+    "L-Menu-任务-Re": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    500,
+                    1280,
+                    220
+                ],
+                "template": [
+                    "Menu/完成度.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1065,
+                "y": -2432
             }
         }
     }
