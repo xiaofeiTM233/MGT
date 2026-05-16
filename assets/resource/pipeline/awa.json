@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "filePath": "E:\\awa\\文件夹\\源码\\MGT\\assets\\resource\\pipeline\\awa.json",
-            "lastSyncTime": 1778944765758,
+            "lastSyncTime": 1778951746630,
             "isDeleted": true,
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 3529,
-                "y": 2754,
-                "zoom": 1.14
+                "x": -265,
+                "y": 2662,
+                "zoom": 1
             },
             "filename": "awa",
             "version": "v1.5.3"
@@ -137,9 +137,9 @@
             "param": {
                 "roi": [
                     0,
-                    500,
+                    600,
                     1280,
-                    220
+                    120
                 ],
                 "template": [
                     "Menu/完成度.png"
@@ -3955,9 +3955,9 @@
             "param": {
                 "roi": [
                     0,
-                    500,
+                    600,
                     1280,
-                    220
+                    120
                 ],
                 "template": [
                     "Menu/完成度.png"
