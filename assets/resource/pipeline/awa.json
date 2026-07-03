@@ -8,12 +8,12 @@
             "isModifiedExternally": false,
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 3357,
-                "y": 2572,
-                "zoom": 1.15
+                "x": 630,
+                "y": 2421,
+                "zoom": 0.87
             },
             "filename": "awa",
-            "version": "v1.5.3"
+            "version": "v1.7.2"
         }
     },
     "$__mpe_sticker_公会签到_awa": {
@@ -3413,14 +3413,6 @@
     },
     "登录确认": {
         "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "Start/适龄提示.png"
-                ]
-            }
-        },
         "action": {
             "type": "Click",
             "param": {
